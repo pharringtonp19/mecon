@@ -1,5 +1,6 @@
 site_name: Microeconomics 
 site_url: https://pharringtonp19.github.io/mecon/
+site_description: An undergraduate microeconimcs course
 
 nav: 
   - Home: index.md 
@@ -11,11 +12,6 @@ theme:
   name: material
 
 plugins:
-    - search  # default search plugin; needs manually re-enabling when using any other plugins
-    - autorefs  # Cross-links to headings
-    - include_exclude_files:
-        include:
-        exclude:
-            - "_overrides"
-            - "_static/README.md"
-    - mknotebooks  # Jupyter notebooks
+  - mkdocs-jupyter:
+    ignore_h1_titles: True
+    execute: True
