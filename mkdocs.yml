@@ -5,8 +5,7 @@ site_description: An undergraduate microeconimcs course
 nav: 
   - Home: index.md 
   - About: about.md
-  - Chapters:
-    - Chapter One: 'chapters/chapter1.ipynb'
+  - Chapter One: chapter1.ipynb
 
 theme:
   name: material
