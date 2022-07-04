@@ -9,3 +9,13 @@ nav:
 
 theme:
   name: material
+
+plugins:
+    - search  # default search plugin; needs manually re-enabling when using any other plugins
+    - autorefs  # Cross-links to headings
+    - include_exclude_files:
+        include:
+        exclude:
+            - "_overrides"
+            - "_static/README.md"
+    - mknotebooks  # Jupyter notebooks
