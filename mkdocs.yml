@@ -4,6 +4,8 @@ site_url: https://pharringtonp19.github.io/mecon/
 nav: 
   - Home: index.md 
   - About: about.md
+  - Chapters:
+    - Chapter One: 'chapters/chapter1.ipynb'
 
 theme:
   name: material
