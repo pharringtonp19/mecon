@@ -1,15 +1,35 @@
 site_name: Microeconomics 
 site_url: https://pharringtonp19.github.io/mecon/
 site_description: An undergraduate microeconimcs course
-
+site_author: Patrick Power
 nav: 
-  - Home: index.md 
-  - About: about.md
-  - Chapter One: chapter1.ipynb
+  - Welcome: index.md 
+  - Overview:
+    - Overview: 'overview/overview.md'
+    - Syllabus: 'overview/Syllabus.pdf'
+  - Chapters:
+      - The First Model: 'chapters/chapter1.ipynb'
+      - Intro to Uncertainty: 'chapters/chapter2.ipynb'
+      - Monopolies: 'chapters/monopolies.ipynb'
+  - Math:
+      - Math on the Computer: 'math/Math on the Computer.md'
+
 
 theme:
   name: material
 
+markdown_extensions:
+    - codehilite
+
 plugins:
   - search
-  - mkdocs-jupyter
+  - mknotebooks
+  # - mkdocs-jupyter:
+  #     ignore_h1_titles: True
+  #     execute: True
+
+extra_javascript: 
+    # The below three make MathJax work, see https://squidfunk.github.io/mkdocs-material/reference/mathjax/
+    - _static/mathjax.js
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
