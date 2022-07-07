@@ -1,0 +1,5 @@
+def f (x:Float) : Float = 
+    x + 2.0 
+
+def compose (n:Nat) (f: Float -> Float) (x:Float) : Float = 
+    fold ($) x (replicate n f)
