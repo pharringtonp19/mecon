@@ -1,1 +1,1 @@
-<center>This is EC201, a course where we build Mirconeconomic models.</center> 
+<center>This is EC201, a course where we build Mircoeconomic models.</center> 
