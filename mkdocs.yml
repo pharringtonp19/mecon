@@ -10,8 +10,9 @@ nav:
   - Chapters:
       - The First Model: 'chapters/chapter1.ipynb'
       - Introduction to Uncertainty: 'chapters/chapter2.ipynb'
+      - Utils: 'chapters/utility.ipynb'
       - Monopolies: 'chapters/monopolies.ipynb'
-      - Game Theory: 'chapters/Adv Game Theory.ipynb'
+      - Adv Game Theory: 'chapters/Game Theory.ipynb'
   - Math:
       - Math on the Computer: 'math/Math on the Computer.md'
 

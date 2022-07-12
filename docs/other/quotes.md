@@ -1,0 +1,1 @@
+[Throughout](https://www.stephendiehl.com/posts/exotic01.html) my life as professional programmer, I’ve realized there are two different groups of programmers. Those that see programming languages primarily as an instrument of human reason and those that see as a means of production for specific tasks.

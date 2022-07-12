@@ -1,0 +1,3 @@
+> We suppose it is a useful property of the surface language to be able to distinguish between units of logic which have effects, and to be able to classify these type of effects in order to greater reason about program composition.-- [Stephen Diehl](https://www.stephendiehl.com/posts/exotic03.html)
+
+> the compiler is aware of the effect it carries and the following function can be written without an annotation and effect inference will deduce the appropriate signature without the user having to specify it.-- [Stephen Diehl](https://www.stephendiehl.com/posts/exotic03.html)

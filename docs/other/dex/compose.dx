@@ -3,6 +3,23 @@
 def f (x:Float) : Float = 
     x + 2.0 
 
+def compose {a} (n:Nat) (f:a->a) : (a->a) = 
+    \x. yield_state x \ansRef. 
+        for i:(Fin n).
+            ansRef := f (get ansRef)
+
+def compose1 {a b} (n:Nat) (f:a->b) (x:a) : (a-> b) = 
+    (a, b) = swap $ run_state x \s. for i.  
+        c = get s 
+        (c', y) = f c 
+        s:= c' 
+        y
+    (a, sum b)
+
+h = compose 2 f 
+
+h 2.0
+
 def listify (n: Nat) (f : Float -> Float) : ( (Fin n)=> (Float -> Float)) = 
     fs = for i:(Fin n). f 
     fs
