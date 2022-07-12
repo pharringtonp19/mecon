@@ -1,5 +1,74 @@
+'### The Details of Composition
+
 def f (x:Float) : Float = 
     x + 2.0 
 
-def compose (n:Nat) (f: Float -> Float) (x:Float) : Float = 
-    fold ($) x (replicate n f)
+def compose {a} (n:Nat) (f:a->a) : (a->a) = 
+    \x. yield_state x \ansRef. 
+        for i:(Fin n).
+            ansRef := f (get ansRef)
+
+def compose1 {a b} (n:Nat) (f:a->b) (x:a) : (a-> b) = 
+    (a, b) = swap $ run_state x \s. for i.  
+        c = get s 
+        (c', y) = f c 
+        s:= c' 
+        y
+    (a, sum b)
+
+h = compose 2 f 
+
+h 2.0
+
+def listify (n: Nat) (f : Float -> Float) : ( (Fin n)=> (Float -> Float)) = 
+    fs = for i:(Fin n). f 
+    fs
+
+z = listify 10 f 
+
+:t z 
+
+def myf {n} (fs: n => (Float -> Float)) (x:Float) : Float = 
+    with_state 0.0 $ \acc. 
+        for i. 
+            acc := fs.i (get acc)
+        get acc 
+
+:t myf z 
+
+def compose (n:Nat) (f :Float -> Float) : (Float -> Float) = 
+    z = listify 10 f 
+    myf z 
+
+g = compose 10 f 
+
+:t g 
+
+
+def embellished (f:Float -> Float) : Float -> (Float & Float) = 
+    \x. (f(x), 0.) 
+
+embellished f 2.0
+
+def listify2 (n: Nat) (f : Float -> (Float & Float)) : ( (Fin n)=> (Float -> (Float & Float))) = 
+    fs = for i:(Fin n). f 
+    fs
+
+:t listify2 10 (embellished f)
+
+def myf1 {n} (fs: n => (Float -> (Float & Float))) (x:Float) : (Float & Float) = 
+    (a, b) = swap $ run_state x \s. for i.  
+        c = get s 
+        (c', y) = fs.i c 
+        s:= c' 
+        y
+    (a, sum b)
+
+def fish (n:Nat) (f :Float -> (Float & Float)) : (Float -> (Float & Float)) = 
+    z = listify2 10 f 
+    myf1 z
+
+:t fish 2 (embellished f)
+
+
+
