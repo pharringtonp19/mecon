@@ -1,0 +1,2 @@
+-- [ref 1](https://youtu.be/HvYYCHMeM-8?t=4241)
+-- [ref 2](https://leanprover.github.io/logic_and_proof/introduction.html#)

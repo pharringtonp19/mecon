@@ -8,9 +8,9 @@ The aim of this course is to help you learn to write down models so that you may
 
 ## **Assessments**
 
-There will be no tests/midterms in this course. In my experience, tests and midterms encourage an impresssive amount of "cramming" days before the test, with most of the material forgotten a few days after. I am not concerned by the fact that the material is forgotten. Most of the material in this course will be forgotten regardless of how you learned it. What's important to take away from this class though is an understanding of how to break down an idea (a model) into simpler parts, work on each part and then glue them back together. Cramming doesn't help with this, so no tests/midterms. 
+<!-- There will be no tests/midterms in this course. In my experience, tests and midterms encourage an impresssive amount of "cramming" days before the test, with most of the material forgotten a few days after. I am not concerned by the fact that the material is forgotten. Most of the material in this course will be forgotten regardless of how you learned it. What's important to take away from this class though is an understanding of how to break down an idea (a model) into simpler parts, work on each part and then glue them back together. Cramming doesn't help with this, so no tests/midterms.  -->
 
-What we will have though is bi-weekly group writeups, and a oral final.
+We will have bi-weekly group assignments, two midterms and a final.
 
 
 ## **Writing Math on a Computer**

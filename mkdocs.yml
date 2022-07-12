@@ -15,6 +15,7 @@ nav:
       - Adv Game Theory: 'chapters/Game Theory.ipynb'
   - Math:
       - Math on the Computer: 'math/Math on the Computer.md'
+      - Dependent Functions: 'math/dependent_functions.md'
 
 
 theme:
