@@ -19,6 +19,7 @@ nav:
   - Math:
       - Math on the Computer: 'math/Math on the Computer.md'
       - Dependent Functions: 'math/dependent_functions.md'
+      - Gradient Descent: 'math/gradient_descent.ipynb'
 
 
 
