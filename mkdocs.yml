@@ -11,11 +11,15 @@ nav:
       - The First Model: 'chapters/chapter1.ipynb'
       - Introduction to Uncertainty: 'chapters/chapter2.ipynb'
       - Utils: 'chapters/utility.ipynb'
+      - Demand: 'chapters/demand.ipynb'
       - Monopolies: 'chapters/monopolies.ipynb'
       - Adv Game Theory: 'chapters/Game Theory.ipynb'
+      - Firm Supply: 'chapters/firm_supply.ipynb' 
+      - Asymmetric Information: 'chapters/asymmetric information.ipynb'
   - Math:
       - Math on the Computer: 'math/Math on the Computer.md'
       - Dependent Functions: 'math/dependent_functions.md'
+
 
 
 theme:
