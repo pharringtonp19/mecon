@@ -16,10 +16,12 @@ nav:
       - Adv Game Theory: 'chapters/Game Theory.ipynb'
       - Firm Supply: 'chapters/firm_supply.ipynb' 
       - Asymmetric Information: 'chapters/asymmetric information.ipynb'
+      - Sequential Decision Making: 'chapters/rl.ipynb'
   - Math:
       - Math on the Computer: 'math/Math on the Computer.md'
       - Dependent Functions: 'math/dependent_functions.md'
       - Gradient Descent: 'math/gradient_descent.ipynb'
+      
 
 
 

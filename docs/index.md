@@ -3,4 +3,3 @@
 
 - **Teaching Philosophy**: 
     - Ideas are explained at the level of detail so as to enable composition
-    - Never let homework get in the way of your education
