@@ -620,17 +620,11 @@
 <p>This note is based largely on David Silver's course on reinforcement learning</p>
 </blockquote>
 <h3 id="the-science-of-decision-making"><a href="https://youtu.be/2pWv7GOvuf0?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&amp;t=412">The Science of Decision Making</a></h3>
-<ul>
-<li><strong>Active learning </strong><ul>
-<li>Make Decisions: 
-$$A_t$$</li>
-<li>Get a new experience/observation and a reward (from the environment)
-$$(O_{t+1}, R_{t+1})$$</li>
-<li>Combining these two ideas, our decisions/actions can depend on the entire experience (History)
-$$H_t = A_1, O_1, R_1, \dots, A_t, O_t, R_t$$</li>
-</ul>
-</li>
-</ul>
+<p>We consider the <strong>Active learning </strong> set-up where "agents" make decisions and from these decisions, receive new experiences/observations and rewards. 
+$$\begin{aligned}\text{Actions} &amp;: A_t \\ 
+\text{Observations, Reward} &amp;: O_{t+1}, R_{t+1} \end{aligned}$$
+Combining these two ideas, our decisions/actions can depend on the entire experience (History)
+    $$H_t = A_1, O_1, R_1, \dots, A_t, O_t, R_t$$</p>
 <p>Defering for the moment any discussion about how we might define an observation or reward for a given problem, <span style="color:blue">the central challenge is how can we learn from our history? </span>
         - To do so, we introduce this idea of state which is some function of the history 
         $$S_t = f(H_t)$$</p>
