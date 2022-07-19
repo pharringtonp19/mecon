@@ -13,7 +13,6 @@ The aim of this course is to help you learn to write down models so that you may
 We will have bi-weekly group assignments, two midterms and a final.
 
 
-## **Writing Math on a Computer**
-
-In this course, we will write math on the computer. Some people will consider it to be programming. But those people would be wrong. It's just writing math on a computer. On the first day of class, you will learn everything you need to know about writing math on the computer.
+## **Teaching Philosophy**: 
+Ideas are explained at the level of detail so as to enable composition (it should feel like you're [playing with legos](https://youtu.be/Jy5Jw8hNiAQ?t=464)). Based on my experience, I found this is best done by writing math on computer. Some people will consider this to be programming, but those people would be wrong. It's just writing math on a computer. On the first day of class, you will learn everything you need to know about writing math on the computer.
 
