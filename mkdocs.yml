@@ -14,6 +14,7 @@ nav:
       - Demand: 'chapters/demand.ipynb'
       - Monopolies: 'chapters/monopolies.ipynb'
       - Adv Game Theory: 'chapters/Game Theory.ipynb'
+      - Technology: 'chapters/Technology.ipynb'
       - Firm Supply: 'chapters/firm_supply.ipynb' 
       - Asymmetric Information: 'chapters/asymmetric information.ipynb'
       - Sequential Decision Making: 'chapters/rl.ipynb'
@@ -23,6 +24,10 @@ nav:
       - Gradient Descent: 'math/gradient_descent.ipynb'
       - Newton's Method: 'math/newton method.ipynb'
       - Convexity: 'math/convexity.ipynb'
+  - Other:
+      - Jax Basics: 'other/jax basics.ipynb'
+      - Symbolic Computation: 'other/symbolic computation.ipynb'
+      - Thoughts: 'other/thoughts.ipynb'
       
 
 
