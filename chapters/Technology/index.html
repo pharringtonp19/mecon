@@ -12,14 +12,14 @@
         <meta name="author" content="Patrick Power">
       
       
-        <link rel="canonical" href="https://pharringtonp19.github.io/mecon/chapters/Game%20Theory/">
+        <link rel="canonical" href="https://pharringtonp19.github.io/mecon/chapters/Technology/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
-        <title>Adv Game Theory - Microeconomics</title>
+        <title>Technology - Microeconomics</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#technical-rate-of-substition" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Adv Game Theory
+              Technology
             
           </span>
         </div>
@@ -364,6 +364,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../Game%20Theory/" class="md-nav__link">
+        Adv Game Theory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -374,12 +388,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Adv Game Theory
+          Technology
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Adv Game Theory
+        Technology
       </a>
       
         
@@ -396,23 +410,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
+  <a href="#technical-rate-of-substition" class="md-nav__link">
+    Technical Rate of Substition
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#framework" class="md-nav__link">
-    Framework
-  </a>
-  
-    <nav class="md-nav" aria-label="Framework">
+    <nav class="md-nav" aria-label="Technical Rate of Substition">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#two-modeling-options" class="md-nav__link">
-    Two Modeling Options
+  <a href="#derivation" class="md-nav__link">
+    Derivation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toy-example" class="md-nav__link">
+    Toy Example
   </a>
   
 </li>
@@ -422,45 +436,10 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nash-equilibirum" class="md-nav__link">
-    Nash Equilibirum
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#underactuated" class="md-nav__link">
-    Underactuated
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Technology/" class="md-nav__link">
-        Technology
-      </a>
     </li>
   
 
@@ -719,50 +698,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
+  <a href="#technical-rate-of-substition" class="md-nav__link">
+    Technical Rate of Substition
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#framework" class="md-nav__link">
-    Framework
-  </a>
-  
-    <nav class="md-nav" aria-label="Framework">
+    <nav class="md-nav" aria-label="Technical Rate of Substition">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#two-modeling-options" class="md-nav__link">
-    Two Modeling Options
+  <a href="#derivation" class="md-nav__link">
+    Derivation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toy-example" class="md-nav__link">
+    Toy Example
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nash-equilibirum" class="md-nav__link">
-    Nash Equilibirum
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#underactuated" class="md-nav__link">
-    Underactuated
-  </a>
   
 </li>
       
@@ -780,7 +738,7 @@
                 
 
 
-  <h1>Adv Game Theory</h1>
+  <h1>Technology</h1>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script>
@@ -813,100 +771,143 @@
 }());
 </script>
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="introduction"><strong>Introduction</strong></h3>
-<p>I think the most important statement in the chapter is "suppose we consider round 10". Hopefully, by the end of this, it will be clear why I think so. </p>
-<hr />
-<p>We're going to learn how to model strategic interactions between agents with limited information. That is we're going to try to model/predict how agents will act when the outcome of interest depends on both their actions and of other agents around them. The term agent is synonymous in this context with the term "decision-maker".</p>
-<p>We'll begin by introducing a relatively general way to model strategic interactions and then illustrate how the toy examples covered in the textbook correspond to a very particular case of the framework. The assumption here is that you have already seen games like Prisoners-delimma and the like from your introduction to microeconomics class. </p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="framework"><strong>Framework</strong></h3>
-<p>We're going to consider the model of an <strong>agent</strong> and an <strong>environment</strong>. An agent, as mentioned above is a decision maker, (i.e. one who makes decisions). The environment cab be thought of as the state of the world together with the mechanism that generates new state of the world. </p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="codehilite"><pre><span></span><code><span class="nf">update</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="n">reward</span><span class="w"></span>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">jax</span> 
+<span class="n">jax</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="s2">&quot;jax_enable_x64&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">jaxopt</span>
 </code></pre></div>
+
+
 
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="technical-rate-of-substition">Technical Rate of Substition</h2>
+<h3 id="derivation">Derivation</h3>
+<p>Let's say that we have an isoquant where $x$ and $y$ correspond to the amount of inputs used to produce $\alpha$ units of output</p>
+<p>$$F(x, y) = \alpha $$</p>
+<p>The above equation defines an implicit function which we can call explicitly as follows</p>
+<p>$$x \longmapsto \underset{y}{\text{solve}}\ F(x,y) = 0$$</p>
+<p>The technical rate of substitution is defined the derivative of the isoquant which we can compute as follows:</p>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For the moment, we're going to focus on environments where the state of the world doesn't matter. Which means we can simpify the above function to:</p>
+<p>Let's start by writing the isoquant in terms of the function $y(x)$</p>
+<p>$$F(x,y(x)) = 0$$</p>
+<p>Now, both the left and right hand sides are functions of $x$, so we can differentiate both side
+with respect to $x$.</p>
+<p>$$\partial _xF(x,y(x)) = 0$$</p>
+<p>From our understanding of calculus, this derivative can be expressed as follows:</p>
+<p>$$\partial _0F(x,y) + \partial _1F(x,y(x))\frac{d}{dx}y(x) = 0 $$</p>
+<p>Hopefully, you can interpret these terms: </p>
+<ul>
+<li><strong>Marginal Product of $x$</strong>: $\partial _0F(x,y)$</li>
+<li><strong>Marginal Product of $y$</strong>: $\partial _1F(x,y)$</li>
+<li><strong>Technical Rate of Substitution</strong>: $\frac{d}{dx}y(x)$</li>
+</ul>
+<p>We see then that we can express the technical rate of substition in terms of the negative of the ratio of the 
+two marginal products: </p>
+<p>$$\frac{d}{dx}y(x) = -\frac{\partial _0F(x,y)}{ \partial _1F(x,y(x))}$$</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="codehilite"><pre><span></span><code><span class="nf">update</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="n">reward</span><span class="w"></span>
+<h3 id="toy-example">Toy Example</h3>
+<p>To make things concrete, let's create a toy example. We'll consider the following production function</p>
+<p>$$F(x, y) = Ax^{\alpha}y^{\beta}$$</p>
+<p>Check your understanding -- With the following values, what do you get as the output and the technical rate of substitution? $$A=3, \alpha=0.8, \beta=1.3, x=10, y=2$$</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">F</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.3</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">A</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">alpha</span><span class="o">*</span><span class="n">y</span><span class="o">**</span><span class="n">beta</span> 
+
+<span class="k">def</span> <span class="nf">implicit_grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">marginal_product_x</span><span class="p">,</span> <span class="n">marginal_product_y</span> <span class="o">=</span> <span class="n">jax</span><span class="o">.</span><span class="n">grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">argnums</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="k">return</span> <span class="o">-</span><span class="n">marginal_product_x</span><span class="o">/</span><span class="n">marginal_product_y</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Output: </span><span class="si">{</span><span class="n">F</span><span class="p">(</span><span class="mf">10.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, TRS: </span><span class="si">{</span><span class="n">implicit_grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="mf">10.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
+
+
+
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>Output: 46.61, TRS: -0.12
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In our work above, we compute the technical rate of substituion given the quantities of each input. This is not the only starting point (information) from which we can compute the TRS though. We can also compute it if we are given one input and the desired output. <strong>Consider</strong>: How might we incorporate our previous work to build this new function? </p>
+<p>The task is then to use the level of input of one good and the desired output to compute the input level of the other good. </p>
+<p>$$F, x, \text{level} \longmapsto F, x,  y(F, x, \text{level}) \longmapsto\underbrace{ \text{TRS}(F, x, y)}_{\text{We have this!}} $$</p>
+<p>So we just need to be able to evaluate the implicit function which we can do by calling a solver
+$$y(F, x, \text{level})$$</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">implicit_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="n">solver</span> <span class="o">=</span> <span class="n">jaxopt</span><span class="o">.</span><span class="n">GradientDescent</span><span class="p">(</span><span class="n">fun</span><span class="o">=</span><span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="o">-</span><span class="n">level</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">maxiter</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">solver</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mf">1.</span><span class="p">)</span><span class="o">.</span><span class="n">params</span> 
+
+<span class="k">def</span> <span class="nf">implicit_grad2</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">implicit_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>  
+    <span class="k">return</span> <span class="n">implicit_grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div>
+
+
 
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">implicit_grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">),</span> <span class="n">implicit_grad2</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="n">F</span><span class="p">(</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">)))</span>
+</code></pre></div>
+
+
+
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="two-modeling-options"><strong>Two Modeling Options</strong></h4>
-<ul>
-<li><span style="color:red">Which one should we choose?</span>
-Hopefully the question that you are asking yourself right now is, how do we incorporate the actions of other agents into this framework? There's essentially two ways, we can think of them as "silently" comming into the<code>update</code> function, or we can think of them as a component of the state, and that therefore the state is only partially observable. We're going to use the latter framework with the understanding that the each agent has the same observable state, but different true states. </li>
-</ul>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="example"><strong>Example</strong></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="nash-equilibirum"><strong>Nash Equilibirum</strong></h3>
-<p>Under our framework, a Nash equilibrium is a situation where no one would be better off by choosing a different action assuming everyone kept theirs (there is no incentive to deviate)</p>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>-3.076923076923077 -3.0769225109304403
+</code>
+</pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="underactuated"><strong>Underactuated</strong></h3>
-<ul>
-<li><span style="color:red">How should we think about underactuated in a discrete time system?</span></li>
-</ul>
-<p>$$\text{new_state} = f(\text{state}, \text{action})$$</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><a href="https://youtu.be/2pWv7GOvuf0?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&amp;t=2399">From</a> the perspective of each individual agent, it can consider all of the other agents
-that it's interacting with to be part of the environment</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html"></div>
 </div>
 </div>
 
@@ -924,7 +925,7 @@ that it's interacting with to be part of the environment</li>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../monopolies/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Monopolies" rel="prev">
+        <a href="../Game%20Theory/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Adv Game Theory" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -933,20 +934,20 @@ that it's interacting with to be part of the environment</li>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Monopolies
+              Adv Game Theory
             </div>
           </div>
         </a>
       
       
         
-        <a href="../Technology/" class="md-footer__link md-footer__link--next" aria-label="Next: Technology" rel="next">
+        <a href="../firm_supply/" class="md-footer__link md-footer__link--next" aria-label="Next: Firm Supply" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Technology
+              Firm Supply
             </div>
           </div>
           <div class="md-footer__button md-icon">
