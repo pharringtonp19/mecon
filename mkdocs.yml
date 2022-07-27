@@ -8,7 +8,7 @@ nav:
     - Overview: 'overview/overview.md'
     - Syllabus: 'overview/Syllabus.pdf'
   - Chapters:
-      - The First Model: 'chapters/chapter1.ipynb'
+      - The First Model: 'chapters/the first model.ipynb'
       - Introduction to Uncertainty: 'chapters/chapter2.ipynb'
       - Utils: 'chapters/utility.ipynb'
       - Demand: 'chapters/demand.ipynb'
@@ -20,7 +20,7 @@ nav:
       - Sequential Decision Making: 'chapters/rl.ipynb'
   - Math:
       - Math on the Computer: 'math/Math on the Computer.md'
-      - Dependent Functions: 'math/dependent_functions.md'
+      - Functions: 'math/function.ipynb'
       - Gradient Descent: 'math/gradient_descent.ipynb'
       - Newton's Method: 'math/newton method.ipynb'
       - Convexity: 'math/convexity.ipynb'
@@ -34,16 +34,21 @@ nav:
 
 theme:
   name: material
+  palette:
+    scheme: default
+    primary: deep purple
+
 
 markdown_extensions:
     - codehilite
 
 plugins:
   - search
-  - mknotebooks
-  # - mkdocs-jupyter:
-  #     ignore_h1_titles: True
-  #     execute: True
+  # - mknotebooks
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+      execute: False
+      include_source: True
 
 extra_javascript: 
     # The below three make MathJax work, see https://squidfunk.github.io/mkdocs-material/reference/mathjax/

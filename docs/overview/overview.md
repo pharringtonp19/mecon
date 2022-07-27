@@ -1,5 +1,10 @@
 # Microeconomics
 
+<div style="text-align: center;">
+    <span>
+        Understand / Communicate / Assess
+    </span>
+</div>
 
 ## **Motivation**
 Models are constructed in response to questions. The key word here is constructed, meaning that models are built. When you build something, the first question to ask is whether the thing you built is any good, whether it's useful. The usefulness depends largely on who the model is for. Perhaps you are writing down a model to help organize your thoughts. Then you may not need a complete model. Or, perhaps you are asked to help predict the effects of a some government policy such as [Right to Counsel](https://www.jud.ct.gov/HomeNotices/NoticeToTenants.html#:~:text=Right%20to%20Counsel%20%2D%20CT%20Judicial%20Branch&text=Public%20Act%2021%2D34%20created,loss%20of%20their%20housing%20subsidy.). Then you probably want to decide on who this policy might effect, think through how each party involved might respond, and suggest a range of possible outcomes.
