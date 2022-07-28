@@ -22,6 +22,7 @@ nav:
   - Math:
       - Functions: 'math/function.ipynb'
       - Optimization Background: 'math/opt1.ipynb'
+      - Optimization Overview: 'math/opt2.ipynb'
       - Gradient Descent: 'math/gradient_descent.ipynb'
       - Newton's Method: 'math/newton method.ipynb'
       - Convexity: 'math/convexity.ipynb'
