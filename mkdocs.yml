@@ -48,7 +48,7 @@ plugins:
   - mkdocs-jupyter:
       ignore_h1_titles: True
       execute: False
-      include_source: True
+      include_source: False
 
 extra_javascript: 
     # The below three make MathJax work, see https://squidfunk.github.io/mkdocs-material/reference/mathjax/
