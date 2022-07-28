@@ -8,8 +8,7 @@ nav:
     - Overview: 'overview/overview.md'
     - Syllabus: 'overview/Syllabus.pdf'
   - Chapters:
-      - The First Model: 'chapters/the first model.ipynb'
-      - Introduction to Uncertainty: 'chapters/chapter2.ipynb'
+      - The First Model: 'chapters/the_first_model.md'
       - Utils: 'chapters/utility.ipynb'
       - Demand: 'chapters/demand.ipynb'
       - Demand Details: 'chapters/demand_details.ipynb'
@@ -20,7 +19,8 @@ nav:
       - Asymmetric Information: 'chapters/asymmetric information.ipynb'
       - Sequential Decision Making: 'chapters/rl.ipynb'
   - Math:
-      - Functions: 'math/function.ipynb'
+      - Functions: 'math/functions.md'
+      - Uncertainty Background: 'math/uncertainty_background.md'
       - Optimization Background: 'math/opt1.ipynb'
       - Optimization Overview: 'math/opt2.ipynb'
       - Gradient Descent: 'math/gradient_descent.ipynb'
@@ -40,10 +40,19 @@ theme:
   palette:
     scheme: default
     primary: deep purple
+  icon:
+    admonition:
+      code: fontawesome/solid/code
+      note: octicons/tag-16
 
 
 markdown_extensions:
     - codehilite
+    - attr_list
+    - md_in_html
+    - pymdownx.superfences
+    - admonition
+    - pymdownx.details
 
 plugins:
   - search
