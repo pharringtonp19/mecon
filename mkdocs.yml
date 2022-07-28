@@ -12,6 +12,7 @@ nav:
       - Introduction to Uncertainty: 'chapters/chapter2.ipynb'
       - Utils: 'chapters/utility.ipynb'
       - Demand: 'chapters/demand.ipynb'
+      - Demand Details: 'chapters/demand_details.ipynb'
       - Monopolies: 'chapters/monopolies.ipynb'
       - Adv Game Theory: 'chapters/Game Theory.ipynb'
       - Technology: 'chapters/Technology.ipynb'
@@ -19,12 +20,13 @@ nav:
       - Asymmetric Information: 'chapters/asymmetric information.ipynb'
       - Sequential Decision Making: 'chapters/rl.ipynb'
   - Math:
-      - Math on the Computer: 'math/Math on the Computer.md'
       - Functions: 'math/function.ipynb'
+      - Optimization Background: 'math/opt1.ipynb'
       - Gradient Descent: 'math/gradient_descent.ipynb'
       - Newton's Method: 'math/newton method.ipynb'
       - Convexity: 'math/convexity.ipynb'
   - Other:
+      - Terms : 'other/comp_terms.ipynb'
       - Jax Basics: 'other/jax basics.ipynb'
       - Symbolic Computation: 'other/symbolic computation.ipynb'
       - Thoughts: 'other/thoughts.ipynb'
