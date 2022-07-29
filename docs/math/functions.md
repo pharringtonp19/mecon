@@ -9,6 +9,7 @@ $$x  \overset{f}{\longmapsto} f(x)$$
 - $x$ is the input to the function 
 - $f$ is the function (i.e. the map which is often represented as an arrow)
 - $f(x)$ is the output, also referred to as the image of $x$ under $f$ 
+
 At a high level, functions take values in a given set and return values in another set, which we can denote by the following:
 $$f : R^n \to R^m $$
 
