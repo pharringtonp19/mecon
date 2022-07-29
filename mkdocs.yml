@@ -3,7 +3,7 @@ site_url: https://pharringtonp19.github.io/mecon/
 site_description: An undergraduate microeconimcs course
 site_author: Patrick Power
 nav: 
-  - Welcome: index.md 
+  - EC201: index.md 
   - Overview:
     - Overview: 'overview/overview.md'
     - Syllabus: 'overview/Syllabus.pdf'
@@ -21,7 +21,7 @@ nav:
   - Math:
       - Functions: 'math/functions.md'
       - Uncertainty Background: 'math/uncertainty_background.md'
-      - Optimization Background: 'math/opt1.ipynb'
+      - Optimization Background: 'math/opt1.md'
       - Optimization Overview: 'math/opt2.ipynb'
       - Gradient Descent: 'math/gradient_descent.ipynb'
       - Newton's Method: 'math/newton method.ipynb'
@@ -50,7 +50,11 @@ markdown_extensions:
     - codehilite
     - attr_list
     - md_in_html
-    - pymdownx.superfences
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
     - admonition
     - pymdownx.details
 

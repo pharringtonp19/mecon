@@ -2,7 +2,7 @@
 
 <div style="text-align: center;">
     <span>
-        Understand / Communicate / Assess
+        Understand / Explain / Assess
     </span>
 </div>
 
@@ -19,5 +19,5 @@ We will have bi-weekly group assignments, two midterms and a final.
 
 
 ## **Teaching Philosophy**: 
-Ideas are explained at the level of detail so as to enable composition (it should feel like you're [playing with legos](https://youtu.be/Jy5Jw8hNiAQ?t=464)). Based on my experience, I found this is best done by writing math on computer. Some people will consider this to be programming, but those people would be wrong. It's just writing math on a computer. On the first day of class, you will learn everything you need to know about writing math on the computer.
+Ideas are explained at the level of detail so as to enable composition (it should feel like you're [playing with legos](https://youtu.be/Jy5Jw8hNiAQ?t=464)). Based on my experience, I found this is best done by writing math on computer. Some people will consider this to be programming, but those people would be wrong. It's just writing math on a computer. On the first day of class, you will learn everything you need to know about writing math on the computer for this class.
 

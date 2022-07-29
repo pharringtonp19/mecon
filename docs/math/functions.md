@@ -1,6 +1,11 @@
-A function is a mapping. That is, it takes some value as an input and returns that value as an output). 
- $$x  \overset{f}{\longmapsto} f(x)$$
+??? tip inline end "Math on the Computer"
+    In the context of working on a computer, a function that behaves like a mathematical function is called a "pure function"
+
+A function is a mapping that takes a value as an input and returns a value as an output. 
+$$x  \overset{f}{\longmapsto} f(x)$$
+
  This has more detail than you will normally see, but it's helpful to see the three distinct components: 
+
 - $x$ is the input to the function 
 - $f$ is the function (i.e. the map which is often represented as an arrow)
 - $f(x)$ is the output, also referred to as the image of $x$ under $f$ 
