@@ -353,6 +353,26 @@
     Consumers
   </a>
   
+    <nav class="md-nav" aria-label="Consumers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#budget-constraint" class="md-nav__link">
+    Budget Constraint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taxes-subsidies" class="md-nav__link">
+    Taxes/ Subsidies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -768,6 +788,26 @@
     Consumers
   </a>
   
+    <nav class="md-nav" aria-label="Consumers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#budget-constraint" class="md-nav__link">
+    Budget Constraint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taxes-subsidies" class="md-nav__link">
+    Taxes/ Subsidies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -793,13 +833,23 @@
 
   <h1>Constraints</h1>
 
-<p>$$B := {x \in \mathcal{X} | \ F(x) \leq 0}$$</p>
+<div class="admonition tldr">
+<p class="admonition-title">Overview</p>
+<p>The aim of this chapter is to illustrate how constraints reflect the "true" cost of some activity or some good. </p>
+</div>
+<div class="arithmatex">\[B := \{x \in \mathcal{X} | \ F(x) \leq 0\}\]</div>
 <h3 id="consumers"><strong>Consumers</strong></h3>
-<p>There might be $n$ different goods and services available to purchase. With a given level of income $m$, an individual can only afford certain combinations of these $n$ goods. Mathematically we represent this as follows:
-- Let $x \in \mathbb{R}^n$ represent a bundle of goods. That is $x.i$ denotes the amount of the $i^{th}$ good in the bundle 
-- Let $p \in \mathbb{R}^n$ represent the prices of the $n$ goods. That is, $p.i$ corresponds to the price of the $i^{th}$ good. </p>
-<p>$$\begin{aligned}B := {x \in \mathcal{X} | \ F_{p,m}(x) \leq 0} \\
-\text{where} \quad F_{p,m}(x) = p \cdot x - m \end{aligned}$$</p>
+<h5 id="budget-constraint">Budget Constraint</h5>
+<p>To begin, let's consider the situation where a consumer with a certian level of income <span class="arithmatex">\(m\)</span> chooses a bundle from among <span class="arithmatex">\(n\)</span> goods. 
+Mathematically we represent this situation as follows:</p>
+<ul>
+<li><strong>Choice Variables</strong>: Let <span class="arithmatex">\(x \in \mathbb{R}^n\)</span> represent a bundle of goods. That is <span class="arithmatex">\(x.i\)</span> denotes the amount of the <span class="arithmatex">\(i^{th}\)</span> good in the bundle </li>
+<li><strong>Parameters</strong>Let <span class="arithmatex">\(p \in \mathbb{R}^n\)</span> represent the prices of the <span class="arithmatex">\(n\)</span> goods. That is, <span class="arithmatex">\(p.i\)</span> corresponds to the price of the <span class="arithmatex">\(i^{th}\)</span> good. </li>
+</ul>
+<p>Then we can define our budget set as follows: </p>
+<div class="arithmatex">\[\begin{align*}B := \{x \in \mathcal{X} | \ F_{p,m}(x) \leq 0\} \\\\
+\text{where} \quad F_{p,m}(x) = p \cdot x - m \end{align*}\]</div>
+<p>It can be helpful to get into the habit of asking, how do "things" change if we tweak the parameters? In this setting, we may be interested in understanding how the budget set changes in response to an increase in income, or to a decrease in the prices. See if you can work through this.</p>
 <details class="tip">
 <summary>Math on the Computer</summary>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jax</span>
@@ -829,11 +879,36 @@
 <span class="n">bundles</span> <span class="o">=</span> <span class="n">jax</span><span class="o">.</span><span class="n">vmap</span><span class="p">(</span><span class="n">partial</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">params</span><span class="p">))(</span><span class="n">good1s</span><span class="p">)</span>                        <span class="c1"># Partially Evaluate + &quot;Vectorize&quot;</span>
 </code></pre></div>
 </details>
+<pre class="mermaid"><code>flowchart LR
+    A(Prices) --&gt; B(Good2);
+    C(Income) --&gt; B;
+    D(Good1) --&gt; B;
+    style A fill:red,stroke:#333,stroke-width:1px
+    style C fill:red,stroke:#333,stroke-width:1px
+    style B fill:green,stroke:#333,stroke-width:1px
+    style D fill:green,stroke:#333,stroke-width:1px</code></pre>
 <figure>
 <p><img alt="Image title" src="../../fig/budget.png" width="500" />
   </p>
 <figcaption>Budget Constraint</figcaption>
 </figure>
+<h5 id="taxes-subsidies">Taxes/ Subsidies</h5>
+<ul>
+<li>There is often a difference between the price that suppliers receive, <span class="arithmatex">\(p_s\)</span>, and the prices that consumers pay, <span class="arithmatex">\(p_c\)</span>. We can represent this difference via a function that maps <span class="arithmatex">\(p_s\)</span> to <span class="arithmatex">\(p_c\)</span>. </li>
+</ul>
+<div class="arithmatex">\[\begin{align*} p_s &amp;\longmapsto p_s + \alpha \\ 
+ p_s &amp;\longmapsto (1+ \alpha)p_s \end{align*}\]</div>
+<ul>
+<li>We can also generalize the set-up by allowing the the tax/subsidy depend on the amount of the good. </li>
+</ul>
+<pre class="mermaid"><code>flowchart LR
+    A(Supplier Prices) --&gt;  B(Consumer Prices);
+    C(Tax) --&gt; B;
+    D(Good1) --&gt;B;
+    C --&gt; F(Disposable Income);
+    B --&gt; H(Good2);
+    F --&gt; H;
+    Z(Income) --&gt; F;</code></pre>
 <h3 id="producers"><strong>Producers</strong></h3>
 
               
