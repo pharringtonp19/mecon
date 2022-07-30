@@ -2,6 +2,13 @@
 
     The aim of this chapter is to illustrate how economic models can be used to understand, explain and assess economic issues/policies.
 
+### **Economics**
+
+??? cite inline end "Partial Understanding"
+    Many people have written about the relationship between Economics and the "hard" sciences. While both strive to adhere to the scientific approach, it should be understood that Economic analyses fall well short of this. In Economics, you generally cannot test precise hypotheses without making unsupported assumptions. -- Read [this article](https://www.nytimes.com/2013/10/21/opinion/yes-economics-is-a-science.html) by Raj Chetty for an alternative take though)
+
+Economics is the study of relationships that exists within the economy (relationships between the government and the consumer, between the consumer and the firm, between a consumer today and a consumer in the future - to name a few). Our understanding of these relationships is **partial**. In part, because these relationships change over time, and in part because we cannot run an unlimited number of experiments to study these relationships (often, we cannot perform a single experiment to study the relationship of interest). 
+
 ### **Constructing a Model**
 Can you construct a model to help you understand an some Economic relationship?
 
