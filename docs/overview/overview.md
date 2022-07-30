@@ -15,7 +15,10 @@ The aim of this course is to help you learn to write down models so that you may
 
 <!-- There will be no tests/midterms in this course. In my experience, tests and midterms encourage an impresssive amount of "cramming" days before the test, with most of the material forgotten a few days after. I am not concerned by the fact that the material is forgotten. Most of the material in this course will be forgotten regardless of how you learned it. What's important to take away from this class though is an understanding of how to break down an idea (a model) into simpler parts, work on each part and then glue them back together. Cramming doesn't help with this, so no tests/midterms.  -->
 
-We will have bi-weekly group assignments, two midterms and a final.
+??? Note inline end 
+
+    "Einstein didn’t know the speed of sound, and had replied that he didn’t care to clutter his brain with facts that could easily be looked up in a textbook." - [ref](https://freaktakes.substack.com/p/a-progress-studies-history-of-early?utm_source=substack&utm_medium=email)
+There are no midterms or tests for the class. 
 
 
 ## **Teaching Philosophy**: 

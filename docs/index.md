@@ -5,9 +5,6 @@
     </span>
 </div>
 
-
-
-
 ``` mermaid
 flowchart LR
     A(Preferences/Income) -->  C(Demand);
