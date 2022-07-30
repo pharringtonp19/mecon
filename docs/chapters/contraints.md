@@ -10,8 +10,11 @@ $$B := \{x \in \mathcal{X} | \ F(x) \leq 0\}$$
 To begin, let's consider the situation where a consumer with a certian level of income $m$ chooses a bundle from among $n$ goods. 
 Mathematically we represent this situation as follows:
 
-- **Choice Variables**: Let $x \in \mathbb{R}^n$ represent a bundle of goods. That is $x.i$ denotes the amount of the $i^{th}$ good in the bundle 
-- **Parameters**Let $p \in \mathbb{R}^n$ represent the prices of the $n$ goods. That is, $p.i$ corresponds to the price of the $i^{th}$ good. 
+- **Choice Variables**:
+    - Let $x \in \mathbb{R}^n$ represent a bundle of goods. That is $x.i$ denotes the amount of the $i^{th}$ good in the bundle 
+- **Parameters**:
+    - Let $p \in \mathbb{R}^n$ represent the prices of the $n$ goods. That is, $p.i$ corresponds to the price of the $i^{th}$ good. 
+    - Let $m \in \mathbb{R}$ represent the amount of income. 
 
 Then we can define our budget set as follows: 
 
