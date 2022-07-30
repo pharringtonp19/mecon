@@ -59,6 +59,8 @@ markdown_extensions:
             format: !!python/name:pymdownx.superfences.fence_code_format
     - admonition
     - pymdownx.details
+    - pymdownx.arithmatex:  # Render LaTeX via MathJax
+        generic: true
 
 plugins:
   - search
