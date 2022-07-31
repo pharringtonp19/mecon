@@ -80,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#technical-rate-of-substition" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -363,10 +368,73 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Production
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Production
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technical-rate-of-substition" class="md-nav__link">
+    Technical Rate of Substition
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Rate of Substition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivation" class="md-nav__link">
+    Derivation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toy-example" class="md-nav__link">
+    Toy Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expectations/" class="md-nav__link">
+        Expectations
+      </a>
     </li>
   
 
@@ -513,6 +581,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technical-rate-of-substition" class="md-nav__link">
+    Technical Rate of Substition
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Rate of Substition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivation" class="md-nav__link">
+    Derivation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toy-example" class="md-nav__link">
+    Toy Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -527,11 +630,30 @@
 
   <h1>Production</h1>
 
+<details class="tip">
+<summary>Notebooks</summary>
+<table>
+<thead>
+<tr>
+<th align="center">Description</th>
+<th align="center">Notebook</th>
+<th align="center">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Production Function</td>
+<td align="center"><a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/production_function.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>
+<td align="center">Work In Progress</td>
+</tr>
+</tbody>
+</table>
+</details>
 <ul>
 <li>In contrast to the budget set, apriori there is not maximum input level </li>
 <li>The production set represents a conversion of inputs to outputs. In that sense, the production set captures the tradeoffs, whereas the budget line reflected the tradeoffs. </li>
+<li>We want to allow the production function to be a vector valued function to capture that during the production process there can be some form of "waste" generated.</li>
 </ul>
-<p>We want to allow the production function to be a vector valued function to capture that during the production process there can be some form of "waste" generated.</p>
 <details class="tip">
 <summary>Math on the Computer</summary>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jax</span>
@@ -566,6 +688,68 @@
 <figure>
 <p><img alt="Image title" src="../../../fig/production_fn.png" width="500" /></p>
 </figure>
+<h2 id="technical-rate-of-substition">Technical Rate of Substition</h2>
+<h3 id="derivation">Derivation</h3>
+<p>Let's say that we have an isoquant where <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> correspond to the amount of inputs used to produce <span class="arithmatex">\(\alpha\)</span> units of output</p>
+<div class="arithmatex">\[F(x, y) = \alpha \]</div>
+<p>The above equation defines an implicit function which we can call explicitly as follows</p>
+<div class="arithmatex">\[x \longmapsto \underset{y}{\text{solve}}\ F(x,y) = 0\]</div>
+<p>The technical rate of substitution is defined the derivative of the isoquant which we can compute as follows:</p>
+<details class="info inline end">
+<summary>Info</summary>
+<p>The implicit function theorem can be understood as providing a set of sufficient conditions for this step. </p>
+</details>
+<p>Let's start by writing the isoquant in terms of the function <span class="arithmatex">\(y(x)\)</span></p>
+<div class="arithmatex">\[F(x,y(x)) = 0\]</div>
+<p>Now, both the left and right hand sides are functions of <span class="arithmatex">\(x\)</span>, so we can differentiate both side
+with respect to <span class="arithmatex">\(x\)</span>.</p>
+<div class="arithmatex">\[\partial _xF(x,y(x)) = 0\]</div>
+<p>From our understanding of calculus, this derivative can be expressed as follows:</p>
+<div class="arithmatex">\[\partial _0F(x,y) + \partial _1F(x,y(x))\frac{d}{dx}y(x) = 0 \]</div>
+<p>Hopefully, you can interpret these terms: </p>
+<ul>
+<li><strong>Marginal Product of <span class="arithmatex">\(x\)</span></strong>: <span class="arithmatex">\(\partial _0F(x,y)\)</span></li>
+<li><strong>Marginal Product of <span class="arithmatex">\(y\)</span></strong>: <span class="arithmatex">\(\partial _1F(x,y)\)</span></li>
+<li><strong>Technical Rate of Substitution</strong>: <span class="arithmatex">\(\frac{d}{dx}y(x)\)</span></li>
+</ul>
+<p>We see then that we can express the technical rate of substition in terms of the negative of the ratio of the 
+two marginal products: </p>
+<div class="arithmatex">\[\frac{d}{dx}y(x) = -\frac{\partial _0F(x,y)}{ \partial _1F(x,y(x))}\]</div>
+<h3 id="toy-example">Toy Example</h3>
+<p>To make things concrete, let's create a toy example. We'll consider the following production function</p>
+<div class="arithmatex">\[F(x, y) = Ax^{\alpha}y^{\beta}\]</div>
+<p>Check your understanding -- With the following values, what do you get as the output and the technical rate of substitution? </p>
+<div class="arithmatex">\[A=3, \alpha=0.8, \beta=1.3, x=10, y=2\]</div>
+<details class="tip">
+<summary>Math on the Computer</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">F</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.3</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">A</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">alpha</span><span class="o">*</span><span class="n">y</span><span class="o">**</span><span class="n">beta</span> 
+
+<span class="k">def</span> <span class="nf">implicit_grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">marginal_product_x</span><span class="p">,</span> <span class="n">marginal_product_y</span> <span class="o">=</span> <span class="n">jax</span><span class="o">.</span><span class="n">grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">argnums</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="k">return</span> <span class="o">-</span><span class="n">marginal_product_x</span><span class="o">/</span><span class="n">marginal_product_y</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Output: </span><span class="si">{</span><span class="n">F</span><span class="p">(</span><span class="mf">10.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, TRS: </span><span class="si">{</span><span class="n">implicit_grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="mf">10.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<p>In our work above, we compute the technical rate of substituion given the quantities of each input. This is not the only starting point (information) from which we can compute the TRS though. We can also compute it if we are given one input and the desired output. <strong>Consider</strong>: How might we incorporate our previous work to build this new function? </p>
+<p>The task is then to use the level of input of one good and the desired output to compute the input level of the other good. </p>
+<div class="arithmatex">\[F, x, \text{level} \longmapsto F, x,  y(F, x, \text{level}) \longmapsto\underbrace{ \text{TRS}(F, x, y)}_{\text{We have this!}} \]</div>
+<p>So we just need to be able to evaluate the implicit function which we can do by calling a solver</p>
+<div class="arithmatex">\[y(F, x, \text{level})\]</div>
+<details class="tip">
+<summary>Math on the Computer</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">implicit_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="n">solver</span> <span class="o">=</span> <span class="n">jaxopt</span><span class="o">.</span><span class="n">GradientDescent</span><span class="p">(</span><span class="n">fun</span><span class="o">=</span><span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="o">-</span><span class="n">level</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">maxiter</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">solver</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mf">1.</span><span class="p">)</span><span class="o">.</span><span class="n">params</span> 
+
+<span class="k">def</span> <span class="nf">implicit_grad2</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">implicit_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>  
+    <span class="k">return</span> <span class="n">implicit_grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">implicit_grad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">),</span> <span class="n">implicit_grad2</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="n">F</span><span class="p">(</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">)))</span>
+</code></pre></div>
+</details>
 
               
             </article>
@@ -597,13 +781,13 @@
       
       
         
-        <a href="../../../math/functions/" class="md-footer__link md-footer__link--next" aria-label="Next: Functions" rel="next">
+        <a href="../expectations/" class="md-footer__link md-footer__link--next" aria-label="Next: Expectations" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Functions
+              Expectations
             </div>
           </div>
           <div class="md-footer__button md-icon">

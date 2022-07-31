@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#feasibility-set" class="md-skip">
+        <a href="#framework" class="md-skip">
           Skip to content
         </a>
       
@@ -363,30 +363,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#feasibility-set" class="md-nav__link">
-    Feasibility Set
+  <a href="#framework" class="md-nav__link">
+    Framework
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#choice-variables" class="md-nav__link">
     Choice Variables
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#constraint-function" class="md-nav__link">
     Constraint Function
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     Parameters
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sections" class="md-nav__link">
+    Sections
+  </a>
+  
+    <nav class="md-nav" aria-label="Sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consumption" class="md-nav__link">
+    Consumption
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production" class="md-nav__link">
+    Production
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -421,6 +454,20 @@
     <li class="md-nav__item">
       <a href="../production_constraints/" class="md-nav__link">
         Production
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expectations/" class="md-nav__link">
+        Expectations
       </a>
     </li>
   
@@ -575,30 +622,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#feasibility-set" class="md-nav__link">
-    Feasibility Set
+  <a href="#framework" class="md-nav__link">
+    Framework
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#choice-variables" class="md-nav__link">
     Choice Variables
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#constraint-function" class="md-nav__link">
     Constraint Function
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     Parameters
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sections" class="md-nav__link">
+    Sections
+  </a>
+  
+    <nav class="md-nav" aria-label="Sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consumption" class="md-nav__link">
+    Consumption
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production" class="md-nav__link">
+    Production
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -622,7 +702,7 @@
 <p class="admonition-title">Overview</p>
 <p>The aim of this chapter is to illustrate how constraints reflect the "true" cost of some activity or some good. </p>
 </div>
-<h3 id="feasibility-set"><strong>Feasibility Set</strong></h3>
+<h2 id="framework"><strong>Framework</strong></h2>
 <p>Given a set of constraints, we can derive the feasibility set </p>
 <div class="arithmatex">\[\{x \in \mathcal{X} | \ F_p(x) \leq 0 \}\]</div>
 <h3 id="choice-variables"><strong>Choice Variables</strong></h3>
@@ -646,6 +726,15 @@ F_p(\text{Saturday}) &amp;= 0
 </details>
 <p>When we're modeling a feasibility set, we do so with respect to a firm, a consumer, perhaps even a government agency. The decisions that that this entity can make are represented by the choice variables, and the decisions that entities around them, whose behavior we are not directly modeling are referred to as parameters. </p>
 <div class="arithmatex">\[ F :: \text{Params} \to \text{ChoiceVariable} \to \text{Bool} \]</div>
+<h2 id="sections"><strong>Sections</strong></h2>
+<h3 id="consumption"><strong>Consumption</strong></h3>
+<ul>
+<li>Highlight is currying/partial evaluation </li>
+</ul>
+<h3 id="production"><strong>Production</strong></h3>
+<ul>
+<li>Highlight is IFT</li>
+</ul>
 
               
             </article>
