@@ -81,6 +81,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://pharringtonp19.github.io/mecon/chapters/constraints/production_constraints/</loc>
+         <lastmod>2022-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://pharringtonp19.github.io/mecon/math/Math%20on%20the%20Computer/</loc>
          <lastmod>2022-07-31</lastmod>
          <changefreq>daily</changefreq>
