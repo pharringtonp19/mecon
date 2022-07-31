@@ -590,7 +590,10 @@ Mathematically we represent this situation as follows:</p>
 <p>Then we can define our budget set as follows: </p>
 <div class="arithmatex">\[\begin{align*}B := \{x \in \mathcal{X} | \ F_{p,m}(x) \leq 0\} \\\\
 \text{where} \quad F_{p,m}(x) = p \cdot x - m \end{align*}\]</div>
-<p>It can be helpful to get into the habit of asking, how do "things" change if we tweak the parameters? In this setting, we may be interested in understanding how the budget set changes in response to an increase in income, or to a decrease in the prices. See if you can work through this.</p>
+<p>To "derive" the budget set, we have to define the relationship between good1 and good2 such that the expenditure of the bundle is equal to the income. To highlight this process, we consider a set-up where <span class="arithmatex">\(n=2\)</span>. Our task is then, setting <span class="arithmatex">\(F_{p,m} = 0\)</span>, to "solve" for <span class="arithmatex">\(x_2\)</span> interms of <span class="arithmatex">\(x_1\)</span>.</p>
+<div class="arithmatex">\[\begin{align*}0 &amp;= p_1x_1 + p_2x_2 - m \\ 
+p_2x_2 &amp;= m - p_1x_1 \\ 
+x_2 &amp;= \frac{m}{p_2} - \frac{p_1}{p_2}x_1\end{align*}\]</div>
 <details class="tip">
 <summary>Math on the Computer</summary>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jax</span>
@@ -633,6 +636,7 @@ Mathematically we represent this situation as follows:</p>
   </p>
 <figcaption>Budget Constraint</figcaption>
 </figure>
+<p>It can be helpful to get into the habit of asking, how do "things" change if we tweak the parameters? In this setting, we may be interested in understanding how the budget set changes in response to an increase in income, or to a decrease in the prices. See if you can work through this.</p>
 <h5 id="taxes-subsidies">Taxes/ Subsidies</h5>
 <ul>
 <li>There is often a difference between the price that suppliers receive, <span class="arithmatex">\(p_s\)</span>, and the prices that consumers pay, <span class="arithmatex">\(p_c\)</span>. We can represent this difference via a function that maps <span class="arithmatex">\(p_s\)</span> to <span class="arithmatex">\(p_c\)</span>. </li>
@@ -646,10 +650,33 @@ Mathematically we represent this situation as follows:</p>
     A(Supplier Prices) --&gt;  B(Consumer Prices);
     C(Tax) --&gt; B;
     D(Good1) --&gt;B;
-    C --&gt; F(Disposable Income);
+    C --&gt; F(After Tax Income);
     B --&gt; H(Good2);
     F --&gt; H;
     Z(Income) --&gt; F;</code></pre>
+<details class="danger inline end">
+<summary>Challenge</summary>
+<p>Here we introduce the concepts of (1) refactoring and 
+(2) currying (3) implicit function (4) Higher Order Function. </p>
+<p>Don't <img alt="😟" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f61f.svg" title=":worried:" />, though, if you don't follow everything the first time. 
+We'll continue to use these terms throughout the semester until it's all 
+<img alt="🙂" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f642.svg" title=":slight_smile:" /> </p>
+</details>
+<p>The key challenge here is that the price of good2 might depend on how much of it one consumes. To keep things simple, let's understand this issue by adjusting the previous example only slightly. </p>
+<div class="arithmatex">\[\begin{align*}0 &amp;= p_1x_1 + p_2(x_2)x_2 - m \\ 
+p_2(x_2)x_2 &amp;= m - p_1x_1 \\ \end{align*}\]</div>
+<p>As we see, we can't follow the steps we took above -- we can't divide both sides by <span class="arithmatex">\(p_2\)</span>! As mentioned previously, though we want to able to work at different levels of abstraction. In this context, the pressing question is, given some amount of good1, can we solve for the good2 on the budget line as a function of <span class="arithmatex">\(p_2(x_2)\)</span>? </p>
+<figure>
+<p><img alt="Image title" src="../../fig/p2.png" width="500" /></p>
+</figure>
+<p>That is, previously we working with a function with the following pseudo type signature </p>
+<div class="arithmatex">\[\begin{align*}f :: \text{params} \to \text{good1} \to \text{price2} \to \text{good2}\end{align*}\]</div>
+<p>and know we would like to work with a function with the following signature: </p>
+<div class="arithmatex">\[\begin{align*}f :: \text{params} \to \text{good1} \to \big(\text{good2} \to \text{price2}  \big)  \to \text{good2} \end{align*}\]</div>
+<ul>
+<li>Partially evaluated you might consider this to be a high-order implicit function! </li>
+<li>The last arrow represents an implicit function</li>
+</ul>
 <h3 id="producers"><strong>Producers</strong></h3>
 
               
