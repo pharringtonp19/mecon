@@ -1,3 +1,9 @@
+??? tip "Notebooks"
+    |Description | Notebook | Status 
+    |:---:|:---:|:---:|
+    Budget Constraints | <a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/budget_constraint.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
+    Budget Constraints With Taxes | <a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/budget_constraint_with_taxes.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
+
 $$B := \{x \in \mathcal{X} | \ F(x) \leq 0\}$$
 
 To begin, let's consider the situation where a consumer with a certian level of income $m$ chooses a bundle from among $n$ goods. 

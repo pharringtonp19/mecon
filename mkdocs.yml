@@ -13,6 +13,7 @@ nav:
         - Introduction: 'chapters/constraints/introduction.md'
         - Consumption: 'chapters/constraints/budget_contraints.md'
         - Production: 'chapters/constraints/production_constraints.md'
+        - Expectations: 'chapters/constraints/expectations.md'
       # - Information: 'chapters/information.md'
       # - Utils: 'chapters/utility.ipynb'
       # - Demand: 'chapters/demand.ipynb'

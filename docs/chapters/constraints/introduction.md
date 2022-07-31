@@ -2,7 +2,7 @@
 
     The aim of this chapter is to illustrate how constraints reflect the "true" cost of some activity or some good. 
 
-### **Feasibility Set**
+## **Framework**
 Given a set of constraints, we can derive the feasibility set 
 
 $$\{x \in \mathcal{X} | \ F_p(x) \leq 0 \}$$
@@ -40,3 +40,12 @@ When we're modeling a feasibility set, we do so with respect to a firm, a consum
 
 
 $$ F :: \text{Params} \to \text{ChoiceVariable} \to \text{Bool} $$
+
+## **Sections**
+
+### **Consumption**
+- Highlight is currying/partial evaluation 
+
+### **Production**
+- Highlight is IFT
+

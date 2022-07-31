@@ -1,3 +1,10 @@
+??? tip "Notebooks"
+    |Description | Notebook | Status 
+    |:---:|:---:|:---:|
+    Production Function | <a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/production_function.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
+
+
+
 - In contrast to the budget set, apriori there is not maximum input level 
 - The production set represents a conversion of inputs to outputs. In that sense, the production set captures the tradeoffs, whereas the budget line reflected the tradeoffs. 
 - We want to allow the production function to be a vector valued function to capture that during the production process there can be some form of "waste" generated.
@@ -52,6 +59,10 @@ The above equation defines an implicit function which we can call explicitly as 
 $$x \longmapsto \underset{y}{\text{solve}}\ F(x,y) = 0$$
 
 The technical rate of substitution is defined the derivative of the isoquant which we can compute as follows:
+
+??? info inline end
+
+    The implicit function theorem can be understood as providing a set of sufficient conditions for this step. 
 
 Let's start by writing the isoquant in terms of the function $y(x)$
 
