@@ -1,12 +1,5 @@
-!!! tldr "Overview"
-
-    The aim of this chapter is to illustrate how constraints reflect the "true" cost of some activity or some good. 
-
 $$B := \{x \in \mathcal{X} | \ F(x) \leq 0\}$$
 
-### **Consumers**
-
-##### Budget Constraint
 To begin, let's consider the situation where a consumer with a certian level of income $m$ chooses a bundle from among $n$ goods. 
 Mathematically we represent this situation as follows:
 
@@ -68,13 +61,13 @@ flowchart LR
 ```
 
 <figure markdown>
-  ![Image title](./../fig/budget.png){ width="500" }
+  ![Image title](./../../fig/budget.png){ width="500" }
   <figcaption>Budget Constraint</figcaption>
 </figure>
 
 It can be helpful to get into the habit of asking, how do "things" change if we tweak the parameters? In this setting, we may be interested in understanding how the budget set changes in response to an increase in income, or to a decrease in the prices. See if you can work through this.
 
-##### Taxes/ Subsidies
+##### Taxes/ Subsidies/ Market Caps
 
 - There is often a difference between the price that suppliers receive, $p_s$, and the prices that consumers pay, $p_c$. We can represent this difference via a function that maps $p_s$ to $p_c$. 
 
@@ -94,8 +87,7 @@ flowchart LR
     Z(Income) --> F;
 ```
 ??? Danger inline end "Challenge"
-    Here we introduce the concepts of (1) refactoring and 
-    (2) currying (3) implicit function (4) Higher Order Function. 
+    Here we introduce the concepts of (1) refactoring and (2) implicit function
 
     Don't :worried:, though, if you don't follow everything the first time. 
     We'll continue to use these terms throughout the semester until it's all 
@@ -109,7 +101,7 @@ p_2(x_2)x_2 &= m - p_1x_1 \\ \end{align*}$$
 As we see, we can't follow the steps we took above -- we can't divide both sides by $p_2$! As mentioned previously, though we want to able to work at different levels of abstraction. In this context, the pressing question is, given some amount of good1, can we solve for the good2 on the budget line as a function of $p_2(x_2)$? 
 
 <figure markdown>
-  ![Image title](./../fig/p2.png){ width="500" }
+  ![Image title](./../../fig/p2.png){ width="500" }
 </figure>
 
 That is, previously we working with a function with the following pseudo type signature 
@@ -123,9 +115,7 @@ $$\begin{align*}f :: \text{params} \to \text{good1} \to \big(\text{good2} \to \t
 - Partially evaluated you might consider this to be a high-order implicit function! 
 - The last arrow represents an implicit function
 
+!!! Question "Consider" 
 
-
-
-
-### **Producers**
+    How could we extend the above model to factor in the market cap for electric vehicles?
 

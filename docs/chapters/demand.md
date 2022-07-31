@@ -1,0 +1,1 @@
+- "[The](https://www.wsj.com/articles/auto-makers-say-bullish-car-buyers-will-keep-spending-amid-economic-downturn-11659173402) car business, which is typically among the first sectors to get hit by any downturn in consumer sentiment" 

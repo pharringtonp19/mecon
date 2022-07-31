@@ -9,7 +9,9 @@ nav:
     # - Syllabus: 'overview/Syllabus.pdf'
   - Chapters:
       - The First Model: 'chapters/the_first_model.md'
-      - Constraints: 'chapters/contraints.md'
+      - Constraints: 
+        - 'chapters/constraints/introduction.md'
+        - 'chapters/constraints/budget_contraints.md'
       # - Information: 'chapters/information.md'
       # - Utils: 'chapters/utility.ipynb'
       # - Demand: 'chapters/demand.ipynb'
