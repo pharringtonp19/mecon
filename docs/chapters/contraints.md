@@ -21,7 +21,11 @@ Then we can define our budget set as follows:
 $$\begin{align*}B := \{x \in \mathcal{X} | \ F_{p,m}(x) \leq 0\} \\\\
 \text{where} \quad F_{p,m}(x) = p \cdot x - m \end{align*}$$
 
-It can be helpful to get into the habit of asking, how do "things" change if we tweak the parameters? In this setting, we may be interested in understanding how the budget set changes in response to an increase in income, or to a decrease in the prices. See if you can work through this.
+To "derive" the budget set, we have to define the relationship between good1 and good2 such that the expenditure of the bundle is equal to the income. To highlight this process, we consider a set-up where $n=2$. Our task is then, setting $F_{p,m} = 0$, to "solve" for $x_2$ interms of $x_1$.
+
+$$\begin{align*}0 &= p_1x_1 + p_2x_2 - m \\ 
+p_2x_2 &= m - p_1x_1 \\ 
+x_2 &= \frac{m}{p_2} - \frac{p_1}{p_2}x_1\end{align*}$$
 
 ??? tip "Math on the Computer"
 
@@ -68,6 +72,8 @@ flowchart LR
   <figcaption>Budget Constraint</figcaption>
 </figure>
 
+It can be helpful to get into the habit of asking, how do "things" change if we tweak the parameters? In this setting, we may be interested in understanding how the budget set changes in response to an increase in income, or to a decrease in the prices. See if you can work through this.
+
 ##### Taxes/ Subsidies
 
 - There is often a difference between the price that suppliers receive, $p_s$, and the prices that consumers pay, $p_c$. We can represent this difference via a function that maps $p_s$ to $p_c$. 
@@ -82,11 +88,41 @@ flowchart LR
     A(Supplier Prices) -->  B(Consumer Prices);
     C(Tax) --> B;
     D(Good1) -->B;
-    C --> F(Disposable Income);
+    C --> F(After Tax Income);
     B --> H(Good2);
     F --> H;
     Z(Income) --> F;
 ```
+??? Danger inline end "Challenge"
+    Here we introduce the concepts of (1) refactoring and 
+    (2) currying (3) implicit function (4) Higher Order Function. 
+
+    Don't :worried:, though, if you don't follow everything the first time. 
+    We'll continue to use these terms throughout the semester until it's all 
+    :slight_smile: 
+
+The key challenge here is that the price of good2 might depend on how much of it one consumes. To keep things simple, let's understand this issue by adjusting the previous example only slightly. 
+
+$$\begin{align*}0 &= p_1x_1 + p_2(x_2)x_2 - m \\ 
+p_2(x_2)x_2 &= m - p_1x_1 \\ \end{align*}$$
+
+As we see, we can't follow the steps we took above -- we can't divide both sides by $p_2$! As mentioned previously, though we want to able to work at different levels of abstraction. In this context, the pressing question is, given some amount of good1, can we solve for the good2 on the budget line as a function of $p_2(x_2)$? 
+
+<figure markdown>
+  ![Image title](./../fig/p2.png){ width="500" }
+</figure>
+
+That is, previously we working with a function with the following pseudo type signature 
+
+$$\begin{align*}f :: \text{params} \to \text{good1} \to \text{price2} \to \text{good2}\end{align*}$$
+
+and know we would like to work with a function with the following signature: 
+
+$$\begin{align*}f :: \text{params} \to \text{good1} \to \big(\text{good2} \to \text{price2}  \big)  \to \text{good2} \end{align*}$$
+
+- Partially evaluated you might consider this to be a high-order implicit function! 
+- The last arrow represents an implicit function
+
 
 
 

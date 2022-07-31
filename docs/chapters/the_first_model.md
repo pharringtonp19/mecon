@@ -25,6 +25,14 @@ To what extent is the second principle redundant? Could the first principle be m
 
 ### **Where Supply Meets Demand**
 
+``` mermaid
+flowchart LR
+    A(Demand) --> C(Market Equilibrium);
+    B(Supply) --> C;
+    C --> Q(Quantity);
+    C --> R(Prices);
+```
+
 ??? cite inline end "-- Hal Varian"
     A model's power stems from the elimination of irrelevant detail, which allows the economist to focus on the essential features of the economic reality he or she is attempting to understand 
 
