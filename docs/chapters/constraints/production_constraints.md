@@ -134,3 +134,5 @@ $$y(F, x, \text{level})$$
 
     print(implicit_grad(F, 2., 10.), implicit_grad2(F, 2., F(2., 10.)))
     ```
+
+### Returns to Scale 
