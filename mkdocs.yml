@@ -10,8 +10,9 @@ nav:
   - Chapters:
       - The First Model: 'chapters/the_first_model.md'
       - Constraints: 
-        - 'chapters/constraints/introduction.md'
-        - 'chapters/constraints/budget_contraints.md'
+        - Introduction: 'chapters/constraints/introduction.md'
+        - Consumption: 'chapters/constraints/budget_contraints.md'
+        - Production: 'chapters/constraints/production_constraints.md'
       # - Information: 'chapters/information.md'
       # - Utils: 'chapters/utility.ipynb'
       # - Demand: 'chapters/demand.ipynb'
