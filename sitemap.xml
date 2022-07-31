@@ -21,7 +21,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pharringtonp19.github.io/mecon/chapters/contraints/</loc>
+         <loc>https://pharringtonp19.github.io/mecon/chapters/demand/</loc>
          <lastmod>2022-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -67,6 +67,16 @@
     </url>
     <url>
          <loc>https://pharringtonp19.github.io/mecon/chapters/utility/</loc>
+         <lastmod>2022-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pharringtonp19.github.io/mecon/chapters/constraints/budget_contraints/</loc>
+         <lastmod>2022-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pharringtonp19.github.io/mecon/chapters/constraints/introduction/</loc>
          <lastmod>2022-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
