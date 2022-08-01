@@ -136,3 +136,5 @@ $$y(F, x, \text{level})$$
     ```
 
 ### Returns to Scale 
+- If I double the studying time, do I double my grade?
+- If I double the number of chips in my computer do I double the amount of functions I can evaluate? 
