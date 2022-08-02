@@ -1,8 +1,10 @@
+<a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/market_for_lemons.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 !!! tldr "Overview"
 
-    The key takeaway is to understand that information not only shapes markets, but can determine whether they exist in the first place.
+    The key takeaway is to understand that information not only shapes markets, but can determine whether they exist in the first place. 
 
-### **Motivating Example**
+### **Motivating Example** 
 
 The following is an adoption from Geroge Akerlof's Market for Lemons.[^1] We begin by consider the case where there are two types of cars with the following values assocaited with the potential buyers and sellers of the car (I've used variables to stand in for specific values). What's import here is that the that the buyer values each type of car more than the sellers)
 
