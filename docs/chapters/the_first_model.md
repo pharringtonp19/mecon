@@ -9,6 +9,10 @@
 
 Economics is the study of relationships that exists within the economy (relationships between the government and the consumer, between the consumer and the firm, between a consumer today and a consumer in the future - to name a few). Our understanding of these relationships is **partial**. In part, because these relationships change over time, and in part because we cannot run an unlimited number of experiments to study these relationships (often, we cannot perform a single experiment to study the relationship of interest). 
 
+??? cite inline end "Fed Reserve"
+    
+    That is, we should always keep in mind that we are working with limited data and imperfect models. --> [Watch](https://youtu.be/vASF-4elpCE?t=290)
+
 ### **Constructing a Model**
 Can you construct a model to help you understand an some Economic relationship?
 

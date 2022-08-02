@@ -16,6 +16,7 @@ nav:
         - Information: 'chapters/constraints/information.md'
       - Markets: 
         - Information: 'chapters/markets/information.md'
+        - Two-sided: 'chapters/markets/two_sided.md'
       # - Information: 'chapters/information.md'
       # - Utils: 'chapters/utility.ipynb'
       # - Demand: 'chapters/demand.ipynb'

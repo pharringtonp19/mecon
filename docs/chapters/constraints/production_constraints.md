@@ -3,7 +3,11 @@
     |:---:|:---:|:---:|
     Production Function | <a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/production_function.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
 
+### **Context**
 
+- [Availability of local labor](https://www.wsj.com/articles/labor-shortage-unemployment-pella-iowa-11659364081?mod=hp_trending_now_article_pos4)
+- [Fixing a labor market](https://www.wsj.com/articles/in-battle-for-workers-companies-build-houses-11653217201?mod=article_inline) issue via housing.
+    - "JBS pays a builder upfront to help cover development costs of each home and is then reimbursed once a property is sold"
 
 - In contrast to the budget set, apriori there is not maximum input level 
 - The production set represents a conversion of inputs to outputs. In that sense, the production set captures the tradeoffs, whereas the budget line reflected the tradeoffs. 
