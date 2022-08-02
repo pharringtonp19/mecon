@@ -13,7 +13,9 @@ nav:
         - Introduction: 'chapters/constraints/introduction.md'
         - Consumption: 'chapters/constraints/budget_contraints.md'
         - Production: 'chapters/constraints/production_constraints.md'
-        - Expectations: 'chapters/constraints/expectations.md'
+        - Information: 'chapters/constraints/information.md'
+      - Markets: 
+        - Information: 'chapters/markets/information.md'
       # - Information: 'chapters/information.md'
       # - Utils: 'chapters/utility.ipynb'
       # - Demand: 'chapters/demand.ipynb'
@@ -69,7 +71,7 @@ markdown_extensions:
     - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
-
+    - footnotes
 
 plugins:
   - search
