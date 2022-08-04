@@ -12,14 +12,14 @@
         <meta name="author" content="Patrick Power">
       
       
-        <link rel="canonical" href="https://pharringtonp19.github.io/mecon/chapters/demand/">
+        <link rel="canonical" href="https://pharringtonp19.github.io/mecon/math/expectations/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
-        <title>Demand - Microeconomics</title>
+        <title>Expectations - Microeconomics</title>
       
     
     
@@ -80,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#riemann-integral" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Demand
+              Expectations
             
           </span>
         </div>
@@ -284,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../the_first_model/" class="md-nav__link">
+      <a href="../../chapters/the_first_model/" class="md-nav__link">
         The First Model
       </a>
     </li>
@@ -324,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../constraints/introduction/" class="md-nav__link">
+      <a href="../../chapters/constraints/introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -338,7 +343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../constraints/budget_contraints/" class="md-nav__link">
+      <a href="../../chapters/constraints/budget_contraints/" class="md-nav__link">
         Consumption
       </a>
     </li>
@@ -352,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../constraints/production_constraints/" class="md-nav__link">
+      <a href="../../chapters/constraints/production_constraints/" class="md-nav__link">
         Production
       </a>
     </li>
@@ -366,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../constraints/information/" class="md-nav__link">
+      <a href="../../chapters/constraints/information/" class="md-nav__link">
         Information
       </a>
     </li>
@@ -413,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markets/elasticities/" class="md-nav__link">
+      <a href="../../chapters/markets/elasticities/" class="md-nav__link">
         Elasticities
       </a>
     </li>
@@ -427,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markets/information/" class="md-nav__link">
+      <a href="../../chapters/markets/information/" class="md-nav__link">
         Information
       </a>
     </li>
@@ -441,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markets/two_sided/" class="md-nav__link">
+      <a href="../../chapters/markets/two_sided/" class="md-nav__link">
         Two-sided
       </a>
     </li>
@@ -496,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/functions/" class="md-nav__link">
+      <a href="../functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -536,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/opt1/" class="md-nav__link">
+      <a href="../opt1/" class="md-nav__link">
         Background
       </a>
     </li>
@@ -623,6 +628,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#riemann-integral" class="md-nav__link">
+    Riemann Integral
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstract-integration" class="md-nav__link">
+    Abstract Integration
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -635,11 +662,19 @@
                 
 
 
-  <h1>Demand</h1>
+  <h1>Expectations</h1>
 
-<ul>
-<li>"<a href="https://www.wsj.com/articles/auto-makers-say-bullish-car-buyers-will-keep-spending-amid-economic-downturn-11659173402">The</a> car business, which is typically among the first sectors to get hit by any downturn in consumer sentiment" </li>
-</ul>
+<h3 id="riemann-integral"><strong>Riemann Integral</strong></h3>
+<p>From calculus1, we know what the following symbols represent </p>
+<div class="arithmatex">\[\int _a ^ b f(x) dx\]</div>
+<p>That is, we know how to compute the Riemann integral over an interval. </p>
+<div class="arithmatex">\[\int _a ^ b f(x) dx = \underset{\Delta x_i \to 0}{\lim} \sum f(x_i) \Delta x_i \]</div>
+<h3 id="abstract-integration"><strong>Abstract Integration</strong></h3>
+<p>Given a measurable space and a measurable function, 
+<span class="arithmatex">\(<span class="arithmatex">\(\big(\Omega, \mathcal{F}, \mu \big), \quad f: \Omega \to [0, \infty]\)</span>\)</span></p>
+<p>We would like to integrate a measurable function over a measurable set with respect to some measure: </p>
+<div class="arithmatex">\[\int _A fd\mu, \quad A \in \mathcal{F} \]</div>
+<div class="arithmatex">\[\text{Abstract Integration} :: \text{Event} \to \text{measure} \to \text{measurable function} \to \text{float}\]</div>
 
               
             </article>
