@@ -15,6 +15,7 @@ nav:
         - Production: 'chapters/constraints/production_constraints.md'
         - Information: 'chapters/constraints/information.md'
       - Markets: 
+        - Elasticities: 'chapters/markets/elasticities.md'
         - Information: 'chapters/markets/information.md'
         - Two-sided: 'chapters/markets/two_sided.md'
       # - Information: 'chapters/information.md'
