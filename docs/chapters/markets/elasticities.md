@@ -1,3 +1,5 @@
+<a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/elasticities.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 An elasticity is a measure of responsiveness. The typical setting in Economics where this comes up is when we're interested in how sensitive demand is to a change in something. That something could be 
 
 - Change in price of the good 
@@ -5,6 +7,7 @@ An elasticity is a measure of responsiveness. The typical setting in Economics w
 - Change in income.  
 
 ### **Computing Elasticities**
+
 To keep things simple, we'll begin by describing how to measure how sensitive demand is to a change in price
 
 $$\varepsilon _D = \frac{p}{q}q'(p)$$
