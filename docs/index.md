@@ -1,4 +1,5 @@
 A course where we :hammer_pick: Microeconomic models 
+in a similair spirit to this [Ride-Sharing Network Effect Model](https://twitter.com/DavidSacks/status/475073311383105536)
 
 ``` mermaid
 flowchart LR
@@ -13,3 +14,4 @@ flowchart LR
     E --> Q(Quantity);
     E --> R(Prices);
 ```
+
