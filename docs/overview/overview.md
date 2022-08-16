@@ -21,8 +21,13 @@ The aim of this course is to help you learn to write down models so that you may
 There are no midterms or tests for the class. 
 
 
-## **Teaching Philosophy**: 
+## **Teaching Philosophy**:
+- How much probability? Coding? Optimization?
+- Verbal Final?
 
+
+- "[Programming](https://henryiii.github.io/level-up-your-python/notebooks/0%20Intro.html) is all about organization"
+    - You might say you can use your ipad for that
 - Ideas are explained at the level of detail so as to enable composition (it should feel like you're [playing with legos](https://youtu.be/Jy5Jw8hNiAQ?t=464)). Based on my experience, I found this is best done by writing math on computer. Some people will consider this to be programming, but those people would be wrong. It's just writing math on a computer. On the first day of class, you will learn everything you need to know about writing math on the computer for this class.
 - Emphasize working at varying levels of abstraction
 - Distinguish between function the signature of the function and it's definition: 

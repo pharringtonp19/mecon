@@ -1,3 +1,7 @@
+??? note "TL;DR"
+
+    We use probability theory to model our understanding/level of information about the world. 
+
 ### **Introduction**
 Making decisions involves assessing tradeoffs -- comparing the benefits to costs. Many of these tradeoffs might not occur in the immediate present, and might not occur with much certainty 
 
