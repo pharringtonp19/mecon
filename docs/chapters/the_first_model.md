@@ -7,16 +7,26 @@
 ??? cite inline end "Partial Understanding"
     Many people have written about the relationship between Economics and the "hard" sciences. While both strive to adhere to the scientific approach, it should be understood that Economic analyses fall well short of this. In Economics, you generally cannot test precise hypotheses without making unsupported assumptions. -- Read [this article](https://www.nytimes.com/2013/10/21/opinion/yes-economics-is-a-science.html) by Raj Chetty for an alternative take though)
 
-Economics is the study of relationships that exists within the economy (relationships between the government and the consumer, between the consumer and the firm, between a consumer today and a consumer in the future - to name a few). Our understanding of these relationships is **partial**. In part, because these relationships change over time, and in part because we cannot run an unlimited number of experiments to study these relationships (often, we cannot perform a single experiment to study the relationship of interest). 
+Economics is the study of relationships that exists within the economy (relationships between the government and the consumer, between the consumer and the firm, between a consumer today and a consumer in the future - to name a few). Our understanding of these relationships is **partial**. In part, because these relationships change over time, and in part because we cannot run repeated experiments to study these relationships. 
 
 ??? cite inline end "Fed Reserve"
     
     That is, we should always keep in mind that we are working with limited data and imperfect models. --> [Watch](https://youtu.be/vASF-4elpCE?t=290)
 
 ### **Constructing a Model**
-Can you construct a model to help you understand an some Economic relationship?
+**Consider**: Can you construct a model to help you understand an some Economic relationship?
 
-We'll yes and no. To start with, in order to build a model you need to have some understanding of the issue/topic of interest so as to determine which aspects of reality don't need to be faithfully captured by the model. But in addition to that, an Economic model without any data is simply the the result of composing several of your own ideas together. So, does it help you understand an Economic reality, or does the act of creating a model help you better understand your own thoughts on the Economic reality?
+??? note "My Response"
+
+    We'll yes and no. 
+    
+    To start with, in order to build a model we need to have some understanding of the issue/topic. In Economics, we need to understand the topic well enough to determine which aspects of reality don't need to be faithfully captured by the model. You see this more generally, though, in other fields as well. 
+
+    Take for instance Reinforcement Learning. In order to design an algorithm/agent that can succeed at some task, the state space must be well defined. 
+
+    The larger point being that 
+    
+    But in addition to that, an Economic model without any data is simply the the result of composing several of your own ideas together. So, does it help you understand an Economic reality, or does the act of creating a model help you better understand your own thoughts on the Economic reality?
 
 ### **Discussion**
 
