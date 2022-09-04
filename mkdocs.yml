@@ -7,18 +7,18 @@ nav:
   - Overview:
     - Overview: 'overview/overview.md'
     # - Syllabus: 'overview/Syllabus.pdf'
-  - Chapters:
-      - The First Model: 'chapters/the_first_model.md'
-      - Constraints: 
-        - Introduction: 'chapters/constraints/introduction.md'
-        - Consumption: 'chapters/constraints/budget_contraints.md'
-        - Production: 'chapters/constraints/production_constraints.md'
-        - Information: 'chapters/constraints/information.md'
-      - Markets: 
-        - Scale: 'chapters/markets/scale.md'
-        - Elasticities: 'chapters/markets/elasticities.md'
-        - Information: 'chapters/markets/information.md'
-        - Two-sided: 'chapters/markets/two_sided.md'
+  # - Sections:
+  #     - The First Model: 'chapters/the_first_model.md'
+      # - Constraints: 
+      #   - Introduction: 'chapters/constraints/introduction.md'
+      #   - Consumption: 'chapters/constraints/budget_contraints.md'
+      #   - Production: 'chapters/constraints/production_constraints.md'
+      #   - Information: 'chapters/constraints/information.md'
+      # - Markets: 
+      #   - Scale: 'chapters/markets/scale.md'
+      #   - Elasticities: 'chapters/markets/elasticities.md'
+      #   - Information: 'chapters/markets/information.md'
+      #   - Two-sided: 'chapters/markets/two_sided.md'
       # - Information: 'chapters/information.md'
       # - Utils: 'chapters/utility.ipynb'
       # - Demand: 'chapters/demand.ipynb'
@@ -29,19 +29,19 @@ nav:
       # - Firm Supply: 'chapters/firm_supply.ipynb' 
       # - Asymmetric Information: 'chapters/asymmetric information.ipynb'
       # - Sequential Decision Making: 'chapters/rl.ipynb'
-  - Math:
-      - Functions: 'math/functions.md'
-      # - Uncertainty Background: 'math/uncertainty_background.md'
-      - Optimization:
-        - Background: 'math/opt1.md'
+  # - Math:
+  #     - Functions: 'math/functions.md'
+  #     # - Uncertainty Background: 'math/uncertainty_background.md'
+  #     - Optimization:
+  #       - Background: 'math/opt1.md'
       # - Probability:
         # - Conditional Expectations: 'math/conditional_expectations.md'
       # - Optimization Overview: 'math/opt2.ipynb'
       # - Gradient Descent: 'math/gradient_descent.ipynb'
       # - Newton's Method: 'math/newton method.ipynb'
       # - Convexity: 'math/convexity.ipynb'
-  - Other:
-      - Terms : 'other/comp_terms.ipynb'
+  # - Other:
+  #     - Terms : 'other/comp_terms.ipynb'
       # - Jax Basics: 'other/jax basics.ipynb'
       # - Symbolic Computation: 'other/symbolic computation.ipynb'
       # - Thoughts: 'other/thoughts.ipynb'

@@ -1,0 +1,1 @@
+[Labor unions](https://www.wsj.com/articles/california-fast-food-wages-would-be-set-by-government-under-bill-passed-by-state-senate-11661811509?mod=hp_lead_pos11) backing the measure have long struggled to organize fast food workers, in part because the industry’s franchise model means there are so many different employers.
