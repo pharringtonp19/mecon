@@ -38,7 +38,9 @@ Hal writes in his textbook of the following two principles:
 To what extent is the second principle redundant? Could the first principle be made more general?
 
 ### **Where Supply Meets Demand**
-
+- **Information**
+- **Time**
+- **Incentives**
 ``` mermaid
 flowchart LR
     A(Demand) --> C(Market Equilibrium);
