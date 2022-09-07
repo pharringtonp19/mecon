@@ -7,26 +7,39 @@
 ??? cite inline end "Partial Understanding"
     Many people have written about the relationship between Economics and the "hard" sciences. While both strive to adhere to the scientific approach, it should be understood that Economic analyses fall well short of this. In Economics, you generally cannot test precise hypotheses without making unsupported assumptions. -- Read [this article](https://www.nytimes.com/2013/10/21/opinion/yes-economics-is-a-science.html) by Raj Chetty for an alternative take though)
 
-Economics is the study of relationships that exists within the economy (relationships between the government and the consumer, between the consumer and the firm, between a consumer today and a consumer in the future - to name a few). Our understanding of these relationships is **partial**. In part, because these relationships change over time, and in part because we cannot run repeated experiments to study these relationships. 
+Economics is the study of relationships that exists within the economy (relationships between the government and a consumer, between a consumer and a firm, and between a consumer today and a consumer in the future - to name a few). Our understanding of these relationships is **partial**. In part, because these relationships change over time, and in part because we cannot conduct randomized control trials to continuously study these relationships.
 
-??? cite inline end "Fed Reserve"
-    
-    That is, we should always keep in mind that we are working with limited data and imperfect models. --> [Watch](https://youtu.be/vASF-4elpCE?t=290)
+### **The Purpose of Economic Models**
+When discussing models, I like to emphasize that they are "built". This hopefully keeps in mind that the key aspect of a model is not whether it is **True**, but rather whether it is **useful**. Does it help you:
 
-### **Constructing a Model**
-**Consider**: Can you construct a model to help you understand an some Economic relationship?
+- [x] Clarify your beliefs/understanding
+- [x] Better communicate your beliefs/understanding
+- [x] Tests your beliefs/understanding?
 
-??? note "My Response"
+To highlight these three distinct roles, we'll consider the exampling of studying the effectiveness of a Right to Counsel (a policy that provides free legal aid to individuals and households facing eviction).
 
-    We'll yes and no. 
-    
-    To start with, in order to build a model we need to have some understanding of the issue/topic. In Economics, we need to understand the topic well enough to determine which aspects of reality don't need to be faithfully captured by the model. You see this more generally, though, in other fields as well. 
+To assess a policy, we need to first decide on a set of relevent outcomes. Writing down a quick economic model can help clarify what those outcomes should be. With the right to counsel, for instance, we might be concerned that it could lead to higher rental prices and maybe lower quantity. If so, we should make sure to collect that data.[^1]
 
-    Take for instance Reinforcement Learning. In order to design an algorithm/agent that can succeed at some task, the state space must be well defined. 
+<figure markdown>
+  ![Image title](./../../fig/rtc_supply_and_demand.png){ width="500" }
+</figure>
 
-    The larger point being that 
-    
-    But in addition to that, an Economic model without any data is simply the the result of composing several of your own ideas together. So, does it help you understand an Economic reality, or does the act of creating a model help you better understand your own thoughts on the Economic reality?
+Second, as demonstrated by the above model and the one below, models allow us to succinctly present our understanding or hypothesis about some economic relationship. 
+
+<figure markdown>
+  ![Image title](./../../fig/markov_rtc.png){ width="500" }
+</figure>
+
+Third, Economic models can be used to assess a policy idea. If you have a near complete understanding of the relationships that make up a model, then you could potentially assess the effect of some new, untested policy.
+
+
+
+
+As you will recall from your Principles of Microeconomics class, economics can 
+
+??? question "Consider"
+
+    Can you construct a model to help you understand an economic relationship?
 
 ### **Discussion**
 
@@ -62,4 +75,4 @@ Let's say that we're back in the Spring of 2020 and that we're working for Petco
 
 Let's start with understanding how a partial shutdown might affect things. There'e the demand for dog food -- how much people are willing to pay for it at a given price, and the supply of dog food -- how much firms are willing to produce at a given price. We can represent these two notions succinctly with a [function](./../../math/function).
 
-
+[^1]: The irony here is that I'm currently working on a paper that studies the effectiveness of a Right to Counsel and I didn't initially take the time to write down a model. As a result, I didn't collect a highly relevant outcome variable (can you guess what it was?). If I had written down the model, it would have been clear that I should collect the variable. 

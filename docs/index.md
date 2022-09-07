@@ -21,5 +21,5 @@ flowchart LR
 | Date      | Topic | Readings  | Assignments| 
 | :----:      |    :----:   |       :----:  | :----:  |
 | 08/07      | [Course Overview](overview/overview.md) | [Reading 1](https://www.nytimes.com/2013/10/21/opinion/yes-economics-is-a-science.html)  | |
-| 08/09   | The First Model        |        |   |
-| 08/14   | Constraints |  | | 
+<!-- | 08/09   | The First Model        |        |   |
+| 08/14   | Constraints |  | |  -->
