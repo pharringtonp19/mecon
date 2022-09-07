@@ -7,8 +7,8 @@ nav:
   - Overview:
     - Overview: 'overview/overview.md'
     - Syllabus: 'overview/Syllabus.pdf'
-  # - Sections:
-  #     - The First Model: 'chapters/the_first_model.md'
+  - Lectures:
+      - Why Model? : 'chapters/why_model.md'
       # - Constraints: 
       #   - Introduction: 'chapters/constraints/introduction.md'
       #   - Consumption: 'chapters/constraints/budget_contraints.md'
@@ -29,9 +29,9 @@ nav:
       # - Firm Supply: 'chapters/firm_supply.ipynb' 
       # - Asymmetric Information: 'chapters/asymmetric information.ipynb'
       # - Sequential Decision Making: 'chapters/rl.ipynb'
-  # - Math:
-  #     - Functions: 'math/functions.md'
-  #     # - Uncertainty Background: 'math/uncertainty_background.md'
+  - Math:
+      - Functions: 'math/functions.md'
+      #- Probability Introduction: 'math/probability_intro.md'
   #     - Optimization:
   #       - Background: 'math/opt1.md'
       # - Probability:
