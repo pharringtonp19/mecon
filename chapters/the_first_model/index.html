@@ -301,8 +301,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#constructing-a-model" class="md-nav__link">
-    Constructing a Model
+  <a href="#the-purpose-of-economic-models" class="md-nav__link">
+    The Purpose of Economic Models
   </a>
   
 </li>
@@ -346,20 +346,28 @@
 <summary>Partial Understanding</summary>
 <p>Many people have written about the relationship between Economics and the "hard" sciences. While both strive to adhere to the scientific approach, it should be understood that Economic analyses fall well short of this. In Economics, you generally cannot test precise hypotheses without making unsupported assumptions. -- Read <a href="https://www.nytimes.com/2013/10/21/opinion/yes-economics-is-a-science.html">this article</a> by Raj Chetty for an alternative take though)</p>
 </details>
-<p>Economics is the study of relationships that exists within the economy (relationships between the government and the consumer, between the consumer and the firm, between a consumer today and a consumer in the future - to name a few). Our understanding of these relationships is <strong>partial</strong>. In part, because these relationships change over time, and in part because we cannot run repeated experiments to study these relationships. </p>
-<details class="cite inline end">
-<summary>Fed Reserve</summary>
-<p>That is, we should always keep in mind that we are working with limited data and imperfect models. --&gt; <a href="https://youtu.be/vASF-4elpCE?t=290">Watch</a></p>
-</details>
-<h3 id="constructing-a-model"><strong>Constructing a Model</strong></h3>
-<p><strong>Consider</strong>: Can you construct a model to help you understand an some Economic relationship?</p>
-<details class="note">
-<summary>My Response</summary>
-<p>We'll yes and no. </p>
-<p>To start with, in order to build a model we need to have some understanding of the issue/topic. In Economics, we need to understand the topic well enough to determine which aspects of reality don't need to be faithfully captured by the model. You see this more generally, though, in other fields as well. </p>
-<p>Take for instance Reinforcement Learning. In order to design an algorithm/agent that can succeed at some task, the state space must be well defined. </p>
-<p>The larger point being that </p>
-<p>But in addition to that, an Economic model without any data is simply the the result of composing several of your own ideas together. So, does it help you understand an Economic reality, or does the act of creating a model help you better understand your own thoughts on the Economic reality?</p>
+<p>Economics is the study of relationships that exists within the economy (relationships between the government and a consumer, between a consumer and a firm, and between a consumer today and a consumer in the future - to name a few). Our understanding of these relationships is <strong>partial</strong>. In part, because these relationships change over time, and in part because we cannot conduct randomized control trials to continuously study these relationships.</p>
+<h3 id="the-purpose-of-economic-models"><strong>The Purpose of Economic Models</strong></h3>
+<p>When discussing models, I like to emphasize that they are "built". This hopefully keeps in mind that the key aspect of a model is not whether it is <strong>True</strong>, but rather whether it is <strong>useful</strong>. Does it help you:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Clarify your beliefs/understanding</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Better communicate your beliefs/understanding</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Tests your beliefs/understanding?</li>
+</ul>
+<p>To highlight these three distinct roles, we'll consider the exampling of studying the effectiveness of a Right to Counsel (a policy that provides free legal aid to individuals and households facing eviction).</p>
+<p>To assess a policy, we need to first decide on a set of relevent outcomes. Writing down a quick economic model can help clarify what those outcomes should be. With the right to counsel, for instance, we might be concerned that it could lead to higher rental prices and maybe lower quantity. If so, we should make sure to collect that data.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<figure>
+<p><img alt="Image title" src="./../../fig/rtc_supply_and_demand.png" width="500" /></p>
+</figure>
+<p>Second, as demonstrated by the above model and the one below, models allow us to succinctly present our understanding or hypothesis about some economic relationship. </p>
+<figure>
+<p><img alt="Image title" src="./../../fig/markov_rtc.png" width="500" /></p>
+</figure>
+<p>Third, Economic models can be used to assess a policy idea. If you have a near complete understanding of the relationships that make up a model, then you could potentially assess the effect of some new, untested policy.</p>
+<p>As you will recall from your Principles of Microeconomics class, economics can </p>
+<details class="question">
+<summary>Consider</summary>
+<p>Can you construct a model to help you understand an economic relationship?</p>
 </details>
 <h3 id="discussion"><strong>Discussion</strong></h3>
 <p>Hal writes in his textbook of the following two principles:</p>
@@ -396,6 +404,14 @@
 </li>
 </ul>
 <p>Let's start with understanding how a partial shutdown might affect things. There'e the demand for dog food -- how much people are willing to pay for it at a given price, and the supply of dog food -- how much firms are willing to produce at a given price. We can represent these two notions succinctly with a <a href="./../../math/function">function</a>.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The irony here is that I'm currently working on a paper that studies the effectiveness of a Right to Counsel and I didn't initially take the time to write down a model. As a result, I didn't collect a highly relevant outcome variable (can you guess what it was?). If I had written down the model, it would have been clear that I should collect the variable.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
               
             </article>
