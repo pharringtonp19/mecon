@@ -9,8 +9,9 @@ nav:
     - Syllabus: 'overview/Syllabus.pdf'
   - Lectures:
       - Why Model? : 'chapters/why_model.md'
+      - Constraints Overview: 'chapters/constraints/constraints_overview.md'
       # - Constraints: 
-      #   - Introduction: 'chapters/constraints/introduction.md'
+      #   
       #   - Consumption: 'chapters/constraints/budget_contraints.md'
       #   - Production: 'chapters/constraints/production_constraints.md'
       #   - Information: 'chapters/constraints/information.md'
