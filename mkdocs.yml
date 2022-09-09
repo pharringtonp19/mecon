@@ -10,9 +10,10 @@ nav:
   - Lectures:
       - Why Model? : 'chapters/why_model.md'
       - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
+      - Budget Constraint: 'chapters/constraints/budget_contraints.md'
       # - Constraints: 
       #   
-      #   - Consumption: 'chapters/constraints/budget_contraints.md'
+
       #   - Production: 'chapters/constraints/production_constraints.md'
       #   - Information: 'chapters/constraints/information.md'
       # - Markets: 
