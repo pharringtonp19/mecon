@@ -2,8 +2,30 @@
 
     We use probability theory to model our understanding/level of information about the world. 
 
-    
 
+### **Random Experiment**
+- An experiment whose outcome is random! -- [Dr. Krishna Jagannathan](https://youtu.be/-nnJQ0kJgIY?list=PLbMVogVj5nJQqGHrpAloTec_lOKsG-foc&t=102)
+
+### **Sample Space & Events ** (of a Random Experiment)
+- **Sample Space**: The set of all possible outcomes of the random experiment, which we'll denote as $\Omega$:
+- **Outcome**: For each run or trial of the experiment, one outcome, $\omega$, occurs.
+
+$$\begin{align*} \omega \in \Omega \end{align*}$$
+
+- **Event**: We will often be interested in whether a subset of the sample space has occurred. Such a subset is referred to as an event. 
+- **$\sigma$-algebra**: The set of Events must form a $\sigma$-algebra, $\mathcal{F}$, whose conditions are highlighted below:
+
+$$\begin{align*} 
+\Omega \in \mathcal{F} \\
+\mathcal{A}_1, \mathcal{A}_2, \dots, \mathcal{A}_n \in \mathcal{F} \implies  \cup _i \mathcal{A}   \in \mathcal{F} \\
+\mathcal{A} \in \mathcal{F} \implies  \mathcal{A}^c \in \mathcal{F} 
+\end{align*}$$
+??? Example
+    
+    We can consider tossing a coin to be a random experiment. How would you define the sample space? Let's say that we toss $n$ coins at the same time. What would be the sample space then?
+
+    
+<!-- 
 ### **Introduction**
 Making decisions involves assessing tradeoffs -- comparing the benefits to costs. Many of these tradeoffs might not occur in the immediate present, and might not occur with much certainty 
 
@@ -43,3 +65,5 @@ With this understanding in mind, I believe introducing additional components can
 We'll start by introducing a probility space. We want to capture a lack of information, a lack of knowledge about some aspect of the world. 
 
 $$\begin{aligned}\big( \Omega, \mathcal{F}, \mathbb{P}) \end{aligned}$$
+
+  -->

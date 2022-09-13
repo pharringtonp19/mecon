@@ -33,7 +33,7 @@ nav:
       # - Sequential Decision Making: 'chapters/rl.ipynb'
   - Math:
       - Functions: 'math/functions.md'
-      #- Probability Introduction: 'math/probability_intro.md'
+      - Probability Introduction: 'math/probability_intro.md'
   #     - Optimization:
   #       - Background: 'math/opt1.md'
       # - Probability:
