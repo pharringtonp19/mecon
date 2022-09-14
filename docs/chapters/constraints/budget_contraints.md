@@ -4,74 +4,77 @@
     Budget Constraints | <a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/budget_constraint.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
     Budget Constraints With Taxes | <a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/budget_constraint_with_taxes.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
 
-$$B := \{x \in \mathcal{X} | \ F(x) \leq 0\}$$
+!!! tldr "Overview"
 
-To begin, let's consider the situation where a consumer with a certian level of income $m$ chooses a bundle from among $n$ goods. 
-Mathematically we represent this situation as follows:
+    The aim of this lecture is to illustrate how we can use the structure developed in the previous lecture to represent the constraints that consumers face.
 
-- **Choice Variables**:
-    - Let $x \in \mathbb{R}^n$ represent a bundle of goods. That is $x.i$ denotes the amount of the $i^{th}$ good in the bundle 
-- **Parameters**:
-    - Let $p \in \mathbb{R}^n$ represent the prices of the $n$ goods. That is, $p.i$ corresponds to the price of the $i^{th}$ good. 
-    - Let $m \in \mathbb{R}$ represent the amount of income. 
+### **Intuitive Understanding of the Problem**
 
-Then we can define our budget set as follows: 
+Let's begin by thinking about the consumer's choice problem without worrying for the moment how we can we represent this mathematically. The consumer would like to purchase some amount of goods and services. During the course of the week, for instance, they probably want to good food shopping, maybe put some gas in their car, $\dots$, things of that nature. And they will be constrained by the amount of income they have.[^1]
 
-$$\begin{align*}B := \{x \in \mathcal{X} | \ F_{p,m}(x) \leq 0\} \\\\
-\text{where} \quad F_{p,m}(x) = p \cdot x - m \end{align*}$$
+### **Structure**
 
-To "derive" the budget set, we have to define the relationship between good1 and good2 such that the expenditure of the bundle is equal to the income. To highlight this process, we consider a set-up where $n=2$. Our task is then, setting $F_{p,m} = 0$, to "solve" for $x_2$ interms of $x_1$.
+#### Choice Variables
+The choice set will be the set of all possible "bundles" that a consumer could buy. Intuitively, a bundle is a collection of goods and services with specific amounts of each good and service. For example, if the choice set is $\{$Apples, Oranged $\}$, then a bundle could be represented as follows 
 
-$$\begin{align*}0 &= p_1x_1 + p_2x_2 - m \\ 
-p_2x_2 &= m - p_1x_1 \\ 
-x_2 &= \frac{m}{p_2} - \frac{p_1}{p_2}x_1\end{align*}$$
+$$\begin{align*}
+\{\text{Apples}: 3, \text{Oranges}:2 \}
+\end{align*}$$
 
-??? tip "Math on the Computer"
+To make things simple mathematically, we will often represent a bundle as a vector where the index of the vector implicity represents the good or service. For instance, we can represent the above bundle via the following vector: 
 
-    ```python 
-    import jax
-    import jax.numpy as jnp 
-    import matplotlib.pyplot as plt
-    from functools import partial 
-    from typing import NamedTuple 
+$$\begin{align*}
+[3, 2] \in \mathbb{R}^2
+\end{align*}$$
 
-    class Params(NamedTuple):
-    """Parameters of the budget constraint"""
-    income: float 
-    price1: float 
-    price2: float 
+More generally, $x \in \mathbb{R}^n$ represent a bundle of goods and services. And, $x.i$ denotes the amount of the $i^{th}$ good or service in the bundle.
 
-    class ChoiceVariables(NamedTuple):
-    """Bundle of Goods"""
-    good1: float 
-    good2: float 
+#### Parameters
 
-    def F(params: Params, good1: float): 
-    """Constraint Function"""
-    good2 = params.income/params.price2 -good1*(params.price1/params.price2)
-    return ChoiceVariables(good1, good2)
+In this set-up, we are going to consider two types of parameters. Again, these can be thought of as aspects of the choice problem that the consumers does not have direct influence over.[^2]
 
-    params = Params(35.0, 10.0, 5.0)                                      # Initialize Parameters for F         
-    good1s = jnp.linspace(0, params.income/params.price1, 100)            # Max x1 is m/p1
-    bundles = jax.vmap(partial(F, params))(good1s)                        # Partially Evaluate + "Vectorize"
-    ```
-``` mermaid
-flowchart LR
-    A(Prices) --> B(Good2);
-    C(Income) --> B;
-    D(Good1) --> B;
-    style A fill:red,stroke:#333,stroke-width:1px
-    style C fill:red,stroke:#333,stroke-width:1px
-    style B fill:green,stroke:#333,stroke-width:1px
-    style D fill:green,stroke:#333,stroke-width:1px
-```
+The first, which we'll denote by $m$, will be income which we'll think of as the amount of money you can spend. The second type of parameters will be the price of each of the $n$ goods and services. Note the ordered structur that we imposed on the goods and services will carry over the the prices. That is, we can represent prices as a vector, $p \in \mathbb{R}^n$, where $p.i$ corresponds to the price of the $i^{th}$ good or service. 
+
+#### Constraint Function 
+With an understanding of the choice set and the parameters we can then define the **parameterized** constraint function as follows:
+
+$$\begin{align*}F &:: \mathbb{R} \to \mathbb{R}^n \to \mathbb{R}^n \to \{0, 1\} \\\\
+F(m, p, x) &= \Big(\sum _{i=1}^n p_i x_i \Big) > m \end{align*}$$
+
+#### Feasible Set 
+As we discussed in the previous lecture, a parameterized constraint function defines a parameterized feasibility set. 
+
+$$\begin{align*}B &:: \mathbb{R} \to \mathbb{R}^n \to \mathcal{P}(\mathbb{R}^n) \\\\
+B(m, p) &= F_{m,p}^{-1}(0) \\\\ 
+B(m, p) &= \Big\{x \in \mathcal{X} | \Big(\sum _{i=1}^n p_ix_i \Big)  \leq m\Big\}\end{align*}$$
+
+### **Example**
+Let's consider the situation were there are two good $n$.[^3] Then for a given level of income and prices, our budget set will be defined as follows: 
+
+$$\begin{align*}B(m,p)= \{x \in \mathbb{R}^2 \mid p_1x_1 + p_2x_2 \leq 0 \}\end{align*}$$
+
+We can represent this visually as follows:
 
 <figure markdown>
   ![Image title](./../../fig/budget.png){ width="500" }
   <figcaption>Budget Constraint</figcaption>
 </figure>
 
+Where we've also represented the budget line which can be thought of as a the **graph** of function between $x_1$ and $x_2$
+
+$$\begin{align*} \text{Budget Line} := \{ (x_1, x_2) \in \mathbb{R}^2 \mid x_2 = \frac{m}{p_2} - \frac{p_1}{p_2}x_1 \} \end{align*}$$
+
+
+Which we can derive as follows:
+
+$$\begin{align*}0 &= p_1x_1 + p_2x_2 - m \\ 
+p_2x_2 &= m - p_1x_1 \\ 
+x_2 &= \frac{m}{p_2} - \frac{p_1}{p_2}x_1\end{align*}$$
+
+
 It can be helpful to get into the habit of asking, how do "things" change if we tweak the parameters? In this setting, we may be interested in understanding how the budget set changes in response to an increase in income, or to a decrease in the prices. See if you can work through this.
+
+<!--
 
 ##### Taxes/ Subsidies/ Market Caps
 
@@ -125,3 +128,10 @@ $$\begin{align*}f :: \text{params} \to \text{good1} \to \big(\text{good2} \to \t
 
     How could we extend the above model to factor in the market cap for electric vehicles?
 
+-->
+
+[^1]: They will also be limited or constrained by the time they have to run all these errands, but we omit this key feature for the moment from our model.
+
+[^2]: Hopefully, though you will be able to think about how we can extend this setup so that income is something that consumers are choosing!
+
+[^3]: The reason we start with two goods is because we can represent two goods visually.

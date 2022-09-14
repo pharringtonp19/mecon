@@ -18,8 +18,9 @@ flowchart LR
 
 ### **Schedule**
 
-| Date      | Topic | Readings  | Assignments| 
-| :----:      |    :----:   |       :----:  | :----:  |
-| 08/07      | [Course Overview](overview/overview.md), [Why Model](./chapters/why_model.md) | [Reading 1](https://www.nytimes.com/2013/10/21/opinion/yes-economics-is-a-science.html)  | |
-| 08/09   | [Intro Constraints](./chapters/constraints/constraints_overview.md)        |        |   |
+| Date      | Topic | Assignments| 
+| :----:      |    :----:   |       :----:  | 
+| 08/07      | [Course Overview](overview/overview.md), [Why Model](./chapters/why_model.md) |  |
+| 08/09   | [Intro Constraints](./chapters/constraints/constraints_overview.md) |  |
+| 08/14   | [Budget Constraints](./chapters/constraints/budget_constraints.md) |   |
 <!-- | 08/14   | Constraints |  | |  -->

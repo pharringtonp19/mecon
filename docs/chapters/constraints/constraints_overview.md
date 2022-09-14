@@ -4,7 +4,7 @@
 
 ??? Danger "Warning"
 
-    I think some of this material would be difficult to understand just from reading these notes. I plan on providing additional examples in lecture that should help clarify these concepts.
+    Some of this material would be difficult to grasp just from reading these notes. Additional example will be provided in lecture to help clarify these concepts.
 
 We are going to work from an understanding that people fundamentally "Maximizers". That is, their behavior can be explained via an **objective function** and **constraints**. In this lecture, we're going to introduce the mathematical tools that we can use to represent constraints. 
 
@@ -45,6 +45,17 @@ $$\begin{align*}
 \{ F_p \mid p \in \mathcal{I} \}
 \end{align*}$$
 
+#### Relationships
+Let's make things more concrete by introducing another example. Let's say you are looking to buy a car. Your choice set will then be all the cars available to you (either at your neighborhood dealer, or online). In this context, the constraint function maps from the set of cars into $\{0, 1\}$, where again $0$ indicates that you can afford the car and $1$ represents that you cannot (too expensive!). 
+
+$$\begin{align*}
+F :: \text{Set of Cars} \to \{0, 1\}
+\end{align*}$$
+
+As you are probably aware, though, the federal goverment offers a federal tax credit to people who buy an electric car. Now the question of whether you can afford a specific car will depend on the size of the federal tax credit. We can represent this via a parameterized constraint function where the size of the tax credit is the parameter and the index set, $\mathcal{I}$, as the set of tax credits that the federal goverment is considering. 
+
+Now here's the key insight! The set of constraint functions that a consumer can face is "roughly equivalent" to the choice set of the federal government![^1] That is, the index set above is the choice set of the federal government![^2]
+
 
 #### Explanation :material-lightning-bolt:
 In the previous section, we defined a constraint function as a function that maps from the choice set into $\{0,1\}$. I will refer to this set as ZeroOne. The signature of the function is as follows.
@@ -68,19 +79,29 @@ $$ \textrm{Maximizer} :: \text{Objective} \to \text{ParameterizedConstraintFunct
 
 This tells us that if we know the function Maximizer, and we're given an Objective function and a ParameterizedConstraintFunction, then the end results is that we have a function that maps from Parameters to Decision. 
 
-It might not be immediatley obvious, but this type of function is often of great economic interest. For example, the parameter might be the tax rate, and the decision might be how much to work. Or the parameter might be the number of oil field leases and the Decision might be the aggregate gas consumption.[^1] This function can therefore be used to capture the relationship between a govenerment's policy and individual or aggregate behavior.
+It might not be immediatley obvious, but this type of function is often of great economic interest. For example, the parameter might be the tax rate, and the decision might be how much to work. Or the parameter might be the number of oil field leases and the decision might be the aggregate gas consumption.[^2] This function can therefore be used to capture the relationship between a govenerment's policy and individual or aggregate behavior.
 
-Sometimes though, as mentioned in the previous lecture we don't have enough structure to accruately model some behavior. For example, as we'll discuss later in the class, we don't always observe the constraint set of the indivdual or firm of interest. But perhaps, we relatively confident that the constraint function looks something like a certain class of functions. Then we can use this exact same set-up to capture our uncertainty!
+Sometimes though, as mentioned in the previous lecture, we don't have enough structure to accruately model some behavior. For example, as we'll discuss later in the class, we don't always observe the constraint set of the indivdual or firm of interest. But perhaps, we relatively confident that the constraint function looks something like a certain class of functions. Then we can use this exact same set-up to capture our uncertainty!
+
+
 
 ### **The Feasibility Set**
 
 Putting this all together (the choice set, the parameterized constraint function), for a given context, we can define the feasible set as follows:
 
 $$\{x \in \mathcal{X} | \ F_p(x) \leq 0 \}$$
+
+
+
+
 <!-- ### **Consumption**
 - Highlight is currying/partial evaluation 
 
 ### **Production**
 - Highlight is IFT -->
 
-[^1]: I recognize that this probably won't make sense yet. I really just want you to get used to seeing this structure and to trust me that it will simplify things in the long run. We'll make heavy use of this thoughout the semester and I'm confident that it will sink in over the comming weeks. Hang in there!
+[^1]: One persons choice set is equivalent to the set of constraints functions of another person!
+
+[^2]: This general idea though is perhaps more prevalent than you might initially imagine. For instance, if you're considering watching a short video on a social media app, your feasible choice set might be all the possible videos that you can scroll through. What's your constraint in this context? Well the fact that you have to scroll through videos -- that takes time! Whose decisions influence your constraint? Well the social media algorithm that decides how to layout/ represent the videos that you see. 
+
+[^3]: I recognize that this probably won't make sense yet. I really just want you to get used to seeing this structure and to trust me that it will simplify things in the long run. We'll make heavy use of this thoughout the semester and I'm confident that it will sink in over the comming weeks. Hang in there!
