@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#taxes-subsidies-market-caps" class="md-skip">
+        <a href="#intuitive-understanding-of-the-problem" class="md-skip">
           Skip to content
         </a>
       
@@ -363,8 +363,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#taxes-subsidies-market-caps" class="md-nav__link">
-    Taxes/ Subsidies/ Market Caps
+  <a href="#intuitive-understanding-of-the-problem" class="md-nav__link">
+    Intuitive Understanding of the Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choice-variables" class="md-nav__link">
+    Choice Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constraint-function" class="md-nav__link">
+    Constraint Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feasible-set" class="md-nav__link">
+    Feasible Set
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
   
 </li>
@@ -471,8 +519,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#taxes-subsidies-market-caps" class="md-nav__link">
-    Taxes/ Subsidies/ Market Caps
+  <a href="#intuitive-understanding-of-the-problem" class="md-nav__link">
+    Intuitive Understanding of the Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choice-variables" class="md-nav__link">
+    Choice Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constraint-function" class="md-nav__link">
+    Constraint Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feasible-set" class="md-nav__link">
+    Feasible Set
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
   
 </li>
@@ -517,79 +613,62 @@
 </tbody>
 </table>
 </details>
-<div class="arithmatex">\[B := \{x \in \mathcal{X} | \ F(x) \leq 0\}\]</div>
-<p>To begin, let's consider the situation where a consumer with a certian level of income <span class="arithmatex">\(m\)</span> chooses a bundle from among <span class="arithmatex">\(n\)</span> goods. 
-Mathematically we represent this situation as follows:</p>
-<ul>
-<li><strong>Choice Variables</strong>:<ul>
-<li>Let <span class="arithmatex">\(x \in \mathbb{R}^n\)</span> represent a bundle of goods. That is <span class="arithmatex">\(x.i\)</span> denotes the amount of the <span class="arithmatex">\(i^{th}\)</span> good in the bundle </li>
-</ul>
-</li>
-<li><strong>Parameters</strong>:<ul>
-<li>Let <span class="arithmatex">\(p \in \mathbb{R}^n\)</span> represent the prices of the <span class="arithmatex">\(n\)</span> goods. That is, <span class="arithmatex">\(p.i\)</span> corresponds to the price of the <span class="arithmatex">\(i^{th}\)</span> good. </li>
-<li>Let <span class="arithmatex">\(m \in \mathbb{R}\)</span> represent the amount of income. </li>
-</ul>
-</li>
-</ul>
-<p>Then we can define our budget set as follows: </p>
-<div class="arithmatex">\[\begin{align*}B := \{x \in \mathcal{X} | \ F_{p,m}(x) \leq 0\} \\\\
-\text{where} \quad F_{p,m}(x) = p \cdot x - m \end{align*}\]</div>
-<p>To "derive" the budget set, we have to define the relationship between good1 and good2 such that the expenditure of the bundle is equal to the income. To highlight this process, we consider a set-up where <span class="arithmatex">\(n=2\)</span>. Our task is then, setting <span class="arithmatex">\(F_{p,m} = 0\)</span>, to "solve" for <span class="arithmatex">\(x_2\)</span> interms of <span class="arithmatex">\(x_1\)</span>.</p>
-<div class="arithmatex">\[\begin{align*}0 &amp;= p_1x_1 + p_2x_2 - m \\ 
-p_2x_2 &amp;= m - p_1x_1 \\ 
-x_2 &amp;= \frac{m}{p_2} - \frac{p_1}{p_2}x_1\end{align*}\]</div>
-<details class="tip">
-<summary>Math on the Computer</summary>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jax</span>
-<span class="kn">import</span> <span class="nn">jax.numpy</span> <span class="k">as</span> <span class="nn">jnp</span> 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span> 
-<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">NamedTuple</span> 
-
-<span class="k">class</span> <span class="nc">Params</span><span class="p">(</span><span class="n">NamedTuple</span><span class="p">):</span>
-<span class="sd">&quot;&quot;&quot;Parameters of the budget constraint&quot;&quot;&quot;</span>
-<span class="n">income</span><span class="p">:</span> <span class="nb">float</span> 
-<span class="n">price1</span><span class="p">:</span> <span class="nb">float</span> 
-<span class="n">price2</span><span class="p">:</span> <span class="nb">float</span> 
-
-<span class="k">class</span> <span class="nc">ChoiceVariables</span><span class="p">(</span><span class="n">NamedTuple</span><span class="p">):</span>
-<span class="sd">&quot;&quot;&quot;Bundle of Goods&quot;&quot;&quot;</span>
-<span class="n">good1</span><span class="p">:</span> <span class="nb">float</span> 
-<span class="n">good2</span><span class="p">:</span> <span class="nb">float</span> 
-
-<span class="k">def</span> <span class="nf">F</span><span class="p">(</span><span class="n">params</span><span class="p">:</span> <span class="n">Params</span><span class="p">,</span> <span class="n">good1</span><span class="p">:</span> <span class="nb">float</span><span class="p">):</span> 
-<span class="sd">&quot;&quot;&quot;Constraint Function&quot;&quot;&quot;</span>
-<span class="n">good2</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">income</span><span class="o">/</span><span class="n">params</span><span class="o">.</span><span class="n">price2</span> <span class="o">-</span><span class="n">good1</span><span class="o">*</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">price1</span><span class="o">/</span><span class="n">params</span><span class="o">.</span><span class="n">price2</span><span class="p">)</span>
-<span class="k">return</span> <span class="n">ChoiceVariables</span><span class="p">(</span><span class="n">good1</span><span class="p">,</span> <span class="n">good2</span><span class="p">)</span>
-
-<span class="n">params</span> <span class="o">=</span> <span class="n">Params</span><span class="p">(</span><span class="mf">35.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span>                                      <span class="c1"># Initialize Parameters for F         </span>
-<span class="n">good1s</span> <span class="o">=</span> <span class="n">jnp</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">params</span><span class="o">.</span><span class="n">income</span><span class="o">/</span><span class="n">params</span><span class="o">.</span><span class="n">price1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>            <span class="c1"># Max x1 is m/p1</span>
-<span class="n">bundles</span> <span class="o">=</span> <span class="n">jax</span><span class="o">.</span><span class="n">vmap</span><span class="p">(</span><span class="n">partial</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">params</span><span class="p">))(</span><span class="n">good1s</span><span class="p">)</span>                        <span class="c1"># Partially Evaluate + &quot;Vectorize&quot;</span>
-</code></pre></div>
-</details>
-<pre class="mermaid"><code>flowchart LR
-    A(Prices) --&gt; B(Good2);
-    C(Income) --&gt; B;
-    D(Good1) --&gt; B;
-    style A fill:red,stroke:#333,stroke-width:1px
-    style C fill:red,stroke:#333,stroke-width:1px
-    style B fill:green,stroke:#333,stroke-width:1px
-    style D fill:green,stroke:#333,stroke-width:1px</code></pre>
+<div class="admonition tldr">
+<p class="admonition-title">Overview</p>
+<p>The aim of this lecture is to illustrate how we can use the structure developed in the previous lecture to represent the constraints that consumers face.</p>
+</div>
+<h3 id="intuitive-understanding-of-the-problem"><strong>Intuitive Understanding of the Problem</strong></h3>
+<p>Let's begin by thinking about the consumer's choice problem without worrying for the moment how we can we represent this mathematically. The consumer would like to purchase some amount of goods and services. During the course of the week, for instance, they probably want to good food shopping, maybe put some gas in their car, <span class="arithmatex">\(\dots\)</span>, things of that nature. And they will be constrained by the amount of income they have.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<h3 id="structure"><strong>Structure</strong></h3>
+<h4 id="choice-variables">Choice Variables</h4>
+<p>The choice set will be the set of all possible "bundles" that a consumer could buy. Intuitively, a bundle is a collection of goods and services with specific amounts of each good and service. For example, if the choice set is <span class="arithmatex">\(\{\)</span>Apples, Oranged <span class="arithmatex">\(\}\)</span>, then a bundle could be represented as follows </p>
+<div class="arithmatex">\[\begin{align*}
+\{\text{Apples}: 3, \text{Oranges}:2 \}
+\end{align*}\]</div>
+<p>To make things simple mathematically, we will often represent a bundle as a vector where the index of the vector implicity represents the good or service. For instance, we can represent the above bundle via the following vector: </p>
+<div class="arithmatex">\[\begin{align*}
+[3, 2] \in \mathbb{R}^2
+\end{align*}\]</div>
+<p>More generally, <span class="arithmatex">\(x \in \mathbb{R}^n\)</span> represent a bundle of goods and services. And, <span class="arithmatex">\(x.i\)</span> denotes the amount of the <span class="arithmatex">\(i^{th}\)</span> good or service in the bundle.</p>
+<h4 id="parameters">Parameters</h4>
+<p>In this set-up, we are going to consider two types of parameters. Again, these can be thought of as aspects of the choice problem that the consumers does not have direct influence over.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<p>The first, which we'll denote by <span class="arithmatex">\(m\)</span>, will be income which we'll think of as the amount of money you can spend. The second type of parameters will be the price of each of the <span class="arithmatex">\(n\)</span> goods and services. Note the ordered structur that we imposed on the goods and services will carry over the the prices. That is, we can represent prices as a vector, <span class="arithmatex">\(p \in \mathbb{R}^n\)</span>, where <span class="arithmatex">\(p.i\)</span> corresponds to the price of the <span class="arithmatex">\(i^{th}\)</span> good or service. </p>
+<h4 id="constraint-function">Constraint Function</h4>
+<p>With an understanding of the choice set and the parameters we can then define the <strong>parameterized</strong> constraint function as follows:</p>
+<div class="arithmatex">\[\begin{align*}F &amp;:: \mathbb{R} \to \mathbb{R}^n \to \mathbb{R}^n \to \{0, 1\} \\\\
+F(m, p, x) &amp;= \Big(\sum _{i=1}^n p_i x_i \Big) &gt; m \end{align*}\]</div>
+<h4 id="feasible-set">Feasible Set</h4>
+<p>As we discussed in the previous lecture, a parameterized constraint function defines a parameterized feasibility set. </p>
+<div class="arithmatex">\[\begin{align*}B &amp;:: \mathbb{R} \to \mathbb{R}^n \to \mathcal{P}(\mathbb{R}^n) \\\\
+B(m, p) &amp;= F_{m,p}^{-1}(0) \\\\ 
+B(m, p) &amp;= \Big\{x \in \mathcal{X} | \Big(\sum _{i=1}^n p_ix_i \Big)  \leq m\Big\}\end{align*}\]</div>
+<h3 id="example"><strong>Example</strong></h3>
+<p>Let's consider the situation were there are two good <span class="arithmatex">\(n\)</span>.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> Then for a given level of income and prices, our budget set will be defined as follows: </p>
+<div class="arithmatex">\[\begin{align*}B(m,p)= \{x \in \mathbb{R}^2 \mid p_1x_1 + p_2x_2 \leq 0 \}\end{align*}\]</div>
+<p>We can represent this visually as follows:</p>
 <figure>
 <p><img alt="Image title" src="../../../fig/budget.png" width="500" />
   </p>
 <figcaption>Budget Constraint</figcaption>
 </figure>
+<p>Where we've also represented the budget line which can be thought of as a the <strong>graph</strong> of function between <span class="arithmatex">\(x_1\)</span> and <span class="arithmatex">\(x_2\)</span></p>
+<div class="arithmatex">\[\begin{align*} \text{Budget Line} := \{ (x_1, x_2) \in \mathbb{R}^2 \mid x_2 = \frac{m}{p_2} - \frac{p_1}{p_2}x_1 \} \end{align*}\]</div>
+<p>Which we can derive as follows:</p>
+<div class="arithmatex">\[\begin{align*}0 &amp;= p_1x_1 + p_2x_2 - m \\ 
+p_2x_2 &amp;= m - p_1x_1 \\ 
+x_2 &amp;= \frac{m}{p_2} - \frac{p_1}{p_2}x_1\end{align*}\]</div>
 <p>It can be helpful to get into the habit of asking, how do "things" change if we tweak the parameters? In this setting, we may be interested in understanding how the budget set changes in response to an increase in income, or to a decrease in the prices. See if you can work through this.</p>
-<h5 id="taxes-subsidies-market-caps">Taxes/ Subsidies/ Market Caps</h5>
-<ul>
-<li>There is often a difference between the price that suppliers receive, <span class="arithmatex">\(p_s\)</span>, and the prices that consumers pay, <span class="arithmatex">\(p_c\)</span>. We can represent this difference via a function that maps <span class="arithmatex">\(p_s\)</span> to <span class="arithmatex">\(p_c\)</span>. </li>
-</ul>
-<div class="arithmatex">\[\begin{align*} p_s &amp;\longmapsto p_s + \alpha \\ 
- p_s &amp;\longmapsto (1+ \alpha)p_s \end{align*}\]</div>
-<ul>
-<li>We can also generalize the set-up by allowing the the tax/subsidy depend on the amount of the good. </li>
-</ul>
+<!--
+
+##### Taxes/ Subsidies/ Market Caps
+
+- There is often a difference between the price that suppliers receive, $p_s$, and the prices that consumers pay, $p_c$. We can represent this difference via a function that maps $p_s$ to $p_c$. 
+
+$$\begin{align*} p_s &\longmapsto p_s + \alpha \\ 
+ p_s &\longmapsto (1+ \alpha)p_s \end{align*}$$
+
+- We can also generalize the set-up by allowing the the tax/subsidy depend on the amount of the good. 
+
 <pre class="mermaid"><code>flowchart LR
     A(Supplier Prices) --&gt;  B(Consumer Prices);
     C(Tax) --&gt; B;
@@ -598,31 +677,54 @@ x_2 &amp;= \frac{m}{p_2} - \frac{p_1}{p_2}x_1\end{align*}\]</div>
     B --&gt; H(Good2);
     F --&gt; H;
     Z(Income) --&gt; F;</code></pre>
-<details class="danger inline end">
-<summary>Challenge</summary>
-<p>Here we introduce the concepts of (1) refactoring and (2) implicit function</p>
-<p>Don't <img alt="😟" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f61f.svg" title=":worried:" />, though, if you don't follow everything the first time. 
-We'll continue to use these terms throughout the semester until it's all 
-<img alt="🙂" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f642.svg" title=":slight_smile:" /> </p>
-</details>
-<p>The key challenge here is that the price of good2 might depend on how much of it one consumes. To keep things simple, let's understand this issue by adjusting the previous example only slightly. </p>
-<div class="arithmatex">\[\begin{align*}0 &amp;= p_1x_1 + p_2(x_2)x_2 - m \\ 
-p_2(x_2)x_2 &amp;= m - p_1x_1 \\ \end{align*}\]</div>
-<p>As we see, we can't follow the steps we took above -- we can't divide both sides by <span class="arithmatex">\(p_2\)</span>! As mentioned previously, though we want to able to work at different levels of abstraction. In this context, the pressing question is, given some amount of good1, can we solve for the good2 on the budget line as a function of <span class="arithmatex">\(p_2(x_2)\)</span>? </p>
-<figure>
-<p><img alt="Image title" src="../../../fig/p2.png" width="500" /></p>
+??? Danger inline end "Challenge"
+    Here we introduce the concepts of (1) refactoring and (2) implicit function
+
+    Don't :worried:, though, if you don't follow everything the first time. 
+    We'll continue to use these terms throughout the semester until it's all 
+    :slight_smile: 
+
+The key challenge here is that the price of good2 might depend on how much of it one consumes. To keep things simple, let's understand this issue by adjusting the previous example only slightly. 
+
+$$\begin{align*}0 &= p_1x_1 + p_2(x_2)x_2 - m \\ 
+p_2(x_2)x_2 &= m - p_1x_1 \\ \end{align*}$$
+
+As we see, we can't follow the steps we took above -- we can't divide both sides by $p_2$! As mentioned previously, though we want to able to work at different levels of abstraction. In this context, the pressing question is, given some amount of good1, can we solve for the good2 on the budget line as a function of $p_2(x_2)$? 
+
+<figure markdown>
+  ![Image title](./../../fig/p2.png){ width="500" }
 </figure>
-<p>That is, previously we working with a function with the following pseudo type signature </p>
-<div class="arithmatex">\[\begin{align*}f :: \text{params} \to \text{good1} \to \text{price2} \to \text{good2}\end{align*}\]</div>
-<p>and know we would like to work with a function with the following signature: </p>
-<div class="arithmatex">\[\begin{align*}f :: \text{params} \to \text{good1} \to \big(\text{good2} \to \text{price2}  \big)  \to \text{good2} \end{align*}\]</div>
-<ul>
-<li>Partially evaluated you might consider this to be a high-order implicit function! </li>
-<li>The last arrow represents an implicit function</li>
-</ul>
-<div class="admonition question">
-<p class="admonition-title">Consider</p>
-<p>How could we extend the above model to factor in the market cap for electric vehicles?</p>
+
+That is, previously we working with a function with the following pseudo type signature 
+
+$$\begin{align*}f :: \text{params} \to \text{good1} \to \text{price2} \to \text{good2}\end{align*}$$
+
+and know we would like to work with a function with the following signature: 
+
+$$\begin{align*}f :: \text{params} \to \text{good1} \to \big(\text{good2} \to \text{price2}  \big)  \to \text{good2} \end{align*}$$
+
+- Partially evaluated you might consider this to be a high-order implicit function! 
+- The last arrow represents an implicit function
+
+!!! Question "Consider" 
+
+    How could we extend the above model to factor in the market cap for electric vehicles?
+
+-->
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>They will also be limited or constrained by the time they have to run all these errands, but we omit this key feature for the moment from our model.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Hopefully, though you will be able to think about how we can extend this setup so that income is something that consumers are choosing!&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>The reason we start with two goods is because we can represent two goods visually.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
 
               
