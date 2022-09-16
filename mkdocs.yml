@@ -11,6 +11,8 @@ nav:
       - Why Model? : 'chapters/why_model.md'
       - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
       - Budget Constraint: 'chapters/constraints/budget_contraints.md'
+      - Real World Constraints: 'chapters/constraints/exploring_choice.md'
+      # - Utility: 'chapters/objectives/utility.md'
       # - Constraints: 
       #   
 

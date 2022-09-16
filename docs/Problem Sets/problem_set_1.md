@@ -2,6 +2,7 @@
 
     The standard level questions are meant to check your understanding. If you can answer them then you are following along with the class. The advanced questions are meant to further your understanding. By tackling them, you should increase your understanding.
 
+Due Date: September 23 (either hand it in in-person or send it to ppower1@bu.edu via email)
 
 ### **Standard**
 

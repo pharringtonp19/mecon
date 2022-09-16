@@ -51,7 +51,7 @@ B(m, p) &= \Big\{x \in \mathcal{X} | \Big(\sum _{i=1}^n p_ix_i \Big)  \leq m\Big
 ### **Example**
 Let's consider the situation were there are two good $n$.[^3] Then for a given level of income and prices, our budget set will be defined as follows: 
 
-$$\begin{align*}B(m,p)= \{x \in \mathbb{R}^2 \mid p_1x_1 + p_2x_2 \leq 0 \}\end{align*}$$
+$$\begin{align*}B(m,p)= \{x \in \mathbb{R}^2 \mid p_1x_1 + p_2x_2 \leq m \}\end{align*}$$
 
 We can represent this visually as follows:
 
