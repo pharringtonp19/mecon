@@ -406,8 +406,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#in-class-exercise" class="md-nav__link">
-    In Class Exercise:
+  <a href="#present-discounted-value" class="md-nav__link">
+    Present Discounted Value
   </a>
   
 </li>
@@ -603,8 +603,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#in-class-exercise" class="md-nav__link">
-    In Class Exercise:
+  <a href="#present-discounted-value" class="md-nav__link">
+    Present Discounted Value
   </a>
   
 </li>
@@ -658,10 +658,10 @@
 </details>
 <div class="admonition tldr">
 <p class="admonition-title">Overview</p>
-<p>In this lecture, we apply the structure concerning constraints to a variety of real world/economic problems. </p>
+<p>In this lecture, we apply the structure we've developed about constraints to a variety of real world/economic problems. </p>
 </div>
 <h3 id="motivation"><strong>Motivation</strong></h3>
-<p>The risk of emphasizing the structure of the constraint setup and using toy examples with bundles consisting of apples and oranges is that the broader usefulness of this framework might initially be obscured. In this lecture, we address this potential shortcoming by working through the following examples.</p>
+<p>The risk of emphasizing the structure of the constraint setup and using toy examples with bundles consisting of apples and oranges is that the broader usefulness of this framework might initially be obscured. In this lecture, we address this potential shortcoming by working through the following examples. -- randomized control trials, intertemporal choice, student achievement. </p>
 <h3 id="randomized-control-trials"><strong>Randomized Control Trials</strong></h3>
 <p>As you will see later in your Economic courses, if you haven't already, randomized control trials are considered the gold standard for assessing the effectiveness of a treatment.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> As a bit of background, a randomized control trial can be thought of as an experiment where one group receives the treatement and another group does not. You then compare the average outcomes across the two groups to understand the effects of the treatment. </p>
 <div class="arithmatex">\[\begin{align*} \hat{\mu} = \hat{\mu}_{\text{treated}} - \hat{\mu}_{\text{control}} \end{align*}\]</div>
@@ -685,7 +685,28 @@
   </p>
 <figcaption>Intertemporal Choice</figcaption>
 </figure>
-<h4 id="in-class-exercise">In Class Exercise:</h4>
+<h4 id="present-discounted-value">Present Discounted Value</h4>
+<p>In the context of the bugdet constraint where bundles consist of two goods, it is relatively straightforward to consider what the maximum amount that you can consume of each good. For example, let's assume that we have an income of <span class="arithmatex">\(\$10\)</span> and the price of oranges and apples are <span class="arithmatex">\(\$5, \$2\)</span> respectively. Then we compute the maximum value of each good as follows</p>
+<div class="arithmatex">\[ \begin{align*} \text{max oranges} &amp;:= \frac{m}{p_{\text{oranges}}} = \frac{10}{5} = 2 \\ 
+\text{max apples} &amp;:= \frac{m}{p_{\text{apples}}} = \frac{10}{2} = 5 \\\end{align*}\]</div>
+<p>In the context of savings, the same thought exercise applies although it may not be as intuitive at first. Given an endowment <span class="arithmatex">\((m_1, m_2)\)</span> and interstest rates, <span class="arithmatex">\(r_{\text{saving}}, r_{\text{borrowing}}\)</span>, we can consider both the maximum amount of consumption today and the maximum amount of consumption tomorrow. </p>
+<p>The maximum consumption today would be the case where we spend all the money we have today <span class="arithmatex">\(m_1\)</span> and borrow against the money we'll get tomorrow. The idea being that there exists a financial entity that is willing to give us some amount of money today <span class="arithmatex">\(v_1\)</span> in exchange for the income we'll receive tomorrow, <span class="arithmatex">\(m_2\)</span>. We can compute this by making use of the borrowing rate as follows:</p>
+<div class="arithmatex">\[ \begin{align*} v_1(1+r_{\text{borrowing}}) &amp;= m_2 \\
+ v_1 &amp;= \frac{m_2}{(1+r_{\text{borrowing}})} \\ \end{align*}\]</div>
+<p>Putting this information together, we see that the present value of our endowment is </p>
+<div class="arithmatex">\[ \begin{align*} m_1 +  v_1 = m_1 \frac{m_2}{(1+r_{\text{borrowing}})}  \end{align*}\]</div>
+<p>We can compute the "future" value of our endowment via a similair line of reasoning. The central issue is how do we value <span class="arithmatex">\(m_1\)</span> in terms of dollars in the next period<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Hopefully we see by now that the value of <span class="arithmatex">\(m_1\)</span> in terms of period two dollars is <span class="arithmatex">\(m_1(1+r_{\text{saving}})\)</span> and therefore the value of our endowment in terms of next period dollars is </p>
+<div class="arithmatex">\[ \begin{align*}  m_2 + m_1 (1+r_{\text{savings}})\end{align*}\]</div>
+<details class="question">
+<summary>Question 1</summary>
+<p>Assume you have an endownment of <span class="arithmatex">\((100, 100)\)</span>. Assuming <span class="arithmatex">\(r_{\text{borrowing}}\)</span> and <span class="arithmatex">\(r_{\text{saving}}\)</span> are positive, illustrate why the present value must be greater than <span class="arithmatex">\(100\)</span> and less than <span class="arithmatex">\(200\)</span>.</p>
+</details>
+<details class="question">
+<summary>Question 2</summary>
+<p>Why does changing the borrowing rate not affect the next period value of the endownment? </p>
+</details>
+<details class="question">
+<summary>Question 3</summary>
 <p>Using the table below, tackle the following questions.
 A) Plot the budget constraint. B) Solve for the present value of the endowment point. C) Extend the model to allow the borrowing rate to depend on the endowment</p>
 <p><center></p>
@@ -716,6 +737,7 @@ A) Plot the budget constraint. B) Solve for the present value of the endowment p
 </tbody>
 </table>
 <p></center></p>
+</details>
 <h3 id="student-achievement"><strong>Student Achievement</strong></h3>
 <p>Let's now assume that you work for a school district and are trying to make up for the loss of learning from Covid. Specifically, you are considering paying students for the number of books that they read. What is the choice set in this context? Let's build off of the above example and incorporate time. What is the key tradeoff in this context? </p>
 <!-- ### **Bitcoin**
@@ -725,7 +747,10 @@ I want to carry off from the first example, where we went to a level of sophisti
 <hr />
 <ol>
 <li id="fn:1">
-<p>By treatment, we don't limit ourselves to a health or medical treatment. We use the term more generally.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>By treatment, we don't limit ourselves to a health or medical treatment. We use the term more generally to mean an intervention or policy initiative.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Note that we are not considering inflation at the moment!&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
