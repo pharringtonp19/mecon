@@ -91,6 +91,19 @@ Putting this all together (the choice set, the parameterized constraint function
 
 $$\{x \in \mathcal{X} | \ F_p(x) \leq 0 \}$$
 
+### **Exchange Function**
+
+Related to the idea of the constraint function, there is this notion of an exchange function which captures how different choice variables can be exchanged for each other. 
+
+- In the case of a budget constriant, we'll show that the exchange function is captured by the relative prices 
+$$ x_1 \longmapsto \frac{p_1}{p_2}x_1$$
+- In the case of a savings problem, the exchange function is captured by the relative savings/borrowing rates 
+$$ x_1 \longmapsto (1+r_{\text{savings}})x_1$$
+- In the case of production, the exchange function determined by the level and type of technology, where we allow $x$ to represent a vector of inputs which get mapped into some output.
+$$ x \longmapsto f(x) $$
+
+
+
 
 
 

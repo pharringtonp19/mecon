@@ -3,7 +3,7 @@
     The aim of this lecture is to illustrate how we can model individual preferences.
 
 
-### **Preferences**
+<!-- ### **Preferences**
 We assume that individuals can consistenly rank the elements in their choice set.[^1] By this we mean, that (A) for any two elements in the choice set, the individual either prefers one element to the other or is indifferent and (B) the ranking must be consistent. By consistent we mean that if the individual prefers good $A$ to good $B$ and prefers good $B$ to good $C$, then they must also preserve good $A$ to good $C$.[^2]
 
 #### Example
@@ -12,7 +12,7 @@ We assume that individuals can consistenly rank the elements in their choice set
 
     Whenever we introduce a topic, it might be helpful to think -- what does this topic leave out? -- what is this topic assuming away? For instance, does this modeling of preferences rule out the idea that people can learn about what they like?
 
-Let's say that we want to model how a college student might search for a summer internship. This assumption that individuals can rank elements in their choice set is equivalent in this context to assuming that a college student would be able to rank each financial offer. Or in the case of searching for a car, it would be equivalent to assuming the people can rank which car they like more and that this ranking is consistent.
+Let's say that we want to model how a college student might search for a summer internship. This assumption that individuals can rank elements in their choice set is equivalent in this context to assuming that a college student would be able to rank each financial offer. Or in the case of searching for a car, it would be equivalent to assuming the people can rank which car they like more and that this ranking is consistent. -->
 
 
 ### **Indifference Curves**
