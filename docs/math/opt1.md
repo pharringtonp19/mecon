@@ -21,7 +21,7 @@ $$n \in \mathbb{N} \longmapsto f(n) \quad \equiv \quad \{x_1, x_2, \dots,  \}$$
 
 #### **Continuity**: 
 
-A function is continuous if:
+A function, $f: \mathbb{R}^n \to \mathbb{R}$, is continuous if:
 
 $$x \rightarrow x^* \implies f(x) \rightarrow f(x^*)$$
 

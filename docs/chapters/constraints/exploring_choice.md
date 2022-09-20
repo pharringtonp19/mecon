@@ -61,7 +61,7 @@ $$ \begin{align*} v_1(1+r_{\text{borrowing}}) &= m_2 \\
 
 Putting this information together, we see that the present value of our endowment is 
 
-$$ \begin{align*} m_1 +  v_1 = m_1 \frac{m_2}{(1+r_{\text{borrowing}})}  \end{align*}$$
+$$ \begin{align*} m_1 +  v_1 = m_1 + \frac{m_2}{(1+r_{\text{borrowing}})}  \end{align*}$$
 
 We can compute the "future" value of our endowment via a similair line of reasoning. The central issue is how do we value $m_1$ in terms of dollars in the next period[^2]. Hopefully we see by now that the value of $m_1$ in terms of period two dollars is $m_1(1+r_{\text{saving}})$ and therefore the value of our endowment in terms of next period dollars is 
 
