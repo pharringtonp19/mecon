@@ -25,7 +25,7 @@ To highlight these three distinct roles, let's consider the following scenario w
 
 To assess a policy, we first need to decide on a set of relevent outcomes by which to judge the policy. If the aim of a Right to Counsel is to decrease evictions, then we should certainly consider evictions as one outcome. But, what else might be affected by the policy? 
 
-To answer this, we can start by replacing the **what** with **who**. Who will be affected by the policy? Whose incentives are shaped or influenced by the policy? Certainly tenants will be, as they receive legal representation. But what about landlords? Would we expect landlords to respond to this policy and if so, how? By listing out a landlord's potential raise (perhaps they (1) exit the rental market (2) raise the rental price (including perhaps the security deposit) we can reason that supply might decrease and therefore that we should look at the effects on price as well.[^3]
+To answer this, we can start by replacing the **what** with **who**. Who will be affected by the policy? Whose incentives are shaped or influenced by the policy? Certainly tenants will be, as they receive legal representation. But what about landlords? Would we expect landlords to respond to this policy and if so, how? By listing out a landlord's possible actions (perhaps they (1) exit the rental market (2) raise the rental price (including perhaps the security deposit), we can reason that supply might decrease and therefore that we should look at the effects on price as well.[^3]
 
 <figure markdown>
   ![Image title](./../../fig/rtc_supply_and_demand.png){ width="500" }

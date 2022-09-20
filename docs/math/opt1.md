@@ -1,13 +1,23 @@
+#### **Orthogonality** 
+
+We'll say that two vectors, $x_1, x_2 \in \mathbb{R}^n$ are orthogonal if 
+
+$$x_1^Tx_2 := \sum _{i=1}^n x_{1i}x_{2i} = 0 $$
+
 #### **Norm**: 
+The norm of a vector corresponds to a measure of the vector's length. We often use the $l_2$ norm which is defined below
 
+$$\begin{align*} l_2 &: \mathbb{R}^n \to \mathbb{R}_+ \\ 
+x & \longmapsto l_2(x) = \| x \| _2 = \sqrt{x^Tx} = \sqrt{ \sum _{i=1}^n x_i^2} \end{align*}$$
 
-$$l_2 =  \sqrt{ \sum _{i=1}^n x_i^2}$$
 
 #### **Sequence**: 
 - Can be understood as a function whose domain is the natural numbers
+
 $$n \in \mathbb{N} \longmapsto f(n) \quad \equiv \quad \{x_1, x_2, \dots,  \}$$
-- Is said to converge if $f(n)$ eventually gets close and stays close to some element in the codomain as $n \rightarrow \infty$. Closeness in codomain is measured by the norm associated with the codomain.
-- Below I show the graph of a convergent sequence
+
+- A sequence converges if the value of the function, $f(n)$ eventually gets close and stays close to some element in the codomain as $n \rightarrow \infty$. Closeness in the codomain is measured by the norm associated with the codomain.
+
 
 #### **Continuity**: 
 

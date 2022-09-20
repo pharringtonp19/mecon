@@ -8,10 +8,16 @@ nav:
     - Overview: 'overview/overview.md'
     - Syllabus: 'overview/Syllabus.pdf'
   - Lectures:
-      - Why Model? : 'chapters/why_model.md'
-      - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
-      - Budget Constraint: 'chapters/constraints/budget_contraints.md'
-      - Real World Constraints: 'chapters/constraints/exploring_choice.md'
+      - General Concepts:
+        - Why Model? : 'chapters/why_model.md'
+        - Uncertainty : 'chapters/constraints/uncertainty.md'
+      - Constraints:
+        - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
+        - Budget Constraint: 'chapters/constraints/budget_contraints.md'
+        - Real World Constraints: 'chapters/constraints/exploring_choice.md'
+      
+      
+      #- Exchange Function: 'chapters/constraints/exchange_function.md'
       # - Utility: 'chapters/objectives/utility.md'
       # - Constraints: 
       #   
@@ -35,7 +41,8 @@ nav:
       # - Sequential Decision Making: 'chapters/rl.ipynb'
   - Math:
       - Functions: 'math/functions.md'
-      - Probability Introduction: 'math/probability_intro.md'
+      - Basics of Optimization: 'math/opt1.md'
+      #- Probability Introduction: 'math/probability_intro.md'
   - Problem Sets: 
       - Problem Set 1: 'Problem Sets/problem_set_1.md'
 

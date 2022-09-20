@@ -3,10 +3,12 @@
     We use probability theory to model our understanding/level of information about the world. 
 
 
+
+
 ### **Random Experiment**
 - An experiment whose outcome is random! -- [Dr. Krishna Jagannathan](https://youtu.be/-nnJQ0kJgIY?list=PLbMVogVj5nJQqGHrpAloTec_lOKsG-foc&t=102)
 
-### **Sample Space & Events ** (of a Random Experiment)
+### **Sample Space & Events **
 - **Sample Space**: The set of all possible outcomes of the random experiment, which we'll denote as $\Omega$:
 - **Outcome**: For each run or trial of the experiment, one outcome, $\omega$, occurs.
 
@@ -15,16 +17,58 @@ $$\begin{align*} \omega \in \Omega \end{align*}$$
 - **Event**: We will often be interested in whether a subset of the sample space has occurred. Such a subset is referred to as an event. 
 - **$\sigma$-algebra**: The set of Events must form a $\sigma$-algebra, $\mathcal{F}$, whose conditions are highlighted below:
 
-$$\begin{align*} 
-\Omega \in \mathcal{F} \\
-\mathcal{A}_1, \mathcal{A}_2, \dots, \mathcal{A}_n \in \mathcal{F} \implies  \cup _i \mathcal{A}   \in \mathcal{F} \\
-\mathcal{A} \in \mathcal{F} \implies  \mathcal{A}^c \in \mathcal{F} 
-\end{align*}$$
+    - The entire sample space, $\Omega$, is in $\mathcal{F}$
+    - If a set is in $\mathcal{F}$, then its compliment is also in $\mathcal{F}$
+    - If we have a "countable" collection of sets, where each set is in $\mathcal{F}$, then the union of these sets is also in $\mathcal{F}$
+
+??? info "Math"
+
+    $$\begin{align*} 
+    \Omega \in \mathcal{F} \\
+    \mathcal{A}_1, \mathcal{A}_2, \dots, \mathcal{A}_n \in \mathcal{F} \implies  \cup _i \mathcal{A}   \in \mathcal{F} \\
+    \mathcal{A} \in \mathcal{F} \implies  \mathcal{A}^c \in \mathcal{F} 
+    \end{align*}$$
+
+??? question "What is the simplest $\sigma$-algebra?"
+
+    $$\{\emptyset, \Omega \}$$
+
+??? question "What is the largest $\sigma$-algebra?"
+
+    $$2^{\Omega}$$
+
+
+
+
 ??? Example
     
     We can consider tossing a coin to be a random experiment. How would you define the sample space? Let's say that we toss $n$ coins at the same time. What would be the sample space then?
 
-    
+### **Probability Measure**
+
+A probability measure is a function that maps events into $[0,1]$. That is, it tells us the probability of a given event. 
+
+??? info "Math"
+
+    $$\begin{align*}\mu &: \mathcal{F} \to [0, 1] \\
+    \mu (\Omega) &= 1 \\ 
+    \mu (\emptyset) &= 0 \\ 
+    \mu \big( \cup _i A_i \big) &= \sum _i \mu(A_i) \quad \text{for} \ A_i \in \mathcal{F}\end{align*}$$
+
+
+### **Random Variable**
+
+A random variable is a function whose domain is the sample space. 
+
+??? info "Math"
+
+    A random variable maps into a measurable space (i.e. a set with a $\sigma$-algebra) such that 
+
+    $$\begin{align*}X : \big(\Omega, \mathcal{F}) \to (\mathbb{R}, \mathbb{B}(\mathbb{R})) \\ 
+    X^{-1}(B) \in \mathcal{F} \ \forall B \in  \mathbb{B}(\mathbb{R})  \end{align*}$$
+
+
+
 <!-- 
 ### **Introduction**
 Making decisions involves assessing tradeoffs -- comparing the benefits to costs. Many of these tradeoffs might not occur in the immediate present, and might not occur with much certainty 
