@@ -19,7 +19,7 @@
     
     
       
-        <title>Opt1 - Microeconomics</title>
+        <title>Basics of Optimization - Microeconomics</title>
       
     
     
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Opt1
+              Basics of Optimization
             
           </span>
         </div>
@@ -225,13 +225,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../functions/" class="md-tabs__link">
+      <a href="../functions/" class="md-tabs__link md-tabs__link--active">
         Math
       </a>
     </li>
@@ -567,15 +569,19 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
+        
+          
         
           
         
@@ -602,6 +608,119 @@
       <a href="../functions/" class="md-nav__link">
         Functions
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Basics of Optimization
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Basics of Optimization
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#orthogonality" class="md-nav__link">
+    Orthogonality
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#norm" class="md-nav__link">
+    Norm:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence" class="md-nav__link">
+    Sequence:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuity" class="md-nav__link">
+    Continuity:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differentiation" class="md-nav__link">
+    Differentiation
+  </a>
+  
+    <nav class="md-nav" aria-label="Differentiation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-differential-of-a-function" class="md-nav__link">
+    The Differential of a function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composition" class="md-nav__link">
+    Composition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mean-value-theorem" class="md-nav__link">
+    Mean Value Theorem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taylor-series" class="md-nav__link">
+    Taylor Series
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -679,7 +798,7 @@
                 
 
 
-  <h1>Opt1</h1>
+  <h1>Basics of Optimization</h1>
 
 <h4 id="orthogonality"><strong>Orthogonality</strong></h4>
 <p>We'll say that two vectors, <span class="arithmatex">\(x_1, x_2 \in \mathbb{R}^n\)</span> are orthogonal if </p>
@@ -697,7 +816,7 @@ x &amp; \longmapsto l_2(x) = \| x \| _2 = \sqrt{x^Tx} = \sqrt{ \sum _{i=1}^n x_i
 <li>A sequence converges if the value of the function, <span class="arithmatex">\(f(n)\)</span> eventually gets close and stays close to some element in the codomain as <span class="arithmatex">\(n \rightarrow \infty\)</span>. Closeness in the codomain is measured by the norm associated with the codomain.</li>
 </ul>
 <h4 id="continuity"><strong>Continuity</strong>:</h4>
-<p>A function is continuous if:</p>
+<p>A function, <span class="arithmatex">\(f: \mathbb{R}^n \to \mathbb{R}\)</span>, is continuous if:</p>
 <div class="arithmatex">\[x \rightarrow x^* \implies f(x) \rightarrow f(x^*)\]</div>
 <p>below I plot the graph of a function that is not continuous</p>
 <h4 id="differentiation"><strong>Differentiation</strong></h4>
@@ -744,6 +863,42 @@ h &amp;:  \mathbb{R}^n \rightarrow \mathbb{R} =  f \circ g \\\\ \\\\
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../functions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Functions" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Functions
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../Problem%20Sets/problem_set_1/" class="md-footer__link md-footer__link--next" aria-label="Next: Problem Set 1" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Problem Set 1
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
