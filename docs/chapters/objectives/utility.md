@@ -3,28 +3,32 @@
     The aim of this lecture is to illustrate how we can model individual preferences.
 
 
-<!-- ### **Preferences**
-We assume that individuals can consistenly rank the elements in their choice set.[^1] By this we mean, that (A) for any two elements in the choice set, the individual either prefers one element to the other or is indifferent and (B) the ranking must be consistent. By consistent we mean that if the individual prefers good $A$ to good $B$ and prefers good $B$ to good $C$, then they must also preserve good $A$ to good $C$.[^2]
+### **Preferences**
 
-#### Example
-
-??? inline end "What about Learning?"
-
-    Whenever we introduce a topic, it might be helpful to think -- what does this topic leave out? -- what is this topic assuming away? For instance, does this modeling of preferences rule out the idea that people can learn about what they like?
-
-Let's say that we want to model how a college student might search for a summer internship. This assumption that individuals can rank elements in their choice set is equivalent in this context to assuming that a college student would be able to rank each financial offer. Or in the case of searching for a car, it would be equivalent to assuming the people can rank which car they like more and that this ranking is consistent. -->
+Intuitively, when thinking about consumer preferences, we're going to assume that preferences are both **complete** and **consistent**. By complete, we mean that if you were to give a consumer two difference choices they could tell you that they stictly prefer one to the other or are indifferent between the choices. By conistent we mean that if they prefer $A$ to $B$ and prefer $B$ to $C$, then they should also prefer $A$ to $C$.[^1]
 
 
 ### **Indifference Curves**
 We can visually represent preferences via an indifference curve. An indifference curve is just a set of elements within the choice set that the individual is indifferent between. 
 
+<figure markdown>
+  ![Image title](./../../fig/indifference_curves.png){ width="400" }
+  <figcaption>Indifference Curves</figcaption>
+</figure>
 
-### **Technical** :material-lightning-bolt:
+??? question 
+
+    What could happen to the indifference curves if we didn't assume that preferences were complete & consistent?
+
+
+
+
+<!-- ### **Technical** :material-lightning-bolt:
 
 #### Drawing an indifference curve  
 What information would you need to draw an indifference curve? Let's say that choice set of the consumer consists of Apples and Oranges, and I give you a specific bundle, say $\{\text{Apples}: 3, \text{Oranges}: 2\}$. What additional information would you need to draw the indifference curve?
 
-If you recall from your calculus course, if we are given two function $f, g$ such that $\frac{d}{dx}f(x) = g(x)$, then[^3]
+You may recall from your calculus course, that if you are given two functions $f, g$ such that $\frac{d}{dx}f(x) = g(x)$, then[^3]
 
 $$\begin{align*}
 \int _a ^b g(x) = f(b) - f(a)
@@ -37,11 +41,14 @@ $$\begin{align*}
 f(a) + \int _a ^b g(x) = f(b)
 \end{align*}$$
 
+Then if we are given an initial endowment, $(x_1, x_2)$, and the indifference curve is the graph of the function $f$, i.e. 
+
+$$\text{Indifference Curve}:=\{(x, f(x)) \mid x \in X_1\}$$
+
+Then we can plot the indifference curve (i.e. plot $f$) if we know $g$. -->
 
 
+[^1]: While it's possible to discuss preferences using the notion of a binary relation over $X \times X$, based on my experience of teaching this course last year, I don't feel like that level of mathematical detail is necessarily helpful.
 
-[^1]: Some courses will emphasize this point in greater detail than we will. If you hear the expression "axioms" of consumer theory, this is what that is referring to. 
-
-[^2]: Can you think of an example where this might be violated? Would you example be violated. 
 
 [^3]: If you haven't seen this before, this is referred to as the first fundamental theorem of calculus. See [here](https://www.youtube.com/watch?v=1RLctDS2hUQ) for a lecture on the topic

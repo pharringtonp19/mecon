@@ -15,6 +15,8 @@ nav:
         - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
         - Budget Constraint: 'chapters/constraints/budget_contraints.md'
         - Real World Constraints: 'chapters/constraints/exploring_choice.md'
+      - Objectives:
+        - 'chapters/objectives/utility.md'
       
       
       #- Exchange Function: 'chapters/constraints/exchange_function.md'
@@ -41,7 +43,8 @@ nav:
       # - Sequential Decision Making: 'chapters/rl.ipynb'
   - Math:
       - Functions: 'math/functions.md'
-      # - Basics of Optimization: 'math/opt1.md'
+      # - Background for Optimization: 'math/opt1.md'
+      # - Basics of Optimization: 'math/opt2.md'
       # - Probability Introduction: 'math/probability_intro.md'
   - Problem Sets: 
       - Problem Set 1: 'Problem Sets/problem_set_1.md'
