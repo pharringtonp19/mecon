@@ -17,6 +17,9 @@ Thinking of a random variable as a function will be helpful for two reasons:
 
 2) It will be straightforward to understand how we can compose random variables (because we'll just be composing functions!)
 
+??? Example
+
+    Let's say we have a sample space, $\Omega$, that defines the possible states of the world tomorrow. Then we have a random variable, $X: \Omega \to \mathbb{R}$, that tells us the value of Tesla stock in each possible state of the world. And finally we are given a utility function, $U: \mathbb{R} \to \mathbb{R}$, that tells us how many "utils" we get from money. Then by composing $X$ with $U$, we can construct a new random variable that tells us how many utils we will get in each state of the world if we're holding a share of Tesla, $U \circ X : \Omega \to \mathbb{R}$
 
 
 [^1]: Technically, it is a measurable function.
