@@ -1,3 +1,5 @@
+### **Introduction**
+
 ??? tip inline end "Math on the Computer"
     In the context of working on a computer, a function that behaves like a mathematical function is called a "pure function"
 
@@ -16,8 +18,31 @@ $$\begin{align*}x \in \mathcal{X}, \quad x \overset{f}{\longmapsto} f(x), \quad 
 $$\begin{align*} f: \mathcal{X} \to \mathcal{Y} \end{align*}$$
 
 
+### **Composition**
+
+Perhaps you will recall that as with numbers, we can add functions. For example, let's say that we are given two function: $f(x) = 2x$, $g(x) = x^2$, then we can construct a new function by adding $g$ with $f$ as follows. 
+
+$$\begin{align*} h &= g + f \\ 
+h(x) &= g(x) + f(x) \\ 
+h(x) &= x^2 + 2x \end{align*}$$
+
+??? inline end "Question" 
+
+    Does the order of composition matter? It doesn't when we multiply numbers!
+
+As you see above, we add functions (as done in the first line), pointwise.[^2]
+
+If we can add functions, it's natural to consider whether we can multiply them. We can multiply numbers, so why not functions? And indeed we can! We refer to this multiplication as **composition**. That is, we can construct a new function by composing two other functions as follows (**note** the symbol $\circ$ denotes composition.) 
+
+$$\begin{align*} h &= g \circ f \\ 
+h(x) &= g(f(x)) \\ 
+h(x) &= (2x)^2 \end{align*}$$
+
+
 
 
 [^1]: a set can be loosley understood as a collection of things. 
+
+[^2]: If you think about this point, it's natural to be momentarily confused. In essence we are defining addition of functions by making use of the addition that we use for numbers. 
 
 
