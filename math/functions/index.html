@@ -80,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -658,9 +663,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Functions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Functions
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composition" class="md-nav__link">
+    Composition
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -741,6 +782,7 @@
 
   <h1>Functions</h1>
 
+<h3 id="introduction"><strong>Introduction</strong></h3>
 <details class="tip inline end">
 <summary>Math on the Computer</summary>
 <p>In the context of working on a computer, a function that behaves like a mathematical function is called a "pure function"</p>
@@ -755,11 +797,28 @@
 <li><span class="arithmatex">\(f\)</span> is the function which maps all of the elements of <span class="arithmatex">\(\mathcal{X}\)</span> into <span class="arithmatex">\(\mathcal{Y}\)</span> such that for each <span class="arithmatex">\(x\)</span> there is only one <span class="arithmatex">\(y\)</span>. We can partially define a function as follows. This tells us the domain and codomain of the function.</li>
 </ul>
 <div class="arithmatex">\[\begin{align*} f: \mathcal{X} \to \mathcal{Y} \end{align*}\]</div>
+<h3 id="composition"><strong>Composition</strong></h3>
+<p>Perhaps you will recall that as with numbers, we can add functions. For example, let's say that we are given two function: <span class="arithmatex">\(f(x) = 2x\)</span>, <span class="arithmatex">\(g(x) = x^2\)</span>, then we can construct a new function by adding <span class="arithmatex">\(g\)</span> with <span class="arithmatex">\(f\)</span> as follows. </p>
+<div class="arithmatex">\[\begin{align*} h &amp;= g + f \\ 
+h(x) &amp;= g(x) + f(x) \\ 
+h(x) &amp;= x^2 + 2x \end{align*}\]</div>
+<details class="inline end">
+<summary>Question</summary>
+<p>Does the order of composition matter? It doesn't when we multiply numbers!</p>
+</details>
+<p>As you see above, we add functions (as done in the first line), pointwise.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<p>If we can add functions, it's natural to consider whether we can multiply them. We can multiply numbers, so why not functions? And indeed we can! We refer to this multiplication as <strong>composition</strong>. That is, we can construct a new function by composing two other functions as follows (<strong>note</strong> the symbol <span class="arithmatex">\(\circ\)</span> denotes composition.) </p>
+<div class="arithmatex">\[\begin{align*} h &amp;= g \circ f \\ 
+h(x) &amp;= g(f(x)) \\ 
+h(x) &amp;= (2x)^2 \end{align*}\]</div>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
 <p>a set can be loosley understood as a collection of things.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>If you think about this point, it's natural to be momentarily confused. In essence we are defining addition of functions by making use of the addition that we use for numbers.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

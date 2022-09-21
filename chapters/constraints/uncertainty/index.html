@@ -792,6 +792,10 @@
 <p>Thinking of a random variable as a function will be helpful for two reasons: </p>
 <p>1) You'll better understand the essenence of a random variable (it "pulls" the probability distribution forward)</p>
 <p>2) It will be straightforward to understand how we can compose random variables (because we'll just be composing functions!)</p>
+<details class="example">
+<summary>Example</summary>
+<p>Let's say we have a sample space, <span class="arithmatex">\(\Omega\)</span>, that defines the possible states of the world tomorrow. Then we have a random variable, <span class="arithmatex">\(X: \Omega \to \mathbb{R}\)</span>, that tells us the value of Tesla stock in each possible state of the world. And finally we are given a utility function, <span class="arithmatex">\(U: \mathbb{R} \to \mathbb{R}\)</span>, that tells us how many "utils" we get from money. Then by composing <span class="arithmatex">\(X\)</span> with <span class="arithmatex">\(U\)</span>, we can construct a new random variable that tells us how many utils we will get in each state of the world if we're holding a share of Tesla, <span class="arithmatex">\(U \circ X : \Omega \to \mathbb{R}\)</span></p>
+</details>
 <!-- Expected cash flow with risk-adjusted discounted rate:
 $$\begin{align*} \sum _{t=1}^{\infty} \frac{ \mathbb{E}[X_t]}{1 + r_{ta}} \end{align*}$$
 
