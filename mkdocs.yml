@@ -43,6 +43,7 @@ nav:
       # - Sequential Decision Making: 'chapters/rl.ipynb'
   - Math:
       - Functions: 'math/functions.md'
+      - Partial Evaluation: 'math/partial_evaluation.md'
       # - Background for Optimization: 'math/opt1.md'
       # - Basics of Optimization: 'math/opt2.md'
       # - Probability Introduction: 'math/probability_intro.md'
