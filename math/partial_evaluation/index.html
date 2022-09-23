@@ -800,10 +800,10 @@
 <p>What would happen, though, if instead of passing in two numbers to <span class="arithmatex">\((+)\)</span> we only passed in one number? That is, we know that if we pass in <span class="arithmatex">\((2,3)\)</span> we'll get back the number <span class="arithmatex">\(5\)</span>, but what if we pass in just the number <span class="arithmatex">\(2\)</span>, what would we get back, and is this even legal?!?</p>
 <details class="note">
 <summary>Answer</summary>
-<p>First, yes it is legal! Second, we get back a new function that takes in a single number and returns another number. For example, if we partially evalute addition with the number <span class="arithmatex">\(5\)</span>, which I'll denote by <span class="arithmatex">\((+)_5\)</span>, we get a function that takes any number and return that number plus <span class="arithmatex">\(5\)</span>. </p>
+<p>First, yes it is legal! Second, we get back a new function that takes in a single number and returns another number. For example, if we partially evalute addition with the number <span class="arithmatex">\(2\)</span>, which I'll denote by <span class="arithmatex">\((+)_2\)</span>, we get a function that takes any number and return that number plus <span class="arithmatex">\(2\)</span>. </p>
 </details>
 <p><strong>###Motivation</strong></p>
-<p>From the example above, it's not clear why would we would care about partial evaluation. What's so useful in the statement that <span class="arithmatex">\((+)_5(3) = (+)(5,3) = 5+3 = 8\)</span>? At first glance, this is just a more complicated way to think about addition. What's the benefit? We'll see the usefulness of this approach throughout the semester, but we can start to appreciate it right away by re-considering something we're already familair with! <a href="../../chapters/constraints/constraints_overview/">the parameterized constraint function</a></p>
+<p>From the example above, it's not clear why would we would care about partial evaluation. What's so useful in the statement that <span class="arithmatex">\((+)_2(3) = (+)(2,3) = 2+3 = 5\)</span>? At first glance, this is just a more complicated way to think about addition. What's the benefit? We'll see the usefulness of this approach throughout the semester, but we can start to appreciate it right away by re-considering something we're already familair with! <a href="../../chapters/constraints/constraints_overview/">the parameterized constraint function</a></p>
 <div class="footnote">
 <hr />
 <ol>
