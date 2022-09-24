@@ -17,6 +17,8 @@ nav:
         - Real World Constraints: 'chapters/constraints/exploring_choice.md'
       - Objectives:
         - 'chapters/objectives/utility.md'
+      - Applications: 
+        - Demand: 'chapters/applications/demand.md'
       
       
       #- Exchange Function: 'chapters/constraints/exchange_function.md'
