@@ -397,6 +397,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -636,8 +638,42 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#utility-function" class="md-nav__link">
+    Utility Function
+  </a>
+  
+    <nav class="md-nav" aria-label="Utility Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#utils" class="md-nav__link">
+    Utils
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-forms" class="md-nav__link">
+    Functional Forms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#indifference-curves" class="md-nav__link">
     Indifference Curves
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marginal-utility" class="md-nav__link">
+    Marginal Utility
   </a>
   
 </li>
@@ -646,6 +682,57 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Applications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Applications" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Applications
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../applications/demand/" class="md-nav__link">
+        Demand
+      </a>
     </li>
   
 
@@ -804,10 +891,47 @@
 <p class="admonition-title">Overview</p>
 <p>The aim of this lecture is to illustrate how we can model individual preferences.</p>
 </div>
+<p>If you recall from your Principles of Microeconomics course, the demand function represents consumers' willingness and ability to pay for a good or service. Up to now in the course, we've focused on ideas that enable us to model a consumer's ability to pay (choice set, parameterized constraints function, feasibility set). In this lecture, we turn our attention to modeling willingness. </p>
 <h3 id="preferences"><strong>Preferences</strong></h3>
-<p>Intuitively, when thinking about consumer preferences, we're going to assume that preferences are both <strong>complete</strong> and <strong>consistent</strong>. By complete, we mean that if you were to give a consumer two difference choices they could tell you that they stictly prefer one to the other or are indifferent between the choices. By conistent we mean that if they prefer <span class="arithmatex">\(A\)</span> to <span class="arithmatex">\(B\)</span> and prefer <span class="arithmatex">\(B\)</span> to <span class="arithmatex">\(C\)</span>, then they should also prefer <span class="arithmatex">\(A\)</span> to <span class="arithmatex">\(C\)</span>.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>We begin with the idea that consumers have preferences. That is, they like certain goods and services more than others - hopefully an idea that you can relate to! We're going to add some "structure" to this idea of preferences. That is, we're going to assume that a consumer's preference is both <strong>complete</strong> and <strong>consistent</strong>. By complete, we mean that a consumer rank any two goods or services. You give the consumer the choice between two different podcasts on Spotify, they should be able to tell you which one they prefer or if there indifferent between the two. By consistent we mean that if for example you prefer the song <em>When You We're Young</em> to <em>Lion Man</em> and prefer <em>Lion Man</em> to <em>Mr. Brightside</em>, then you should also prefer <em>When You We're Young</em> to <em>Mr. Brightside</em>.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<details class="question">
+<summary>Question 1</summary>
+<p>Is it possible to have preferences over the frequency with which you play certain songs?" </p>
+</details>
+<h3 id="utility-function"><strong>Utility Function</strong></h3>
+<p>We're going to represent preferences via a function known as the utility function whose signature we write below. The utility function takes elements from the choice set and maps them in how many "utils" the individual receives from that element. </p>
+<div class="arithmatex">\[\text{Utility}:: \text{Choice Set} \to \mathbb{R}\]</div>
+<h4 id="utils">Utils</h4>
+<p>This notion of utils is a a bit handwavy as it's not thing that's ever observed. For instance, if I see that you are deciding between an apple and an orange, I see that you choose the apple over the orange then I can conclude that you prefer an apple to an orange. But I cann't determine how much satisfaction you receive from an apple compared to the orange. We're willing to work with this level of handwavyness, though, because all we really care about the utility function is that it gives us a mathematically convient way to think about preferences. That is, by assuming that the consumer has complete and consistent preferences, we're assume that the consumer can rank each and every object. Therefore, any utility function that preseves that ranking will be a mathematically convient function to work with. </p>
+<h4 id="functional-forms">Functional Forms</h4>
+<p>There are many popular functional forms for the utility function. For example, if we want to model the fact that a consumer is indifferent between some amount of good 1 and some amount of good 2, we can express this with the following utility function </p>
+<div class="arithmatex">\[\begin{align*} \text{Utility}&amp;: \text{Choice Set} \to \mathbb{R} \\
+    u(x_1, x_2) &amp;= \alpha x_1 + \beta x_2 \\ \end{align*}\]</div>
+<details class="question">
+<summary>Question 2</summary>
+<p>What would the levels sets of this type of utility function look like? </p>
+</details>
+<p>Or, we may want to capture the idea that consumer views the goods as perfect compliments. That is, they only get utility from the goods when consumed in a constant proportion.  </p>
+<div class="arithmatex">\[\begin{align*} \text{Utility}&amp;: \text{Choice Set} \to \mathbb{R} \\
+    u(x_1, x_2) &amp;= \text{min}(\alpha x_1, \beta x_2) \\ \end{align*}\]</div>
+<details class="question">
+<summary>Question 3</summary>
+<p>What would the levels sets of this type of utility function look like? </p>
+</details>
+<p>Or any of the following functional forms: </p>
+<div class="arithmatex">\[\begin{align*} \text{Utility}&amp;: \text{Choice Set} \to \mathbb{R} \\
+    u(x_1, x_2) &amp;= v(x_1) + x_2  &amp; \text{Quasilinear}\\ 
+    u(x_1, x_2) &amp;= x_1^cx_2^d  &amp;  \text{Cobb-Douglas}\\\end{align*}\]</div>
+<details class="question">
+<summary>Question 4</summary>
+<p>What would the levels sets of this type of utility function look like? </p>
+</details>
 <h3 id="indifference-curves"><strong>Indifference Curves</strong></h3>
-<p>We can visually represent preferences via an indifference curve. An indifference curve is just a set of elements within the choice set that the individual is indifferent between. </p>
+<p>It turns out that there is a name and an important economic idea captured in the level sets of the utility function that you have been writing out. In the context of a utility function, we refer to these level sets as indifference curves. To illustrate where this name comes from, let's dive deeper into the definition of a level set. </p>
+<p>Given a function, <span class="arithmatex">\(f:X \to Y\)</span>, and some value <span class="arithmatex">\(c \in Y\)</span>, we can define a level set as follows: </p>
+<div class="arithmatex">\[\{ x \in X \mid f(x) = c \}\]</div>
+<p>When <span class="arithmatex">\(f\)</span> is the utility function and <span class="arithmatex">\(X\)</span> is the choice set, and <span class="arithmatex">\(c\)</span> is some level of utility, the level set is the collection of goods that get mapped into the same level of utility. That is, it is the collection of goods that a consumer is indifferent between -- hence the name "indifference curves". </p>
+<p>Indifference curves are useful in that they define the rate at which consumers are willing to substitute between goods. For instance, if we are given the indifference curve of a consumer like one below, the slope of the difference curve captures the rate at which the consumer is willing to substitute between good 1 and 2. </p>
 <figure>
 <p><img alt="Image title" src="../../../fig/indifference_curves.png" width="400" />
   </p>
@@ -817,6 +941,18 @@
 <summary>Question</summary>
 <p>What could happen to the indifference curves if we didn't assume that preferences were complete &amp; consistent?</p>
 </details>
+<p>If you recall from the example of the consumer budget constraint, we we're able to compute the slope of the budget constraint by first expressing <span class="arithmatex">\(x_2\)</span> as an explicit function of <span class="arithmatex">\(x_1\)</span> and then taking the derivative of this function. As we'll now show, we don't need to write one good as an explicit function of another good in order to compute the slope of the indifference curve. It's possible to differentiate it when one good is thought of as an inplicit function of the other. </p>
+<div class="arithmatex">\[\begin{align*}U(x_1, x_2) &amp;= c \\ 
+U(x_1, x_2^*(x_1)) &amp;= c \\ 
+\frac{d}{dx_1} U(x_1, x_2^*(x_1))  &amp;= \frac{d}{dx_1} 0 \\ 
+\partial_0 U(x_1, x_2^*(x_1))\frac{d x_1}{dx_1} + \partial_1 U(x_1, x_2^*(x_1))\frac{d x_2^*(x_1)}{dx_1} &amp;= 0 \\ 
+\partial_0 U(x_1, x_2^*(x_1)) + \partial_1 U(x_1, x_2^*(x_1))\frac{d x_2^*(x_1)}{dx_1} &amp;= 0 \\
+\frac{d x_2^*(x_1)}{dx_1} &amp;= \frac{- \partial_0 U(x_1, x_2^*(x_1))}{\partial_1 U(x_1, x_2^*(x_1))} \end{align*}\]</div>
+<h3 id="marginal-utility"><strong>Marginal Utility</strong></h3>
+<div class="admonition info">
+<p class="admonition-title">Tip</p>
+<p>While not necessary, you may find it helpful to understand the idea of <a href="../../../math/partial_evaluation/">partial evaluation</a> before proceeding. </p>
+</div>
 <!-- ### **Technical** :material-lightning-bolt:
 
 #### Drawing an indifference curve  
@@ -888,13 +1024,13 @@ Then we can plot the indifference curve (i.e. plot $f$) if we know $g$. -->
       
       
         
-        <a href="../../../math/functions/" class="md-footer__link md-footer__link--next" aria-label="Next: Functions" rel="next">
+        <a href="../../applications/demand/" class="md-footer__link md-footer__link--next" aria-label="Next: Demand" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Functions
+              Demand
             </div>
           </div>
           <div class="md-footer__button md-icon">
