@@ -3,51 +3,27 @@
     |:---:|:---:|:---:|
     Production Function | <a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/production_function.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
 
-### **Context**
+### **Introduction**
+- The information that a firm has will affect how they produce something. Think of knowledge diffusion. 
 
-- [Availability of local labor](https://www.wsj.com/articles/labor-shortage-unemployment-pella-iowa-11659364081?mod=hp_trending_now_article_pos4)
-- [Fixing a labor market](https://www.wsj.com/articles/in-battle-for-workers-companies-build-houses-11653217201?mod=article_inline) issue via housing.
-    - "JBS pays a builder upfront to help cover development costs of each home and is then reimbursed once a property is sold"
+Firms make decisions regarding what to produce and how to produce. We can model this relationship via a function that maps from the set of **factors of production**[^1] to the set of outputs.
 
-- In contrast to the budget set, apriori there is not maximum input level 
-- The production set represents a conversion of inputs to outputs. In that sense, the production set captures the tradeoffs, whereas the budget line reflected the tradeoffs. 
-- We want to allow the production function to be a vector valued function to capture that during the production process there can be some form of "waste" generated.
+$$\text{Production Function} :: \text{Factors of Production} \to \text{Output}$$
 
-??? tip "Math on the Computer"
-
-    ```python 
-    import jax
-    import jax.numpy as jnp 
-    from functools import partial 
-    from typing import NamedTuple 
-
-    class Params(NamedTuple):
-    """Parameters related to the
-    production fn"""
-    productivity: float 
-
-    class ChoiceVariables(NamedTuple):
-    """Input levels"""
-    input1: float 
-
-    class Outputs(NamedTuple):
-    """Outputs of the production process"""
-    output1: float
-
-    def F(params: Params, input1: float): 
-    """Production Function"""
-    output1 = params.productivity * jnp.sqrt(input1)
-    return Outputs(output1)
-
-    n = 1000
-    params = Params(3.0)                                               
-    input1s = jnp.linspace(0, 20, n)             
-    outputs = jax.vmap(partial(F, params))(input1s)     
-    ```
+Below, we plot what this might look like if we had one input and one output. 
 
 <figure markdown>
   ![Image title](./../../fig/production_fn.png){ width="500" }
 </figure>
+
+In practice, this production function can be quite complex, because firms might not just need to decide on the number of workers to hire, but also how to recruit them, and how to incentive them to be productive workers.[^2]
+
+### **Isoquants**
+
+As with the objective function that we considered in the case of the consumer, the level sets of the production function have an economic name (they are referred to as isoquants) and are economically meaningful in that they illustrate the rate at which firms tradeoff one input for another (although in contrast to indifference curves, they are observable!) 
+
+
+
 
 ## Technical Rate of Substition
 
@@ -142,3 +118,8 @@ $$y(F, x, \text{level})$$
 ### Returns to Scale 
 - If I double the studying time, do I double my grade?
 - If I double the number of chips in my computer do I double the amount of functions I can evaluate? 
+
+[^1]: The factors of production would include anythin in the production process such as land, capital (both fisical and financial) and labor
+
+[^2]: Two interesting articles on this topic: [article 1](https://www.wsj.com/articles/labor-shortage-unemployment-pella-iowa-11659364081?mod=hp_trending_now_article_pos4)
+[article 2](https://www.wsj.com/articles/in-battle-for-workers-companies-build-houses-11653217201?mod=article_inline)

@@ -11,14 +11,20 @@ nav:
       - General Concepts:
         - Why Model? : 'chapters/why_model.md'
         - Uncertainty : 'chapters/constraints/uncertainty.md'
+        - Heterogeneity: 'chapters/heterogeneity.md'
       - Constraints:
         - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
         - Budget Constraint: 'chapters/constraints/budget_contraints.md'
         - Real World Constraints: 'chapters/constraints/exploring_choice.md'
       - Objectives:
-        - 'chapters/objectives/utility.md'
+        - Utility: 'chapters/objectives/utility.md'
+        - Production Function: 'chapters/objectives/production_constraints.md'
+        - Profit: 'chapters/objectives/profit.md'
+      - Solvers: 
+        - Intro: 'chapters/solvers/intro.md'
       - Applications: 
         - Demand: 'chapters/applications/demand.md'
+
       
       
       #- Exchange Function: 'chapters/constraints/exchange_function.md'
