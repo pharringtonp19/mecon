@@ -397,6 +397,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -424,6 +426,8 @@
       
       
       
+        
+          
         
           
         
@@ -465,6 +469,20 @@
     <li class="md-nav__item">
       <a href="../../chapters/constraints/uncertainty/" class="md-nav__link">
         Uncertainty
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/heterogeneity/" class="md-nav__link">
+        Heterogeneity
       </a>
     </li>
   
@@ -577,6 +595,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3_3">
@@ -599,6 +621,34 @@
     <li class="md-nav__item">
       <a href="../../chapters/objectives/utility/" class="md-nav__link">
         Utility
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/objectives/production_constraints/" class="md-nav__link">
+        Production Function
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/objectives/profit/" class="md-nav__link">
+        Profit
       </a>
     </li>
   
@@ -631,12 +681,63 @@
       
       
         <label class="md-nav__link" for="__nav_3_4">
+          Solvers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Solvers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Solvers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/solvers/intro/" class="md-nav__link">
+        Intro
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
           Applications
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Applications" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_4">
+        <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
           Applications
         </label>
@@ -863,12 +964,15 @@
 <p>First, yes it is legal! Second, we get back a new function that takes in a single number and returns another number. For example, if we partially evalute addition with the number <span class="arithmatex">\(2\)</span>, which I'll denote by <span class="arithmatex">\((+)_2\)</span>, we get a function that takes any number and return that number plus <span class="arithmatex">\(2\)</span>. </p>
 </details>
 <h3 id="motivation"><strong>Motivation</strong></h3>
-<p>From the example above, it's not clear why would we would care about partial evaluation. What's so useful in the statement that <span class="arithmatex">\((+)_2(3) = (+)(2,3) = 2+3 = 5\)</span>? At first glance, this is just a more complicated way to think about addition. What's the benefit? We'll see the usefulness of this approach throughout the semester, but we can start to appreciate it right away by re-considering something we're already familair with! <a href="../../chapters/constraints/constraints_overview/">the parameterized constraint function</a></p>
+<p>From the example above, it's not clear why would we would care about partial evaluation. What's so useful in the statement that <span class="arithmatex">\((+)_2(3) = (+)(2,3) = 2+3 = 5\)</span>? At first glance, this is just a more complicated way to think about addition. What's the benefit? We'll see the usefulness of this approach throughout the semester, but we can start to appreciate it right away by re-considering something we're already familair with! <a href="../../chapters/constraints/constraints_overview/">the parameterized constraint function</a><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
 <p>For visaul clarity, though, we often express the above as <span class="arithmatex">\(2 + 3\)</span> and <span class="arithmatex">\(10 + 12\)</span>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Also relevant for modeling short-run versus long-run decision making of the firm.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
