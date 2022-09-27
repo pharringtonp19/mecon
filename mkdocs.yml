@@ -57,7 +57,7 @@ nav:
       # - Probability Introduction: 'math/probability_intro.md'
   - Problem Sets: 
       - Problem Set 1: 'Problem Sets/problem_set_1.md'
-
+      - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
   #     - Optimization:
   #       - Background: 'math/opt1.md'
       # - Probability:
