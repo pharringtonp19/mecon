@@ -64,11 +64,11 @@ $$\frac{d}{dx_1}x_2^*(x_1) = -\frac{\partial _0F(x_1,x_2^*(x_1))}{ \partial _1F(
 
 To make things concrete, let's create a toy example. We'll consider the following production function
 
-$$F(x, y) = Ax^{\alpha}y^{\beta}$$
+$$F(x_1, x_2) = Ax_1^{\alpha}x_2^{\beta}$$
 
 Check your understanding -- With the following values, what do you get as the output and the technical rate of substitution? 
 
-$$A=3, \alpha=0.8, \beta=1.3, x=10, y=2$$
+$$A=3, \alpha=0.8, \beta=1.3, x_1=10, x_2=2$$
 
 ??? question 
 
