@@ -1,6 +1,6 @@
 ### **Background** 
 
-There's an initiative by St. Vincent de Paul of Lane County to create a mobile-home production line. As this is the first of it's kind, I'm curious about its pontential to be a model for future social enterpreneuirship.
+There's an [initiative](https://www.registerguard.com/story/news/2022/07/23/eugene-nonprofit-st-vincent-de-paul-build-mobile-homes-low-income-oregon/65380843007/) by St. Vincent de Paul of Lane County to create a mobile-home production line. As this is the first of it's kind, I'm curious about its pontential to be a model for future social enterpreneuirship.
 
 > If it's not charity, then why aren't these mobile homes being produced by a for-profit firm?
 

@@ -22,6 +22,7 @@ nav:
         - Profit: 'chapters/objectives/profit.md'
       - Solvers: 
         - Intro: 'chapters/solvers/intro.md'
+        - Basics: 'chapters/solvers/stopping.md'
       - Applications: 
         - Demand: 'chapters/applications/demand.md'
 

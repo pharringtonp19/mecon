@@ -38,5 +38,7 @@ flowchart LR
 | tbd   | Utility over Random Variables | | 
 | tbd   | Network Effects | | 
 | tbd   | Modeling Over States | | 
+| tbd   | Asymetric Information | | 
+| tbd   | Moral Hazard | | 
 
 
