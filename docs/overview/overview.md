@@ -28,7 +28,7 @@ There are two aims with this course. The first is to learn how to model economic
 
 ### **Technical Background** :material-lightning-bolt:
 
-As you are probably aware, Microeconomic Analysis involves manipulating and evaluating mathematical expressions. This will be a self-contained class, though, so we won't assume prior familarity with these mathematical concepts. We'll begin today be introducing the notion of a [function](./../math/functions.md).[^2]
+As you are probably aware, Microeconomic Analysis involves manipulating and evaluating mathematical expressions. This will be a self-contained class, though, so we won't assume prior familarity with these mathematical concepts. We'll begin today by introducing the notion of a [function](./../math/functions.md).[^2]
 
 ### **Assessments**
 

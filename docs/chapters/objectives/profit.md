@@ -5,11 +5,15 @@
 
 ### **Introduction** 
 
-As we've alluded to previously, modeling the behavior of firms can be quite complex as their choice set can be quite large, their time horizion can include several time periods, and the demand that they face may be partially unknown to them. 
+??? question inline end "Consider"
 
-For the moment, we're not going to try and capture this complexity. Instead, we just want model firms in a relatively simplistic setting so that you can begin to see what are the key components and how these key components fit together. Later on in the semester, we'll be able to add more complexity to our models by considering multiple time periods and thinking through how a firms decisions today affect their choice set tomorrow, and things of that nature. For the time being, we're going to model firms as a profit maximizing entity operating in a single period. 
+    What else makes modeling the behavior of firms complex? Consider for instance that the actions of the firm today affect its feasibility set tomorrow!
 
-In this context, the objective of the firm is to make choices in order to maximize their profit. Profit you may recall is the difference between **Revenue** and **Cost**. 
+As we've alluded to previously, modeling the behavior of firms can be quite complex. The reason(s) being that a firm's choice set can be quite large. The time horizon that the firm considers can involve multiple periods. And, the demand that they face may be partially unknown. 
+
+Later in the semester, we'll be able to add complexity to our models by considering multiple time periods and thinking through how a firms decisions today affect their choice set tomorrow, and things of that nature. For the moment though, we want to begin my modeling firms as a profit maximizing entity in a single time period where demand is known. 
+
+In this context, the objective of the firm is to make choices in order to maximize their profit.
 
 $$\text{Profit} = \text{Revenue} - \text{Cost}  $$ 
 
@@ -19,25 +23,74 @@ Revenue is the price of the good multiplied by the quantity produced. We can exp
 
 $$\textrm{Revenue}(q) = D^{-1}(q)q$$
 
-??? info "Inverse Demand Function"
 
-    The inverse demand function is a bit of a long name for a relatively simple relationship. When we talk about the demand function, we mean a function whose domain is prices and whose codomain in quantity. 
+The inverse demand function is a bit of a long name for a relatively simple relationship. When we talk about the demand function, we mean a function whose domain is prices and whose codomain in quantity. 
 
-    $$\text{Demand} :: \text{Prices} \to \text{Quantity} $$
+$$\text{Demand} :: \text{Prices} \to \text{Quantity} $$
 
-    The inverse demand function is the inverse of this function:
+The inverse demand function is the inverse of this function:
 
-    $$\text{Inverse Demand} :: \text{Quantity} \to  \text{Prices} $$
+$$\text{Inverse Demand} :: \text{Quantity} \to  \text{Prices} $$
 
-    Such that the following holds:
+Such that the following holds:
 
-    $$\text{Demand}(\text{Inverse Demand}(q)) = q $$
+$$\text{Demand}(\text{Inverse Demand}(q)) = q $$
+
+Given the revenue function, we can compute the **marginal revenue** by differentaiting the function with respect to quantity.  
+
+$$\text{Marginal Revenue} (q) = \frac{d}{dq}\text{Revenue}(q) = \frac{d}{dq}D^{-1}(q)q + D^{-1}(q)$$
 
 ### **Cost**
 
 As with revenue, we can express the cost as a function of the number of outputs: $c(q)$. For instance, we may want to model the cost function as follows
 
-$$c(q) = 10q + 0.5q^2$$
+$$c(q) = 10 + 0.5q^2$$
+
+
+
+
+#### Characterizing Costs
+- **Variable Costs**: Costs that vary with output -- Ex the wages of mechanics in an auto repair shop
+- **Fixed Costs**: Costs that do not vary with output -- Ex the rent/mortage on the auto repair shop
+
+$$\text{Total Costs} = \text{Fixed Costs} + \text{Variable Costs}$$
+
+<figure markdown>
+  ![Image title](./../../fig/cost.png){ width="500" }
+  <figcaption>$$c(q) = 10 + 0.5q^2$$</figcaption>
+</figure>
+
+??? question 
+
+    If you are given a cost function, how would you compute the fixed and variable costs?
+
+We're often interested in costs per unit of output. As we can see from the figure below, the average fixed costs will decline as we increase quantity. This tells us that as $q$ gets largs, average total costs $\approx$ average variable costs.
+
+<figure markdown>
+  ![Image title](./../../fig/avg_cost.png){ width="500" }
+  <figcaption>$$\frac{c(q)}{q} = \frac{10}{q} + 0.5q$$</figcaption>
+</figure>
+
+Additionally, you may recall from your Principles of Microeconomics class that the profit maximizing firm chooses output to equate **marginal revenue** equal to **marginal costs**. Below we plot the marginal costs as well as the average marginal costs. 
+
+<figure markdown>
+  ![Image title](./../../fig/marginal_cost.png){ width="500" }
+</figure>
+
+<figure markdown>
+  ![Image title](./../../fig/marginal_avg_cost.png){ width="500" }
+</figure>
+
+??? question 
+
+    Let's say that the firm's cost function is as depicted above:
+
+    $$c(q) = 10 + 0.5q^2$$
+
+    If the firm produces $4$ units of output, what is its total cost, fixed cost and variable costs?
+
+
+
 
 We can also model the cost function in terms of the prices of the factors of production by making use of the **production function** which we introduced in a previous lecture. That is the cost function can be defined as an **implicit function** as follows:
 

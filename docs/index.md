@@ -30,9 +30,9 @@ flowchart LR
 | 09/26   | Implicit Functions & Differentiation |  |
 | 09/28   | [Technology](./chapters/objectives/production_constraints.md) |  |
 | 09/30   | [Profit](./chapters/objectives/profit.md)  | Draft of Written Response Due  | 
-| 10/04   | Profit Maximization (1)| | 
+| 10/04   | Profit Maximization (1)| Problem Set Two Posted| 
 | 10/05   | Profit Maximization (2) | | 
-| 10/07   | Hetergeneity | Problem Set Two Posted| 
+| 10/07   | Hetergeneity | | 
 | 10/10   | Modeling Demand & Supply | | 
 | 10/12   | Midterm | | 
 | tbd   | Utility over Random Variables | | 
