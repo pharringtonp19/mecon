@@ -29,11 +29,11 @@ flowchart LR
 | 09/23   | [Utility (2)](./chapters/objectives/utility.md) | Problem Set One Due  |
 | 09/26   | Implicit Functions & Differentiation |  |
 | 09/28   | [Technology](./chapters/objectives/production_constraints.md) |  |
-| 09/30   | Profit Maximization (1) | Draft of Written Response Due  | 
-| 10/04   | Profit Maximization (2)| | 
-| 10/05   | Modeling Heterogeneity | | 
-| 10/07   | Modeling Demand & Supply | Problem Set Two Due| 
-| 10/10   | Midterm Review | | 
+| 09/30   | [Profit](./chapters/objectives/profit.md)  | Draft of Written Response Due  | 
+| 10/04   | Profit Maximization (1)| | 
+| 10/05   | Profit Maximization (2) | | 
+| 10/07   | Hetergeneity | Problem Set Two Posted| 
+| 10/10   | Modeling Demand & Supply | | 
 | 10/12   | Midterm | | 
 | tbd   | Utility over Random Variables | | 
 | tbd   | Network Effects | | 
