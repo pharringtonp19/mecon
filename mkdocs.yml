@@ -57,6 +57,9 @@ nav:
       # - Basics of Optimization: 'math/opt2.md'
       # - Probability Introduction: 'math/probability_intro.md'
   - Problem Sets: 
+      - PS1:
+        - Questions: 'Problem Sets/PS1/problem_set_1.md'
+        - Solutions: 'Problem Sets/PS1/ps1_solutions.md'
       - Problem Set 1: 'Problem Sets/problem_set_1.md'
       - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
   #     - Optimization:
