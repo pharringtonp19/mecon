@@ -56,11 +56,9 @@ nav:
       # - Background for Optimization: 'math/opt1.md'
       # - Basics of Optimization: 'math/opt2.md'
       # - Probability Introduction: 'math/probability_intro.md'
-  - Problem Sets: 
-      - PS1:
-        - Questions: 'Problem Sets/PS1/problem_set_1.md'
-        - Solutions: 'Problem Sets/PS1/ps1_solutions.md'
-      - Problem Set 1: 'Problem Sets/problem_set_1.md'
+  - Assignments: 
+      - PS1: 'Problem Sets/problem_set_1.md'
+      - PS2 : 'Problem Sets/Problem_Set_Two.pdf'
       - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
   #     - Optimization:
   #       - Background: 'math/opt1.md'
