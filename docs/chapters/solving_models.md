@@ -57,7 +57,7 @@ With the benefit of experience, I am confident that my hypothetical previous sel
 
 [^1]: The thinking being that you'll recognize that the law of diminishing marginal utility is very similar to the law of diminshing marginal product
 
-[^2]: As an undergrad, I had no understanding of these concepts and was completely loss. 
+[^2]: As an undergrad, I had no understanding of these concepts and was completely lost. 
 
 [^3]: This is really just the division of labor at work!
 

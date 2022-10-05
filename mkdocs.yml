@@ -55,7 +55,7 @@ nav:
       - Functions: 'math/functions.md'
       - Partial Evaluation: 'math/partial_evaluation.md'
       # - Background for Optimization: 'math/opt1.md'
-      # - Basics of Optimization: 'math/opt2.md'
+      - Basics of Optimization: 'math/opt2.md'
       # - Probability Introduction: 'math/probability_intro.md'
   - Assignments: 
       - PS1: 'Problem Sets/problem_set_1.md'
