@@ -19,7 +19,7 @@
     
     
       
-        <title>Opt2 - Microeconomics</title>
+        <title>Basics of Optimization - Microeconomics</title>
       
     
     
@@ -80,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Opt2
+              Basics of Optimization
             
           </span>
         </div>
@@ -220,13 +225,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../functions/" class="md-tabs__link">
+      <a href="../functions/" class="md-tabs__link md-tabs__link--active">
         Math
       </a>
     </li>
@@ -801,15 +808,19 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
+        
+          
         
           
         
@@ -852,6 +863,111 @@
       <a href="../partial_evaluation/" class="md-nav__link">
         Partial Evaluation
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Basics of Optimization
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Basics of Optimization
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notation" class="md-nav__link">
+    Notation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-minimium" class="md-nav__link">
+    Local Minimium
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searchable-conditions" class="md-nav__link">
+    Searchable Conditions
+  </a>
+  
+    <nav class="md-nav" aria-label="Searchable Conditions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unconstrained" class="md-nav__link">
+    Unconstrained
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constrained" class="md-nav__link">
+    Constrained
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -961,9 +1077,96 @@
                 
 
 
-  <h1>Opt2</h1>
+  <h1>Basics of Optimization</h1>
 
-<div class="arithmatex">\[\begin{align*} \underset{x \in S}{\text{minimize}} \ f(x) \end{align*}\]</div>
+<h3 id="introduction"><strong>Introduction</strong></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We can reason locally about a function by using First Order Taylor Polynomials </p>
+</div>
+<p>We want to consider the following problem: </p>
+<div class="arithmatex">\[\begin{align*} \underset{x \in G(\mathbb{R}^n)}{\text{minimize}} \ f(x) \end{align*}\]</div>
+<h4 id="notation">Notation</h4>
+<ul>
+<li>
+<p><span class="arithmatex">\(f\)</span> is the objective function</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathbb{R}^n\)</span> is the domain of <span class="arithmatex">\(f\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(G\)</span> is a set-valed function that maps the domain of <span class="arithmatex">\(f\)</span> into a subset of <span class="arithmatex">\(\mathbb{R}^n\)</span></p>
+</li>
+<li>
+<p>We can express <span class="arithmatex">\(G\)</span> in terms of a constraint function <span class="arithmatex">\(c\)</span>:</p>
+</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+G(\mathbb{R}^n) := \{x \ \mathbb{R}^n \mid c(x) = 0\}
+\end{align*}\]</div>
+<ul>
+<li><span class="arithmatex">\(x \in \mathbb{R}^n\)</span> is the choice variable</li>
+</ul>
+<h3 id="local-minimium"><strong>Local Minimium</strong></h3>
+<p>Roughly speaking, a point, <span class="arithmatex">\(x_0\)</span>, is a local minimum of a function, <span class="arithmatex">\(f\)</span>, if for every point in the <strong><em>feasible neighborhood</em></strong> of <span class="arithmatex">\(x_0\)</span>, <span class="arithmatex">\(f(x) \geq f(x_0)\)</span>.</p>
+<p>More formally, we can say that <span class="arithmatex">\(x_0 \in G(S)\)</span> is a local minimum if the following condition holds:</p>
+<div class="arithmatex">\[\begin{align*}
+\underbrace{\exists \ \varepsilon &gt; 0 \ s.t. \ \forall x \in G(S) \ s.t. \|x-x_0\| &lt; \varepsilon}_{\textrm{feasible neighborhood: open ball around} \ x_0}, \quad f(x) \geq f(x_0), 
+\end{align*}\]</div>
+<figure>
+<p><img alt="Image title" src="./../../fig/functions.png" width="1000" />
+  </p>
+<figcaption>Functions</figcaption>
+</figure>
+<h3 id="searchable-conditions"><strong>Searchable Conditions</strong></h3>
+<p>Now that we have a conceptual understanding of what a local minimum is (note this definition holds for both constrained and unconstrained problems) we would like to express the criteria of a local minimum in a way so that we can search for it. That is we want to make this definition mathematically tractable. We do so by making use of the First Order Taylor Polynomial around <span class="arithmatex">\(x_0\)</span>.</p>
+<div class="arithmatex">\[\begin{align*}
+f_{x_0}(x) &amp;= f(x_0)  + \nabla f(x_0)'(x-x_0)
+\end{align*}\]</div>
+<p>From the definition of a local minimum, it's clear that if <span class="arithmatex">\(x_0\)</span> is a local minimum, then the  condition, <span class="arithmatex">\(f(x) \geq f(x_0)\)</span>, must hold when <span class="arithmatex">\(x\)</span> is very close to <span class="arithmatex">\(x_0\)</span>. Hence, when reasoning about <span class="arithmatex">\(f(x)\)</span> in some small neighborhood around <span class="arithmatex">\(x_0\)</span>, it is sufficient to reason about <span class="arithmatex">\(f_{x_0}(x)\)</span>. </p>
+<p>Therefore, if <span class="arithmatex">\(x_0\)</span> is a local minimum, then for any feasible <span class="arithmatex">\(x\)</span> in a small neighborhood of <span class="arithmatex">\(x_0\)</span></p>
+<div class="arithmatex">\[\begin{align*}
+f_{x_0}(x) &amp;\geq f(x) \\
+\iff \quad f(x_0)  + \nabla f(x_0)'(x-x_0) &amp;\geq f(x) \\
+\iff \quad \nabla f(x_0)'(x-x_0) &amp;\geq 0
+\end{align*}\]</div>
+<h4 id="unconstrained">Unconstrained</h4>
+<p>If there are no constraints, then the feasible set is <span class="arithmatex">\(\mathbb{R}^n\)</span>. Hence we can re-write the above condition as saying </p>
+<div class="arithmatex">\[\begin{align*}
+\nabla f(x_0)'d \geq 0 \quad \forall d \in \mathbb{R}^n, \|d\| \ll 1
+\end{align*}\]</div>
+<p>Take <span class="arithmatex">\(d =  -\nabla f(x_0)/k\)</span> where <span class="arithmatex">\(k\)</span> is some sufficintly large scalar such that <span class="arithmatex">\(\| -\nabla f(x_0)/k\|  \ll 1\)</span>. Thus we found a <span class="arithmatex">\(d\)</span> where::</p>
+<div class="arithmatex">\[\begin{align*}
+\nabla f(x_0)'d &amp;= \nabla f(x_0)'\nabla f(x_0)\Big(\frac{-1}{k}\Big) \\ 
+&amp;= \|\nabla f(x_0)\|^2\Big(\frac{-1}{k}\Big) \\
+&amp;\leq 0 
+\end{align*}\]</div>
+<p>Hence, we can conclude that if <span class="arithmatex">\(x_0\)</span> is a local minimum and there are no constraints, then <span class="arithmatex">\(\nabla f(x_0)=0\)</span>.</p>
+<h4 id="constrained">Constrained</h4>
+<p>With a constraint function, the feasible set is no longer <span class="arithmatex">\(\mathbb{R}^n\)</span>. Hence we can re-write the above condition as saying </p>
+<div class="arithmatex">\[\begin{align*}
+\nabla f(x_0)'d \geq 0 \quad \forall d \in \mathbb{R}^n, \|d\| \ll 1, d \ \textrm{is a feasible direction}
+\end{align*}\]</div>
+<p>1) If <span class="arithmatex">\(x_0\)</span> is a local minimum, it must be feasible and hence <span class="arithmatex">\(c(x_0) = 0\)</span>. Therefore the first order taylor polynomial of the constraint function around <span class="arithmatex">\(x_0\)</span> is the following: </p>
+<div class="arithmatex">\[\begin{align*}
+c_{x_0}(x_0 + d) &amp;= \underbrace{c(x_0)}_{=0}  + \nabla c(x_0)'d\\
+&amp;=\nabla c(x_0)'d
+\end{align*}\]</div>
+<p>2) If <span class="arithmatex">\(d\)</span> is feasible direction (i.e. <span class="arithmatex">\(c_{x_0}(x_0 + d) = 0\)</span>, then </p>
+<div class="arithmatex">\[\begin{align*}
+c_{x_0}(x_0 + d) &amp;= 0 \\ 
+\iff \nabla c(x_0)'d &amp;= 0 
+\end{align*}\]</div>
+<p>3) But <strong>note</strong> if <span class="arithmatex">\(d\)</span> is a feasible direction then <span class="arithmatex">\(-d\)</span> is also a feasible directiion, which means we can actually tighten the above constraint even further to say that <span class="arithmatex">\(\nabla f(x_0)'d = 0\)</span> </p>
+<p>If <span class="arithmatex">\(x_0\)</span> is local minimum of <span class="arithmatex">\(f\)</span> then <span class="arithmatex">\(\nabla f(x_0)'d = 0\)</span> for all <span class="arithmatex">\(d\)</span> such that <span class="arithmatex">\(\nabla c(x_0)'d = 0\)</span>. This just means that if <span class="arithmatex">\(x_0\)</span> is a local minimum, then <span class="arithmatex">\(\nabla f(x)\)</span> is parallel to <span class="arithmatex">\(\nabla c(x_0)\)</span>. i.e. </p>
+<div class="arithmatex">\[\begin{align*}
+\nabla f(x_0) &amp;= \lambda \nabla c(x_0), \quad \textrm{for some} \ \lambda \\
+c(x_0) &amp;= 0 
+\end{align*}\]</div>
+<h4 id="references">References</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Ry5i8DGZrJs&amp;list=PL3940DD956CDF0622&amp;index=5">Stephen Boyd</a>, <a href="https://www.google.com/search?q=necessary+and+sufficient+conditions+local+minimum&amp;biw=939&amp;bih=674&amp;tbm=vid&amp;sxsrf=AOaemvL11vJ6KYgxSjmDFhtXAuisr1Td2Q%3A1632345955007&amp;ei=Yp9LYYn0PMbM_AbF0LnYBg&amp;oq=necessary+and+sufficient+conditions+local+minimum&amp;gs_l=psy-ab-video.3...6810.12008.0.12290.17.17.0.0.0.0.186.1820.1j13.14.0....0...1c.1.64.psy-ab-video..3.13.1710...0i512k1j0i390k1j0i67k1j0i22i30k1j33i22i29i30k1j0i333k1.0.bg_Bf2HIKKs">Coursera</a></li>
+</ul>
 
               
             </article>
@@ -979,6 +1182,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../partial_evaluation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Partial Evaluation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Partial Evaluation
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../Problem%20Sets/problem_set_1/" class="md-footer__link md-footer__link--next" aria-label="Next: PS1" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              PS1
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
