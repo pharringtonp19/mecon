@@ -931,11 +931,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#searchable-conditions" class="md-nav__link">
-    Searchable Conditions
+  <a href="#first-order-conditions" class="md-nav__link">
+    First Order Conditions
   </a>
   
-    <nav class="md-nav" aria-label="Searchable Conditions">
+    <nav class="md-nav" aria-label="First Order Conditions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -951,6 +951,19 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-order-conditions" class="md-nav__link">
+    Second Order Conditions:
+  </a>
+  
+    <nav class="md-nav" aria-label="Second Order Conditions:">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
@@ -1001,6 +1014,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5">
@@ -1037,6 +1052,20 @@
     <li class="md-nav__item">
       <a href="../../Problem%20Sets/Problem_Set_Two.pdf" class="md-nav__link">
         PS2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Problem%20Sets/Problem_Set_Two_Solutions.pdf" class="md-nav__link">
+        PS2 Solutions
       </a>
     </li>
   
@@ -1102,7 +1131,7 @@
 </li>
 </ul>
 <div class="arithmatex">\[\begin{align*}
-G(\mathbb{R}^n) := \{x \ \mathbb{R}^n \mid c(x) = 0\}
+G(\mathbb{R}^n) := \{x \in \mathbb{R}^n \mid c(x) = 0\}
 \end{align*}\]</div>
 <ul>
 <li><span class="arithmatex">\(x \in \mathbb{R}^n\)</span> is the choice variable</li>
@@ -1118,7 +1147,7 @@ G(\mathbb{R}^n) := \{x \ \mathbb{R}^n \mid c(x) = 0\}
   </p>
 <figcaption>Functions</figcaption>
 </figure>
-<h3 id="searchable-conditions"><strong>Searchable Conditions</strong></h3>
+<h3 id="first-order-conditions"><strong>First Order Conditions</strong></h3>
 <p>Now that we have a conceptual understanding of what a local minimum is (note this definition holds for both constrained and unconstrained problems) we would like to express the criteria of a local minimum in a way so that we can search for it. That is we want to make this definition mathematically tractable. We do so by making use of the First Order Taylor Polynomial around <span class="arithmatex">\(x_0\)</span>.</p>
 <div class="arithmatex">\[\begin{align*}
 f_{x_0}(x) &amp;= f(x_0)  + \nabla f(x_0)'(x-x_0)
@@ -1163,6 +1192,21 @@ c_{x_0}(x_0 + d) &amp;= 0 \\
 \nabla f(x_0) &amp;= \lambda \nabla c(x_0), \quad \textrm{for some} \ \lambda \\
 c(x_0) &amp;= 0 
 \end{align*}\]</div>
+<h3 id="second-order-conditions"><strong>Second Order Conditions</strong>:</h3>
+<ul>
+<li>
+<p>Hessian:  <span class="arithmatex">\(\nabla^2f(x)\)</span></p>
+</li>
+<li>
+<p>Positive Semi-Definite Hessian:  <span class="arithmatex">\(\quad v^T\nabla^2f(x)v \geq 0 \quad \forall v \in \mathbb{R}^n\)</span></p>
+</li>
+</ul>
+<p>Second Order Taylor Polynomial around a critical point:</p>
+<div class="arithmatex">\[\begin{align*}
+f_{x_0}(x) &amp;= f(x_0) + \underbrace{\nabla f(x_0)}_{=0}(x-x_0) + \frac{1}{2}(x-x_0)^T\nabla^2f(x_0)(x-x_0) \\
+f_{x_0}(x) &amp;= f(x_0) + \frac{1}{2}(x-x_0)^T\nabla^2f(x_0)(x-x_0) \\
+\end{align*}\]</div>
+<p>If <span class="arithmatex">\(\nabla^2f(x)\)</span> is Positive Semi-Definite, then <span class="arithmatex">\(x_0\)</span> is a local minimum of <span class="arithmatex">\(f\)</span>.</p>
 <h4 id="references">References</h4>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=Ry5i8DGZrJs&amp;list=PL3940DD956CDF0622&amp;index=5">Stephen Boyd</a>, <a href="https://www.google.com/search?q=necessary+and+sufficient+conditions+local+minimum&amp;biw=939&amp;bih=674&amp;tbm=vid&amp;sxsrf=AOaemvL11vJ6KYgxSjmDFhtXAuisr1Td2Q%3A1632345955007&amp;ei=Yp9LYYn0PMbM_AbF0LnYBg&amp;oq=necessary+and+sufficient+conditions+local+minimum&amp;gs_l=psy-ab-video.3...6810.12008.0.12290.17.17.0.0.0.0.186.1820.1j13.14.0....0...1c.1.64.psy-ab-video..3.13.1710...0i512k1j0i390k1j0i67k1j0i22i30k1j33i22i29i30k1j0i333k1.0.bg_Bf2HIKKs">Coursera</a></li>
