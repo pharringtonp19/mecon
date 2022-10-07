@@ -60,6 +60,7 @@ nav:
   - Assignments: 
       - PS1: 'Problem Sets/problem_set_1.md'
       - PS2 : 'Problem Sets/Problem_Set_Two.pdf'
+      - PS2 Solutions: 'Problem Sets/Problem_Set_Two_Solutions.pdf'
       - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
   #     - Optimization:
   #       - Background: 'math/opt1.md'

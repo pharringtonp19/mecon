@@ -18,7 +18,7 @@ $$\begin{align*} \underset{x \in G(\mathbb{R}^n)}{\text{minimize}} \ f(x) \end{a
 - We can express $G$ in terms of a constraint function $c$:
 
 \begin{align*}
-G(\mathbb{R}^n) := \{x \ \mathbb{R}^n \mid c(x) = 0\}
+G(\mathbb{R}^n) := \{x \in \mathbb{R}^n \mid c(x) = 0\}
 \end{align*}
 
 - $x \in \mathbb{R}^n$ is the choice variable
@@ -38,7 +38,7 @@ More formally, we can say that $x_0 \in G(S)$ is a local minimum if the followin
   <figcaption>Functions</figcaption>
 </figure>
 
-### **Searchable Conditions**
+### **First Order Conditions**
 
 Now that we have a conceptual understanding of what a local minimum is (note this definition holds for both constrained and unconstrained problems) we would like to express the criteria of a local minimum in a way so that we can search for it. That is we want to make this definition mathematically tractable. We do so by making use of the First Order Taylor Polynomial around $x_0$.
 
@@ -105,6 +105,21 @@ If $x_0$ is local minimum of $f$ then $\nabla f(x_0)'d = 0$ for all $d$ such tha
 \nabla f(x_0) &= \lambda \nabla c(x_0), \quad \textrm{for some} \ \lambda \\
 c(x_0) &= 0 
 \end{align*}
+
+### **Second Order Conditions**:
+
+- Hessian:  $\nabla^2f(x)$
+
+- Positive Semi-Definite Hessian:  $\quad v^T\nabla^2f(x)v \geq 0 \quad \forall v \in \mathbb{R}^n$
+
+Second Order Taylor Polynomial around a critical point:
+
+\begin{align*}
+f_{x_0}(x) &= f(x_0) + \underbrace{\nabla f(x_0)}_{=0}(x-x_0) + \frac{1}{2}(x-x_0)^T\nabla^2f(x_0)(x-x_0) \\
+f_{x_0}(x) &= f(x_0) + \frac{1}{2}(x-x_0)^T\nabla^2f(x_0)(x-x_0) \\
+\end{align*}
+
+If $\nabla^2f(x)$ is Positive Semi-Definite, then $x_0$ is a local minimum of $f$.
 
 #### References
 
