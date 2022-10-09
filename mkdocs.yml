@@ -7,7 +7,7 @@ nav:
   - Overview:
     - Overview: 'overview/overview.md'
     - Syllabus: 'overview/Syllabus.pdf'
-  - Lectures:
+  - Notes:
       - General Concepts:
         - Why Model? : 'chapters/why_model.md'
         - Uncertainty : 'chapters/constraints/uncertainty.md'
@@ -26,31 +26,8 @@ nav:
         - Basics: 'chapters/solvers/stopping.md'
       - Applications: 
         - Demand: 'chapters/applications/demand.md'
-
-      
-      
-      #- Exchange Function: 'chapters/constraints/exchange_function.md'
-      # - Utility: 'chapters/objectives/utility.md'
-      # - Constraints: 
-      #   
-
-      #   - Production: 'chapters/constraints/production_constraints.md'
-      #   - Information: 'chapters/constraints/information.md'
-      # - Markets: 
-      #   - Scale: 'chapters/markets/scale.md'
-      #   - Elasticities: 'chapters/markets/elasticities.md'
-      #   - Information: 'chapters/markets/information.md'
-      #   - Two-sided: 'chapters/markets/two_sided.md'
-      # - Information: 'chapters/information.md'
-      # - Utils: 'chapters/utility.ipynb'
-      # - Demand: 'chapters/demand.ipynb'
-      # - Demand Details: 'chapters/demand_details.ipynb'
-      # - Monopolies: 'chapters/monopolies.ipynb'
-      # - Adv Game Theory: 'chapters/Game Theory.ipynb'
-      # - Technology: 'chapters/Technology.ipynb'
-      # - Firm Supply: 'chapters/firm_supply.ipynb' 
-      # - Asymmetric Information: 'chapters/asymmetric information.ipynb'
-      # - Sequential Decision Making: 'chapters/rl.ipynb'
+  - Slides:
+      - Consumer Heterogeneity: 'chapters/slides/conumers.md'
   - Math:
       - Functions: 'math/functions.md'
       - Partial Evaluation: 'math/partial_evaluation.md'
@@ -58,10 +35,12 @@ nav:
       - Basics of Optimization: 'math/opt2.md'
       # - Probability Introduction: 'math/probability_intro.md'
   - Assignments: 
-      - PS1: 'Problem Sets/problem_set_1.md'
-      - PS2 : 'Problem Sets/Problem_Set_Two.pdf'
-      - PS2 Solutions: 'Problem Sets/Problem_Set_Two_Solutions.pdf'
       - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
+      - PS1 : 'Problem Sets/Problem_Set_One.pdf'
+      - PS2 : 'Problem Sets/Problem_Set_Two.pdf'
+      - PS1 Solutions: 'Problem Sets/Problem_Set_One_Solutions.pdf'
+      - PS2 Solutions: 'Problem Sets/Problem_Set_Two_Solutions.pdf'
+
   #     - Optimization:
   #       - Background: 'math/opt1.md'
       # - Probability:

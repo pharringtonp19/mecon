@@ -32,7 +32,7 @@ flowchart LR
 | 09/30   | [Profit ](./chapters/objectives/profit.md)  | Draft of Written Response Due  | 
 | 10/03   | [Solving Models](./chapters/solving_models.md) | Problem Set Two Posted| 
 | 10/05   | Profit Maximization | | 
-| 10/07   | Utility Maximization | | 
+| 10/07   | [Consumer Heterogeneity](./chapters/slides/conumers.md) | | 
 | 10/11   | Modeling Demand & Supply | | 
 | 10/12   | Midterm | | 
 | tbd   | Utility over Random Variables | | 

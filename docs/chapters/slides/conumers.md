@@ -1,0 +1,1 @@
+<iframe src="https://slides.com/pharringtonp19/rtc-386d02/embed" width="576" height="420" title="Modeling Consumer Heterogeneity" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
