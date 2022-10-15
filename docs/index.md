@@ -16,6 +16,8 @@ flowchart LR
     E --> R(Prices);
 ```
 
+### [YouTube Mini Lectures](https://studio.youtube.com/channel/UCLRuphScQa7h9tgrIzWG2rA)
+
 ### **Schedule**
 
 | Date      | Topic | Assignments| 

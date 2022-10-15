@@ -39,6 +39,13 @@ h(x) &= g(f(x)) \\
 h(x) &= (2x)^2 \end{align*}$$
 
 
+### **Implicit Functions** 
+
+Implicit functions are functions where a solver is called during the evaluation of the function. 
+
+$$x^*(\theta) := \underset{x}{\text{solve}} \ F(x, \theta) = 0 $$
+
+
 
 
 [^1]: a set can be loosley understood as a collection of things. 
