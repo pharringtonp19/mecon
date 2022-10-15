@@ -12,7 +12,6 @@ nav:
         - Why Model? : 'chapters/why_model.md'
         - Uncertainty : 'chapters/constraints/uncertainty.md'
         - Solving Models: 'chapters/solving_models.md'
-        - Heterogeneity: 'chapters/heterogeneity.md'
       - Constraints:
         - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
         - Budget Constraint: 'chapters/constraints/budget_contraints.md'
@@ -26,6 +25,7 @@ nav:
         - Basics: 'chapters/solvers/stopping.md'
       - Applications: 
         - Demand: 'chapters/applications/demand.md'
+        - Comparative Statics: 'chapters/comparative_statics.md'
   - Slides:
       - Consumer Heterogeneity: 'chapters/slides/conumers.md'
   - Math:
