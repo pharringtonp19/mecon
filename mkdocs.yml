@@ -12,12 +12,13 @@ nav:
         - Why Model? : 'chapters/why_model.md'
         - Uncertainty : 'chapters/constraints/uncertainty.md'
         - Solving Models: 'chapters/solving_models.md'
-      - Constraints:
+      - Choice Sets:
         - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
         - Budget Constraint: 'chapters/constraints/budget_contraints.md'
         - Real World Constraints: 'chapters/constraints/exploring_choice.md'
       - Objectives:
         - Utility: 'chapters/objectives/utility.md'
+        - Random Utility: 'chapters/objectives/random_utility.md'
         - Production Function: 'chapters/objectives/production_constraints.md'
         - Profit: 'chapters/objectives/profit.md'
       - Solvers: 
@@ -26,6 +27,7 @@ nav:
       - Applications: 
         - Demand: 'chapters/applications/demand.md'
         - Comparative Statics: 'chapters/comparative_statics.md'
+        - Equilibrium: 'chapters/markets/equilibrium.md'
   - Slides:
       - Consumer Heterogeneity: 'chapters/slides/conumers.md'
   - Math:
@@ -33,7 +35,7 @@ nav:
       - Partial Evaluation: 'math/partial_evaluation.md'
       # - Background for Optimization: 'math/opt1.md'
       - Basics of Optimization: 'math/opt2.md'
-      # - Probability Introduction: 'math/probability_intro.md'
+      - Probability Introduction: 'math/probability_intro.md'
   - Assignments: 
       - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
       - PS1 : 'Problem Sets/Problem_Set_One.pdf'

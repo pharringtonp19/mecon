@@ -2,11 +2,12 @@
 
     We use probability theory to model our understanding/level of information about the world. 
 
-
-
-
 ### **Random Experiment**
-- An experiment whose outcome is random! -- [Dr. Krishna Jagannathan](https://youtu.be/-nnJQ0kJgIY?list=PLbMVogVj5nJQqGHrpAloTec_lOKsG-foc&t=102)
+At its core, this course is about modeling relationships that make up the broader economy. And in particular, how the decisions of one agent, influence the decisions of another. To do this well, we have to embrace the inherent uncertainty of decision making. We have to model consumers, firms, agents as they are: making decisions whose outcomes and therefore benefits and costs are unknown. 
+
+We model such decisions by using probability theory. And today, we start by introducing the essentials of the topic by convering the following concepts: probability space, random variables, and expectations of random variables.. 
+
+:material-lightning-bolt: We introduce the material in this abstract way in the hope that it will better convey the fundamental ideas of the topic. For example, you will understand the essence of a random variables (it pulls the probability measure forward!, it generates a new probability space). By developing a deep understanding of these concepts, you will be in a better position to intuitively and rigurously think through and model real world economic issues.
 
 ### **Sample Space & Events **
 - **Sample Space**: The set of all possible outcomes of the random experiment, which we'll denote as $\Omega$:
@@ -68,6 +69,8 @@ A random variable is a function whose domain is the sample space.
     X^{-1}(B) \in \mathcal{F} \ \forall B \in  \mathbb{B}(\mathbb{R})  \end{align*}$$
 
 
+### **Expectations of Random Variables**
+$$\mathbb{E}[X] = \int _{\Omega} X d\mathbb{P}$$
 
 <!-- 
 ### **Introduction**

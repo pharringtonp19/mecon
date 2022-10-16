@@ -35,9 +35,12 @@ flowchart LR
 | 10/03   | [Solving Models](./chapters/solving_models.md) | Problem Set Two Posted| 
 | 10/05   | Profit Maximization | | 
 | 10/07   | [Consumer Heterogeneity](./chapters/slides/conumers.md) | | 
-| 10/11   | Modeling Demand & Supply | | 
+| 10/11   | Midterm Review | | 
 | 10/12   | Midterm | | 
-| tbd   | Utility over Random Variables | | 
+| 10/14   | [Demand](./chapters/applications/demand.md) | |
+| 10/17   | [Utility (3)](./chapters/objectives/random_utility.md) | |
+| 10/19   | [Utility (4)](./chapters/objectives/random_utility.md) | |
+| 10/21   | [Comparative Statics](./chapters/comparative_statics.md) | |
 | tbd   | Network Effects | | 
 | tbd   | Modeling Over States | | 
 | tbd   | Asymetric Information | | 
