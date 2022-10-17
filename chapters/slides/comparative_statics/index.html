@@ -12,14 +12,14 @@
         <meta name="author" content="Patrick Power">
       
       
-        <link rel="canonical" href="https://pharringtonp19.github.io/mecon/chapters/markets/information/">
+        <link rel="canonical" href="https://pharringtonp19.github.io/mecon/chapters/slides/comparative_statics/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
-        <title>Information - Microeconomics</title>
+        <title>Comparative Statics - Microeconomics</title>
       
     
     
@@ -80,11 +80,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#motivating-example" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -114,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Information
+              Comparative Statics
             
           </span>
         </div>
@@ -225,13 +220,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../slides/conumers/" class="md-tabs__link">
+      <a href="../conumers/" class="md-tabs__link md-tabs__link--active">
         Slides
       </a>
     </li>
@@ -838,12 +835,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -872,7 +871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slides/conumers/" class="md-nav__link">
+      <a href="../conumers/" class="md-nav__link">
         Consumer Heterogeneity
       </a>
     </li>
@@ -884,11 +883,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../slides/comparative_statics/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Comparative Statics
       </a>
+      
     </li>
   
 
@@ -1130,92 +1137,9 @@
                 
 
 
-  <h1>Information</h1>
+  <h1>Comparative Statics</h1>
 
-<p><a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/market_for_lemons.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
-<div class="admonition tldr">
-<p class="admonition-title">Overview</p>
-<p>The key takeaway is to understand that information not only shapes markets, but can determine whether they exist in the first place. </p>
-</div>
-<h3 id="motivating-example"><strong>Motivating Example</strong></h3>
-<p>The following is an adoption from Geroge Akerlof's Market for Lemons.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> We begin by consider the case where there are two types of cars with the following values assocaited with the potential buyers and sellers of the car (I've used variables to stand in for specific values). What's import here is that the that the buyer values each type of car more than the sellers)</p>
-<table>
-<thead>
-<tr>
-<th align="center">Cars</th>
-<th align="center">Quantity</th>
-<th align="center">Buyer Value</th>
-<th align="center">Seller Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">Plums</td>
-<td align="center"><span class="arithmatex">\(q_1\)</span></td>
-<td align="center"><span class="arithmatex">\(\text{buyer}\_\text{value}_1\)</span></td>
-<td align="center"><span class="arithmatex">\(\text{seller}\_\text{value}_2\)</span></td>
-</tr>
-<tr>
-<td align="center">Lemons</td>
-<td align="center"><span class="arithmatex">\(q_2\)</span></td>
-<td align="center"><span class="arithmatex">\(\text{buyer}\_\text{value}_2\)</span></td>
-<td align="center"><span class="arithmatex">\(\text{seller}\_\text{value}_2\)</span></td>
-</tr>
-</tbody>
-</table>
-<h4 id="exercises"><strong>Exercises</strong></h4>
-<div class="admonition question">
-<p class="admonition-title">Framework</p>
-<p>See if you can write down the above problem in terms of a probability space (Answer: <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>)</p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">Market Clearing Condition</p>
-<p>Letting <span class="arithmatex">\(V\)</span> denote the random variable that captures the buyer's value of each car, work through the conditions underwhich the "market clears" (Answer: <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>)</p>
-</div>
-<details class="tip">
-<summary>Math on the Computer</summary>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jax</span>
-<span class="kn">import</span> <span class="nn">jax.numpy</span> <span class="k">as</span> <span class="nn">jnp</span> 
-<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span> 
-<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span> 
-
-<span class="nd">@dataclass</span> 
-<span class="k">class</span> <span class="nc">Market_for_lemons</span><span class="p">:</span> 
-    <span class="n">alpha</span> <span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.5</span> 
-    <span class="n">buyer_value</span><span class="p">:</span> <span class="n">jnp</span><span class="o">.</span><span class="n">array</span> <span class="o">=</span> <span class="n">jnp</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">100.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">])</span>
-    <span class="n">seller_value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">80.0</span> 
-</code></pre></div>
-</details>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p><a href="https://en.wikipedia.org/wiki/The_Market_for_Lemons">Here</a> is the wiki article&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<details class="check" open="open">
-<summary>Answer</summary>
-<ul>
-<li><span class="arithmatex">\(\Omega = \{\text{plum}, \text{lemon}\}\)</span></li>
-<li><span class="arithmatex">\(\mathcal{F} =  \Big\{\emptyset,  \{\text{plum}\},  \{\text{lemon}\},  \{\text{plum}, \text{lemon}\}  \Big\}\)</span></li>
-<li><span class="arithmatex">\(\mathbb{P}(\emptyset) = 0,\mathbb{P}(\{\text{plum}\}) = \alpha,  \mathbb{P}(\{\text{lemon}\}) = 1-\alpha,  \mathbb{P}(\{\text{plum}, \text{lemon}\}) = 1\)</span></li>
-</ul>
-</details>
-<p><a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:3">
-<details class="check" open="open">
-<summary>Answer</summary>
-<p>We know that the market will clear if the expected value that the consumer derives from buying a car is greater than the value that a seller associates to the plums. </p>
-<p>Which means that we'll want to express our answer in terms of the probability measure, the random variable, anb the seller's value of a plum.</p>
-<div class="arithmatex">\[\begin{align*}E[V] &amp;= \int Vd\mathbb{P} \\ 
-&amp;= \sum _i V(E_i)\mathbb{P}(E_i) \\
-&amp;= V(\text{plum})\alpha + V(\text{lemon})(1-\alpha)\end{align*}\]</div>
-</details>
-<p><a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+<iframe src="https://slides.com/pharringtonp19/copy-of-modeling-consumer-heterogeneity/embed" width="576" height="420" title="Comparative Statics" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
               
             </article>
@@ -1231,6 +1155,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../conumers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Consumer Heterogeneity" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Consumer Heterogeneity
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../../math/functions/" class="md-footer__link md-footer__link--next" aria-label="Next: Functions" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Functions
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
