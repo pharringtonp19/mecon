@@ -27,9 +27,9 @@ nav:
       - Applications: 
         - Demand: 'chapters/applications/demand.md'
         - Comparative Statics: 'chapters/comparative_statics.md'
-        - Equilibrium: 'chapters/markets/equilibrium.md'
   - Slides:
       - Consumer Heterogeneity: 'chapters/slides/conumers.md'
+      - Comparative Statics: 'chapters/slides/comparative_statics.md'
   - Math:
       - Functions: 'math/functions.md'
       - Partial Evaluation: 'math/partial_evaluation.md'

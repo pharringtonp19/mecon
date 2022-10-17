@@ -38,9 +38,9 @@ flowchart LR
 | 10/11   | Midterm Review | | 
 | 10/12   | Midterm | | 
 | 10/14   | [Demand](./chapters/applications/demand.md) | |
-| 10/17   | [Utility (3)](./chapters/objectives/random_utility.md) | |
-| 10/19   | [Utility (4)](./chapters/objectives/random_utility.md) | |
-| 10/21   | [Comparative Statics](./chapters/comparative_statics.md) | |
+| 10/17   | [Comparative Statics](./chapters/comparative_statics.md) | |
+| 10/19   | [Utility (3)](./chapters/objectives/random_utility.md) | |
+| 10/21   | [Utility (4)](./chapters/objectives/random_utility.md) | |
 | tbd   | Network Effects | | 
 | tbd   | Modeling Over States | | 
 | tbd   | Asymetric Information | | 

@@ -2,6 +2,8 @@
     |Description | Notebook | Status 
     |:---:|:---:|:---:|
     Income Expansion Path | <a href="https://github.com/pharringtonp19/mecon/blob/main/notebooks/Income_Expansion_Path.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
+    Equilibrium With Taxes | <a href="https://github.com/pharringtonp19/mecon/blob/main/notebooks/market_taxes.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
+
 
 
 ### **Introduction**
