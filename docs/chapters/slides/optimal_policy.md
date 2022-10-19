@@ -1,0 +1,1 @@
+<iframe src="https://slides.com/pharringtonp19/comparative-statics/embed" width="576" height="420" title="Optimal Policy" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

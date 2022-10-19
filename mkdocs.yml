@@ -30,6 +30,7 @@ nav:
   - Slides:
       - Consumer Heterogeneity: 'chapters/slides/conumers.md'
       - Comparative Statics: 'chapters/slides/comparative_statics.md'
+      - Optimal Policy: 'chapters/slides/optimal_policy.md'
   - Math:
       - Functions: 'math/functions.md'
       - Partial Evaluation: 'math/partial_evaluation.md'
