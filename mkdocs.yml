@@ -39,10 +39,10 @@ nav:
       - Basics of Optimization: 'math/opt2.md'
       - Probability Introduction: 'math/probability_intro.md'
   - Assignments: 
-      - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
+      # - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
       - PS1 : 'Problem Sets/Problem_Set_One.pdf'
-      - PS2 : 'Problem Sets/Problem_Set_Two.pdf'
       - PS1 Solutions: 'Problem Sets/Problem_Set_One_Solutions.pdf'
+      - PS2 : 'Problem Sets/Problem_Set_Two.pdf'
       - PS2 Solutions: 'Problem Sets/Problem_Set_Two_Solutions.pdf'
 
   #     - Optimization:
