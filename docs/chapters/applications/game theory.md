@@ -1,3 +1,11 @@
+??? tip "Notebooks"
+    |Description | Notebook | Status 
+    |:---:|:---:|:---:|
+    Stackelberg Model | <a href="https://github.com/pharringtonp19/mecon/blob/main/notebooks/game_theory/Stackelberg.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
+
+!!! tldr "Overview"
+
+    The aim of this lecture is to introduce the fundamentals of game theory
 
 ### **Introduction**
 Up to this point in the class we have considered models with following form.[^1] We've seen this in the context of individual consumers maximizing their utility subject to a budget constraint, firms maximizing profits given their production function, and a government entity maximizing tax revenue. What these models shared in flavor was the fact that one agent was maximizing taking the other agent's decisions as given. For example, in the optimal tax case, the government set the tax assuming that individuals selected the optimal bundle in response to the tax. 
