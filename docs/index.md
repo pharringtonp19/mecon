@@ -39,8 +39,9 @@ flowchart LR
 | 10/12   | Midterm | | 
 | 10/14   | [Demand](./chapters/applications/demand.md) | |
 | 10/17   | [Comparative Statics](./chapters/comparative_statics.md) | |
-| 10/19   | [Utility (3)](./chapters/objectives/random_utility.md) | |
-| 10/21   | [Utility (4)](./chapters/objectives/random_utility.md) | |
+| 10/19   | [Optimal Policy](./chapters/slides/optimal_policy.md)| |
+| 10/21   | [Game Theory (1)](./chapters/applications/game%20theory.md) | Problem Set 3 Posted|
+| tbd   | Expected Utility | | 
 | tbd   | Network Effects | | 
 | tbd   | Modeling Over States | | 
 | tbd   | Asymetric Information | | 
