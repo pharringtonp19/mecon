@@ -19,7 +19,7 @@
     
     
       
-        <title>Random Utility - Microeconomics</title>
+        <title>Random utility - Microeconomics</title>
       
     
     
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Random Utility
+              Random utility
             
           </span>
         </div>
@@ -202,8 +202,6 @@
         
   
   
-    
-  
 
 
   
@@ -215,7 +213,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../why_model/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../why_model/" class="md-tabs__link">
         Notes
       </a>
     </li>
@@ -395,14 +393,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -601,19 +597,15 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
       
       
-        
-          
         
           
         
@@ -644,91 +636,6 @@
       <a href="../utility/" class="md-nav__link">
         Utility
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Random Utility
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Random Utility
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-    <nav class="md-nav" aria-label="Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#choice-set" class="md-nav__link">
-    Choice Set
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#objective-function-expected-utility" class="md-nav__link">
-    Objective Function (Expected Utility)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extentions" class="md-nav__link">
-    Extentions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -947,6 +854,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -997,6 +908,34 @@
     <li class="md-nav__item">
       <a href="../../slides/optimal_policy/" class="md-nav__link">
         Optimal Policy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/game_theory/" class="md-nav__link">
+        Game Theory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/expected_utility/" class="md-nav__link">
+        Choice Uncertainty
       </a>
     </li>
   
@@ -1223,60 +1162,115 @@
                 
 
 
-  <h1>Random Utility</h1>
+  <h1>Random utility</h1>
 
 <div class="admonition tldr">
 <p class="admonition-title">Overview</p>
 <p>In this lecture we extend the choice set and utility function to allow us to model agents selecting random variables. </p>
 </div>
 <h3 id="introduction"><strong>Introduction</strong></h3>
-<p>Up to this point in the course, we have considered "everything" to be known. For example, consumer's know their income and firm's known the demand they face. From a modeling perspective, this has been appropriate because we've thought of consumers and firms as maximizing a static objective function: </p>
-<div class="arithmatex">\[\underset{x \in F_p^{-1}(0)}{\text{maximize}} \ f(x)\]</div>
-<p>As we've discussed repeatedly, though, consumers and firms don't behave in this manor. They make a sequence of decisions over time whose effects/conseqeunces are generally unknown when they make them. If you read the previous sentence again, you'll realize that there is alot to unpack. As is typical in this class, we'll do so little by little. In this lecture we'll start by unpacking what it means for the outcomes to be unknown. </p>
 <details class="note">
-<summary>Technical Review</summary>
-<p>Random variables are functions that generate new probability spaces. </p>
-<p>Consider the following probability space where <span class="arithmatex">\(\Omega\)</span> denotes the set of possible states of the world.</p>
-<div class="arithmatex">\[\big( \Omega, \mathcal{F}, \mathbb{P}\big)\]</div>
-<p>A random variable defined on this space, <span class="arithmatex">\(X: \Omega \to \mathbb{R}\)</span>, then generate a new probability space as follows </p>
-<ul>
-<li>The "sample space" is the codomain of the random variable </li>
-<li>We've assigning probabilities to elements of the Borel Sigma algebra </li>
-<li>The probability measure induced on this space is defined as follows: <span class="arithmatex">\(\mathbb{P}_X := \mathbb{P} \circ X^{-1}\)</span></li>
-</ul>
-<div class="arithmatex">\[\big( \mathbb{R}, \mathcal{B}(\mathbb{R}), \mathbb{P}_X\big)\]</div>
+<summary>Presentation Style</summary>
+<p>We all have that friend who prefers to read and understand all the rules before playing a board game. We would usually prefer for that friend to loosen up a bit, though, and just read the main or key rules so that we can get playing more quickly. </p>
+<p>I make this reference because when you are learning probability theory for the first time, it can feel like the instructor is that person who prefers to read all the rules before introducing the applications. You are sitting there in class, wondering why this level of detail is needed, and you asking yourself why we can't just start using this stuff and figure the rest out as we go.</p>
+<p>As you go on to take more classes that make use of or directly teach probability theory, you will come to realize that I am highly selective in the concepts that I have chosen to introduce. We're only scatching the surface of probability theory. And the central focus which motivates the selection of choices is composition. I want to explain ideas at the level of detail so that you can compose them. This is again why I stress the importance of understanding that a random variable is a function!</p>
 </details>
-<h3 id="example"><strong>Example</strong></h3>
-<p>Let's assume that an individual has a home worth <span class="arithmatex">\(v\)</span> dollars and that with probability <span class="arithmatex">\(p\)</span> a storm will damage housing causing <span class="arithmatex">\(z\)</span> dollars worth of losses. In light of this, the consumer can decide whether to buy insurance to cover their house. That is, for each dollar of insurance they purchase, they will receive <span class="arithmatex">\(k\)</span> dollars if the storm occurs.</p>
-<details class="tip">
-<summary>Notation</summary>
-<ul>
-<li>We can consider the sample space to be whether or not a storm damaged the house </li>
-</ul>
-<div class="arithmatex">\[\Omega = \{\text{storm}, \text{no storm}\} \]</div>
-<ul>
-<li>Because the sample space is countable, we can take <span class="arithmatex">\(F\)</span> to be the power set of <span class="arithmatex">\(\Omega\)</span> </li>
-<li>Then the probability measure defined on <span class="arithmatex">\(F\)</span> can be expressed as follows:</li>
-</ul>
-<div class="arithmatex">\[\begin{align*} \mathbb{P}(\emptyset) &amp;= 0 \\ 
-\mathbb{P}(\{\text{storm}\}) &amp;= p \\ 
-\mathbb{P}(\{\text{no storm}\}) &amp;= 1-p \\
-\mathbb{P}(\{\text{storm}\} \cup \{\text{no storm}\}) &amp;= 1 \\\end{align*}\]</div>
-</details>
-<h4 id="choice-set">Choice Set</h4>
-<p>The choice set for the consumer is the amount of insurance to purchase. Prior to seeing whether the storm occurs, they have to decide on the amount of insurance to purchase. </p>
-<p>The choice set could also be thought of as a collection of random variables indexed by the amount of insurance purchased:</p>
-<div class="arithmatex">\[X_l(\omega)=
+<p>Up to this point in the course, we have considered "everything" to be known. Like everything. For instance, when modeling how two firms compete where one firm makes a decision before another (the Stackleberg example), we assumed that the firm that moved first knew the market demand function as well as the cost function of its competitor. Now depending on the context and the purpose of the model this might be a reasonable approach, but at the moment it's hard to determine if that true without considering an alternative modeling approach. </p>
+<p>In this lecture we illustrate how to model decisions under uncertainty. We begin with an example buying a share of Telsa stock. As we can see in this <a href="https://yhoo.it/3ABfrFV">figure</a>, the price of tesla moves around quite a bit, so if you bought one share of Tesla today, you wouldn't know the value of the share tomorrow.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<figure>
+<p><img alt="Image title" src="../../../fig/tesla.png" width="500" />
+  </p>
+<figcaption>Tesla Stock Price</figcaption>
+</figure>
+<p>To think about this formally, we begin by writing down a probability space, where <span class="arithmatex">\(\Omega\)</span> represents the set of possible states of the world. </p>
+<div class="arithmatex">\[\begin{align*} \Big( \Omega, \mathcal{F}, \mathbb{P}\Big) \end{align*}\]</div>
+<p>Given this probability state, we can think of Tesla's stock price as a random variable that maps from <span class="arithmatex">\(\Omega\)</span> to <span class="arithmatex">\(\mathbb{R}_+\)</span>. That is for any possible state of the world, <span class="arithmatex">\(\omega \in \Omega\)</span>, <span class="arithmatex">\(X(\omega)\)</span> tells us the price of the Tesla stock. </p>
+<p>Now as previously mentioned, the reason we talk this somewhat formal approach to probability theory is because it highlights the essence of a random variable. Random variables are functions which "pull" the probability measure forward onto the space we care about. For our purpose, we don't care about which state of the world we're in. That has a lot of irrelevant information. For our purpose we only care about the corresponding value of the share price. </p>
+<div class="arithmatex">\[\begin{align*} \Big( \Omega, \mathcal{F}, \mathbb{P}\Big) \to \Big( \mathbb{R}_+, \mathcal{B}(\mathbb{R_+}), \mathbb{P} \circ X^{-1}\Big) \end{align*}\]</div>
+<p>With this structure in place (and yes I admit there's a lot going on here!), we now want to think about what the consumer knows. Hopefully you can see that thing we really care about <span class="arithmatex">\(\mathbb{P} \circ X^{-1}\)</span> is the thing the consumer doesn't actually know. That's the probability measure defined over the set of prices that the stock can take. In other words, in reality not only are we uncertain about the price of the share tomorrow, but we're uncertain about the associated probability measure.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>  To make some progress, though, we're going to assume that we know the probability measure (again a strong assumption that should be relaxed depending on this context and the reason for the model). </p>
+<p>For example, let's assume that given the current price, the stock is a continuous random variable.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> 
+- Uniform Random Variable 
+- Normal Random Variable</p>
+<p>Given this information, how might a consumer value purchasing a share of tesla stock? </p>
+<p>First, if <span class="arithmatex">\(X\)</span> is a random variable, then the expected value of the random variable is defined as follow, where <span class="arithmatex">\(f\)</span> is the probability density function.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<div class="arithmatex">\[\mathbb{E}[X] := \int _{\mathbb{R}} x f dx\]</div>
+<h4 id="clarification">Clarification</h4>
+<p>As you'll begin to understand, the probability space structure contains more information than we sometimes care to consider. For instance, in practice we may not care about <span class="arithmatex">\(\mathbb{P}\)</span> or <span class="arithmatex">\(X\)</span> individually, but only together. That is, we may only be interested in the generated probability measure defined on <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+<!-- 
+### **Example**
+
+Let's assume that an individual has a home worth $v$ dollars and that with probability $p$ a storm will damage housing causing $z$ dollars worth of losses. In light of this, the consumer can decide whether to buy insurance to cover their house. That is, for each dollar of insurance they purchase, they will receive $k$ dollars if the storm occurs.
+
+??? tip "Notation"
+
+    - We can consider the sample space to be whether or not a storm damaged the house 
+
+    $$\Omega = \{\text{storm}, \text{no storm}\} $$
+
+    - Because the sample space is countable, we can take $F$ to be the power set of $\Omega$ 
+    - Then the probability measure defined on $F$ can be expressed as follows:
+
+    $$\begin{align*} \mathbb{P}(\emptyset) &= 0 \\ 
+    \mathbb{P}(\{\text{storm}\}) &= p \\ 
+    \mathbb{P}(\{\text{no storm}\}) &= 1-p \\
+    \mathbb{P}(\{\text{storm}\} \cup \{\text{no storm}\}) &= 1 \\\end{align*}$$
+
+#### Choice Set 
+
+The choice set for the consumer is the amount of insurance to purchase. Prior to seeing whether the storm occurs, they have to decide on the amount of insurance to purchase. 
+
+The choice set could also be thought of as a collection of random variables indexed by the amount of insurance purchased:
+
+$$X_l(\omega)=
 \begin{cases}
 v - l, \quad \omega = \text{if no storm}\\
 v - l - z + kl, \quad \omega = \text{if storm}\\
-\end{cases}\]</div>
-<h4 id="objective-function-expected-utility">Objective Function (Expected Utility)</h4>
-<div class="arithmatex">\[V :: \text{Utility Functions} \to \text{Probability Measures} \to \text{Random Variables} \to \mathbb{R}\]</div>
-<div class="arithmatex">\[\begin{align*}V(\mathbb{P}, X_l, U) &amp;= \int U \circ X_l d\mathbb{P}  \\ 
-&amp;= \ U(X_l(\text{no storm}))(1-p) + \ U(X_l(\text{storm}))p \\ 
-&amp;= \ U(v - l)(1-p) + \ U(v - l - z + kl)p \end{align*}\]</div>
-<h3 id="extentions">Extentions</h3>
+\end{cases}$$
+
+
+#### Objective Function (Expected Utility)
+
+$$V :: \text{Utility Functions} \to \text{Probability Measures} \to \text{Random Variables} \to \mathbb{R}$$
+
+$$\begin{align*}V(\mathbb{P}, X_l, U) &= \int U \circ X_l d\mathbb{P}  \\ 
+&= \ U(X_l(\text{no storm}))(1-p) + \ U(X_l(\text{storm}))p \\ 
+&= \ U(v - l)(1-p) + \ U(v - l - z + kl)p \end{align*}$$ -->
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The attentive reader will point out that we are not only interested in the price of tesla tomorrow, but also the price over any time interval between today and tomorrow and likely beyond tomorrow. That's true! Good point.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Random variables are classified by the probability measure that they induce on the real line -- <a href="https://youtu.be/VsUJwyK9wlo?list=PLbMVogVj5nJQqGHrpAloTec_lOKsG-foc&amp;t=25">reference</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<details class="tip">
+<summary>Continuous Random Variable</summary>
+<p>Let's consider the following measurable space <span class="arithmatex">\((\mathbb{R}, \mathcal{B}(\mathbb{R}))\)</span> and let's take <span class="arithmatex">\(\mathbb{P}_X\)</span> to be the probability measure generated by the random variable <span class="arithmatex">\(X\)</span> whose codomain is <span class="arithmatex">\(\mathbb{R}\)</span>. Then <span class="arithmatex">\(X\)</span> is a continuous random variable if  <span class="arithmatex">\(\mathbb{P}_X\)</span> is absolutely continuous with respect to the lebesgue measure, which in short is the following condtion </p>
+<div class="arithmatex">\[\forall A \in \mathcal{B}(\mathbb{R}) \ \text{s.t.} \ \lambda (A) = 0 \implies \mathbb{P}_X(A) = 0 \]</div>
+<p>Note, an important point of clarification is that a probability measure may be absolutely continuous with respect to a non-probability measure. </p>
+<p>If a random variable is continuous, then by the Radon Nikodym Theorem there exists a function <span class="arithmatex">\(f: \mathbb{R} \to [0, \infty)\)</span> such that the following holds </p>
+<div class="arithmatex">\[\forall A \in \mathcal{B}(\mathbb{R}),\ \mathbb{P}_X(A) = \int_A fd\lambda\]</div>
+<p>Note, if the Borel set corresponds to an interval, then the lesbegue integral corresponds to the Reiman integral that we are familiair with from Calculus 1. We refer to <span class="arithmatex">\(f\)</span> as the probability density function.</p>
+</details>
+<p><a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<details class="tip">
+<summary>Expectation of Random Variables</summary>
+<p>We define the expectation of a random variable as follows.  </p>
+<div class="arithmatex">\[\mathbb{E}[X] := \int _{\Omega} X d\mathbb{P}\]</div>
+<p>We can also express the expected value by integrating over the codomain of <span class="arithmatex">\(X\)</span></p>
+<div class="arithmatex">\[\mathbb{E}[X] := \int _{\mathbb{R}} x d\mathbb{P_{X}}\]</div>
+<p>Which via the Radon-Nikodym Theorem is equivalent to the following:</p>
+<div class="arithmatex">\[\mathbb{E}[X] := \int _{\mathbb{R}} x fd\lambda\]</div>
+</details>
+<p><a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
               
             </article>
@@ -1292,42 +1286,6 @@ v - l - z + kl, \quad \omega = \text{if storm}\\
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../utility/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Utility" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Utility
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../production_constraints/" class="md-footer__link md-footer__link--next" aria-label="Next: Production Function" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Production Function
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
