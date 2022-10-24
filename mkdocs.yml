@@ -18,7 +18,7 @@ nav:
         - Real World Constraints: 'chapters/constraints/exploring_choice.md'
       - Objectives:
         - Utility: 'chapters/objectives/utility.md'
-        - Random Utility: 'chapters/objectives/random_utility.md'
+        #- Random Utility: 'chapters/objectives/random_utility.md'
         - Production Function: 'chapters/objectives/production_constraints.md'
         - Profit: 'chapters/objectives/profit.md'
       - Solvers: 
@@ -32,6 +32,8 @@ nav:
       - Consumer Heterogeneity: 'chapters/slides/conumers.md'
       - Comparative Statics: 'chapters/slides/comparative_statics.md'
       - Optimal Policy: 'chapters/slides/optimal_policy.md'
+      - Game Theory: 'chapters/slides/game_theory.md'
+      - Choice Uncertainty: 'chapters/slides/expected_utility.md'
   - Math:
       - Functions: 'math/functions.md'
       - Partial Evaluation: 'math/partial_evaluation.md'

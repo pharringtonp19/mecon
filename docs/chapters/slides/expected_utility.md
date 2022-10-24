@@ -1,0 +1,1 @@
+<iframe src="https://slides.com/pharringtonp19/modeling-consumer-heterogeneity-6d8d25/embed" width="576" height="420" title="Copy of Modeling Consumer Heterogeneity" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
