@@ -40,8 +40,8 @@ flowchart LR
 | 10/14   | [Demand](./chapters/applications/demand.md) | |
 | 10/17   | [Comparative Statics](./chapters/comparative_statics.md) | |
 | 10/19   | [Optimal Policy](./chapters/slides/optimal_policy.md)| |
-| 10/21   | [Game Theory (1)](./chapters/applications/game%20theory.md) | Problem Set 3 Posted|
-| tbd   | Expected Utility | | 
+| 10/21   | [Game Theory (1)](./chapters/applications/game%20theory.md) | |
+| 10/24   | [Choice Uncertainty](./chapters/slides/choice_uncertainty.md) |Problem Set 3 Posted | 
 | tbd   | Network Effects | | 
 | tbd   | Modeling Over States | | 
 | tbd   | Asymetric Information | | 

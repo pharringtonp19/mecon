@@ -33,7 +33,7 @@ nav:
       - Comparative Statics: 'chapters/slides/comparative_statics.md'
       - Optimal Policy: 'chapters/slides/optimal_policy.md'
       - Game Theory: 'chapters/slides/game_theory.md'
-      - Choice Uncertainty: 'chapters/slides/expected_utility.md'
+      - Choice Uncertainty: 'chapters/slides/choice_uncertainty.md'
   - Math:
       - Functions: 'math/functions.md'
       - Partial Evaluation: 'math/partial_evaluation.md'
