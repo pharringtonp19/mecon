@@ -19,7 +19,7 @@
     
     
       
-        <title>Information - Microeconomics</title>
+        <title>Asymmetric Information - Microeconomics</title>
       
     
     
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Information
+              Asymmetric Information
             
           </span>
         </div>
@@ -202,6 +202,8 @@
         
   
   
+    
+  
 
 
   
@@ -213,7 +215,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../why_model/" class="md-tabs__link">
+      <a href="../../why_model/" class="md-tabs__link md-tabs__link--active">
         Notes
       </a>
     </li>
@@ -393,15 +395,19 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
+        
+          
         
           
         
@@ -826,6 +832,103 @@
 
             
           
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
+          Markets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Markets" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Markets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Asymmetric Information
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Asymmetric Information
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#motivating-example" class="md-nav__link">
+    Motivating Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-for-equilibrium" class="md-nav__link">
+    Solving for Equilibrium
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1162,92 +1265,52 @@
                 
 
 
-  <h1>Information</h1>
+  <h1>Asymmetric Information</h1>
 
-<p><a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/market_for_lemons.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
 <div class="admonition tldr">
 <p class="admonition-title">Overview</p>
 <p>The key takeaway is to understand that information not only shapes markets, but can determine whether they exist in the first place. </p>
 </div>
+<p>You don't need to be an Economics major to understand that information has value. Indeed, its inherent value can be unstood by thinking about all the time and effort spent trying to a navigate a world without it. Imagine for a moment that companies knew the true productive work of potential employees. When they met you for the first time, they knew how hard you worked, how well you get along with others, and your true skill set! Now consider how this might shape your undergraduate experience.  Grades would have no meaning for the most part. Classes would be entirely focused on learning. Things would certainly look very different. </p>
+<p>In this lecture, we want to consider how information shapes markets. We want to consider how market outcomes change in response to information. In the first example, we illustrate how markets can fail to function as a result of a lack of information.</p>
 <h3 id="motivating-example"><strong>Motivating Example</strong></h3>
-<p>The following is an adoption from Geroge Akerlof's Market for Lemons.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> We begin by consider the case where there are two types of cars with the following values assocaited with the potential buyers and sellers of the car (I've used variables to stand in for specific values). What's import here is that the that the buyer values each type of car more than the sellers)</p>
+<p>The following is an adoption from Geroge Akerlof's Market for Lemons.[^1] We consider a market with two types of cars (Good Cars, Bad Cars). Consumers, and Sellers have some value associated with these cars which we reflect with their willingness to pay. Below we assume that the consumers value each type of car more than the sellers. Therefore in a world with "full information" we would expect that consumers purchase good cars for some value between <span class="arithmatex">\(\$2400\)</span> and <span class="arithmatex">\(\$2000\)</span>, and purchase bad cars for a price between <span class="arithmatex">\(\$1200\)</span> and <span class="arithmatex">\(\$1000\)</span>. </p>
 <table>
 <thead>
 <tr>
 <th align="center">Cars</th>
-<th align="center">Quantity</th>
-<th align="center">Buyer Value</th>
 <th align="center">Seller Value</th>
+<th align="center">Consumer Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">Plums</td>
-<td align="center"><span class="arithmatex">\(q_1\)</span></td>
-<td align="center"><span class="arithmatex">\(\text{buyer}\_\text{value}_1\)</span></td>
-<td align="center"><span class="arithmatex">\(\text{seller}\_\text{value}_2\)</span></td>
+<td align="center">Good Car</td>
+<td align="center"><span class="arithmatex">\(2000\)</span></td>
+<td align="center"><span class="arithmatex">\(2400\)</span></td>
 </tr>
 <tr>
-<td align="center">Lemons</td>
-<td align="center"><span class="arithmatex">\(q_2\)</span></td>
-<td align="center"><span class="arithmatex">\(\text{buyer}\_\text{value}_2\)</span></td>
-<td align="center"><span class="arithmatex">\(\text{seller}\_\text{value}_2\)</span></td>
+<td align="center">Bad Car</td>
+<td align="center"><span class="arithmatex">\(1000\)</span></td>
+<td align="center"><span class="arithmatex">\(1200\)</span></td>
 </tr>
 </tbody>
 </table>
-<h4 id="exercises"><strong>Exercises</strong></h4>
-<div class="admonition question">
-<p class="admonition-title">Framework</p>
-<p>See if you can write down the above problem in terms of a probability space (Answer: <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>)</p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">Market Clearing Condition</p>
-<p>Letting <span class="arithmatex">\(V\)</span> denote the random variable that captures the buyer's value of each car, work through the conditions underwhich the "market clears" (Answer: <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>)</p>
-</div>
-<details class="tip">
-<summary>Math on the Computer</summary>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jax</span>
-<span class="kn">import</span> <span class="nn">jax.numpy</span> <span class="k">as</span> <span class="nn">jnp</span> 
-<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span> 
-<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span> 
-
-<span class="nd">@dataclass</span> 
-<span class="k">class</span> <span class="nc">Market_for_lemons</span><span class="p">:</span> 
-    <span class="n">alpha</span> <span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.5</span> 
-    <span class="n">buyer_value</span><span class="p">:</span> <span class="n">jnp</span><span class="o">.</span><span class="n">array</span> <span class="o">=</span> <span class="n">jnp</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">100.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">])</span>
-    <span class="n">seller_value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">80.0</span> 
-</code></pre></div>
-</details>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p><a href="https://en.wikipedia.org/wiki/The_Market_for_Lemons">Here</a> is the wiki article&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<details class="check" open="open">
-<summary>Answer</summary>
-<ul>
-<li><span class="arithmatex">\(\Omega = \{\text{plum}, \text{lemon}\}\)</span></li>
-<li><span class="arithmatex">\(\mathcal{F} =  \Big\{\emptyset,  \{\text{plum}\},  \{\text{lemon}\},  \{\text{plum}, \text{lemon}\}  \Big\}\)</span></li>
-<li><span class="arithmatex">\(\mathbb{P}(\emptyset) = 0,\mathbb{P}(\{\text{plum}\}) = \alpha,  \mathbb{P}(\{\text{lemon}\}) = 1-\alpha,  \mathbb{P}(\{\text{plum}, \text{lemon}\}) = 1\)</span></li>
-</ul>
-</details>
-<p><a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:3">
-<details class="check" open="open">
-<summary>Answer</summary>
-<p>We know that the market will clear if the expected value that the consumer derives from buying a car is greater than the value that a seller associates to the plums. </p>
-<p>Which means that we'll want to express our answer in terms of the probability measure, the random variable, anb the seller's value of a plum.</p>
-<div class="arithmatex">\[\begin{align*}E[V] &amp;= \int Vd\mathbb{P} \\ 
-&amp;= \sum _i V(E_i)\mathbb{P}(E_i) \\
-&amp;= V(\text{plum})\alpha + V(\text{lemon})(1-\alpha)\end{align*}\]</div>
-</details>
-<p><a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+<p>Consumers, though, may not have full information about the car they're purchasing. When they see an add online that someone is selling a car they don't know whether the car is really a good car or a bad car. We are interested in modeling a consumer's willingness to pay for a car whose value they don't know. </p>
+<p>From previous lectures, we can model such a willingness to pay as follows:</p>
+<div class="arithmatex">\[W(p, X_c, u) = u^{-1} \circ V(p, X_c, u) =  u^{-1} \Big(pu(X_c(\textrm{Good Car})) + (1-p)u(X_c(\textrm{Bad Car}) \Big)\]</div>
+<p>In terms of probability theory, we can think of <span class="arithmatex">\(\Omega = \{\textrm{Good Car}, \textrm{Bad Car}\}\)</span> and then <span class="arithmatex">\(X_c\)</span> maps each each type of car to the price that a consumer would be willing to pay if they knew the type of the car.</p>
+<p>To make things concrete, let's assume that <span class="arithmatex">\(p=0.5\)</span> and <span class="arithmatex">\(u =  x \longmapsto \sqrt{x}\)</span>. Then we can evalute <span class="arithmatex">\(W\)</span> as follows:</p>
+<div class="arithmatex">\[\begin{align*}W(0.5, X_c, u) = \big(0.5\sqrt{2400} + 0.5\sqrt{1200} \big)^2 \end{align*} = 1748.5282\]</div>
+<p>What jumps out to you? You notice that the consumer's willingness to pay for a car with an unknown type is less than the willingness to pay of sellers with a good quality car. Therefore, at this price, no good cars will be sold. In response to this, consumers will update their beliefs about the distribution of the available cars and only bad cars will be sold for some price in <span class="arithmatex">\([1200, 1000]\)</span>.</p>
+<h3 id="solving-for-equilibrium"><strong>Solving for Equilibrium</strong></h3>
+<p>More formally, we can consider that equilibrium is defined with respect to the price that the consumers offer and the probability of a good car. As we have done previously, we can solve for the equilbrium as follows where prob denotes the probability of a good car, and p denotes the price that the seller is willing to pay for a car. </p>
+<div class="arithmatex">\[\underset{\textrm{prob}, p}{\textrm{Solve}} \ F_{X_c, X_s, u}(\textrm{prob}, p) = 0 \]</div>
+<p>Equilibrium is defined as the root of this function <span class="arithmatex">\(F\)</span> which we define as follows. </p>
+<div class="arithmatex">\[F_{X_s, X_c, u}(\textrm{prob}, \textrm{price}) = \begin{bmatrix} \textrm{price} - u^{-1} \circ V(\textrm{prob}, X_c, u) \\
+\textrm{prob} - S(X_c, \textrm{price})
+\end{bmatrix}\]</div>
+<p>This function is zero when the price the sellers receive is equal to the price that consumers are willing to pay. And the price that consumers are willing to pay is a function of the probability of good cars which is the probability of good cars supplied at the price. </p>
 
               
             </article>
@@ -1263,6 +1326,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../applications/game%20theory/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Game Theory" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Game Theory
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../slides/conumers/" class="md-footer__link md-footer__link--next" aria-label="Next: Consumer Heterogeneity" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Consumer Heterogeneity
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
