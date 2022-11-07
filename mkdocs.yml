@@ -36,6 +36,7 @@ nav:
       - Optimal Policy: 'chapters/slides/optimal_policy.md'
       - Game Theory: 'chapters/slides/game_theory.md'
       - Choice Uncertainty: 'chapters/slides/choice_uncertainty.md'
+      - Asymmetric Information: 'chapters/slides/asymmetric_information.md'
   - Math:
       - Functions: 'math/functions.md'
       - Partial Evaluation: 'math/partial_evaluation.md'
