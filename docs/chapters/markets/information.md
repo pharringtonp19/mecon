@@ -40,7 +40,7 @@ $$\underset{\textrm{prob}, p}{\textrm{Solve}} \ F_{X_c, X_s, u}(\textrm{prob}, p
 Equilibrium is defined as the root of this function $F$ which we define as follows. 
 
 $$F_{X_s, X_c, u}(\textrm{prob}, \textrm{price}) = \begin{bmatrix} \textrm{price} - u^{-1} \circ V(\textrm{prob}, X_c, u) \\
-\textrm{prob} - S(X_c, \textrm{price})
+\textrm{prob} - S(X_s, \textrm{price})
 \end{bmatrix}$$
 
 This function is zero when the price the sellers receive is equal to the price that consumers are willing to pay. And the price that consumers are willing to pay is a function of the probability of good cars which is the probability of good cars supplied at the price. 
