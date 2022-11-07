@@ -47,7 +47,7 @@ flowchart LR
 |10/31 | [Math on the Computer](https://github.com/pharringtonp19/mecon/blob/main/notebooks/Problem_Set_4_Preparation.ipynb) |  [Problem Set 4 Posted](https://github.com/pharringtonp19/mecon/blob/main/notebooks/problem_sets/assignments/Problem_Set_Four.ipynb) | 
 | 11/02   | [Choice Uncertainty (3)](./chapters/slides/choice_uncertainty.md) | | 
 | 11/04   | [Choice Uncertainty (4)](./chapters/slides/choice_uncertainty.md) | | 
-|11/07 | [Asymmetric Information](./chapters/slides/asymmetric_information.md) |  Problem Set 5 Posted | 
+|11/07 | [Asymmetric Information](./chapters/markets/information.md) |  Problem Set 5 Posted | 
 | tbd   | Network Effects | | 
 | tbd   | Modeling Over States | | 
 | tbd   | Asymetric Information | | 

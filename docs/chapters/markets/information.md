@@ -1,66 +1,46 @@
-<a href="https://colab.research.google.com/github/pharringtonp19/mecon/blob/main/notebooks/market_for_lemons.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
 !!! tldr "Overview"
 
     The key takeaway is to understand that information not only shapes markets, but can determine whether they exist in the first place. 
 
+You don't need to be an Economics major to understand that information has value. Indeed, its inherent value can be unstood by thinking about all the time and effort spent trying to a navigate a world without it. Imagine for a moment that companies knew the true productive work of potential employees. When they met you for the first time, they knew how hard you worked, how well you get along with others, and your true skill set! Now consider how this might shape your undergraduate experience.  Grades would have no meaning for the most part. Classes would be entirely focused on learning. Things would certainly look very different. 
+
+In this lecture, we want to consider how information shapes markets. We want to consider how market outcomes change in response to information. In the first example, we illustrate how markets can fail to function as a result of a lack of information.
+
+
 ### **Motivating Example** 
 
-The following is an adoption from Geroge Akerlof's Market for Lemons.[^1] We begin by consider the case where there are two types of cars with the following values assocaited with the potential buyers and sellers of the car (I've used variables to stand in for specific values). What's import here is that the that the buyer values each type of car more than the sellers)
+The following is an adoption from Geroge Akerlof's Market for Lemons.[^1] We consider a market with two types of cars (Good Cars, Bad Cars). Consumers, and Sellers have some value associated with these cars which we reflect with their willingness to pay. Below we assume that the consumers value each type of car more than the sellers. Therefore in a world with "full information" we would expect that consumers purchase good cars for some value between $\$2400$ and $\$2000$, and purchase bad cars for a price between $\$1200$ and $\$1000$. 
 
 
-| Cars      | Quantity | Buyer Value | Seller Value | 
-| :----:  | :----: |  :----: | :----:  |
-| Plums      | $q_1$      | $\text{buyer}\_\text{value}_1$ |  $\text{seller}\_\text{value}_2$ | 
-| Lemons   | $q_2$        |  $\text{buyer}\_\text{value}_2$ |  $\text{seller}\_\text{value}_2$ |
+| Cars  | Seller Value | Consumer Value | 
+| :----:  |  :----: | :----:  |
+| Good Car   |$2000$ |  $2400$ | 
+| Bad Car   |   $1000$ |  $1200$ |
 
-#### **Exercises**
+Consumers, though, may not have full information about the car they're purchasing. When they see an add online that someone is selling a car they don't know whether the car is really a good car or a bad car. We are interested in modeling a consumer's willingness to pay for a car whose value they don't know. 
 
-!!! Question "Framework"
+From previous lectures, we can model such a willingness to pay as follows:
 
-    See if you can write down the above problem in terms of a probability space (Answer: [^2])
+$$W(p, X_c, u) = u^{-1} \circ V(p, X_c, u) =  u^{-1} \Big(pu(X_c(\textrm{Good Car})) + (1-p)u(X_c(\textrm{Bad Car}) \Big)$$
 
-!!! Question "Market Clearing Condition"
+In terms of probability theory, we can think of $\Omega = \{\textrm{Good Car}, \textrm{Bad Car}\}$ and then $X_c$ maps each each type of car to the price that a consumer would be willing to pay if they knew the type of the car.
 
-    Letting $V$ denote the random variable that captures the buyer's value of each car, work through the conditions underwhich the "market clears" (Answer: [^3])
+To make things concrete, let's assume that $p=0.5$ and $u =  x \longmapsto \sqrt{x}$. Then we can evalute $W$ as follows:
 
-??? Tip "Math on the Computer"
+$$\begin{align*}W(0.5, X_c, u) = \big(0.5\sqrt{2400} + 0.5\sqrt{1200} \big)^2 \end{align*} = 1748.5282$$
 
-    ```python
-    import jax
-    import jax.numpy as jnp 
-    from functools import partial 
-    from dataclasses import dataclass 
+What jumps out to you? You notice that the consumer's willingness to pay for a car with an unknown type is less than the willingness to pay of sellers with a good quality car. Therefore, at this price, no good cars will be sold. In response to this, consumers will update their beliefs about the distribution of the available cars and only bad cars will be sold for some price in $[1200, 1000]$.
 
-    @dataclass 
-    class Market_for_lemons: 
-        alpha : float = 0.5 
-        buyer_value: jnp.array = jnp.array([100., 50.])
-        seller_value: float = 80.0 
-    ```
+### **Solving for Equilibrium**
 
+More formally, we can consider that equilibrium is defined with respect to the price that the consumers offer and the probability of a good car. As we have done previously, we can solve for the equilbrium as follows where prob denotes the probability of a good car, and p denotes the price that the seller is willing to pay for a car. 
 
+$$\underset{\textrm{prob}, p}{\textrm{Solve}} \ F_{X_c, X_s, u}(\textrm{prob}, p) = 0 $$
 
+Equilibrium is defined as the root of this function $F$ which we define as follows. 
 
+$$F_{X_s, X_c, u}(\textrm{prob}, \textrm{price}) = \begin{bmatrix} \textrm{price} - u^{-1} \circ V(\textrm{prob}, X_c, u) \\
+\textrm{prob} - S(X_c, \textrm{price})
+\end{bmatrix}$$
 
-[^1]: [Here](https://en.wikipedia.org/wiki/The_Market_for_Lemons) is the wiki article
-
-[^2]:
-
-    ???+ check "Answer"
-
-        - $\Omega = \{\text{plum}, \text{lemon}\}$
-        - $\mathcal{F} =  \Big\{\emptyset,  \{\text{plum}\},  \{\text{lemon}\},  \{\text{plum}, \text{lemon}\}  \Big\}$
-        - $\mathbb{P}(\emptyset) = 0,\mathbb{P}(\{\text{plum}\}) = \alpha,  \mathbb{P}(\{\text{lemon}\}) = 1-\alpha,  \mathbb{P}(\{\text{plum}, \text{lemon}\}) = 1$
-
-[^3]:
-
-    ???+ check "Answer"
-
-        We know that the market will clear if the expected value that the consumer derives from buying a car is greater than the value that a seller associates to the plums. 
-
-        Which means that we'll want to express our answer in terms of the probability measure, the random variable, anb the seller's value of a plum.
-
-        $$\begin{align*}E[V] &= \int Vd\mathbb{P} \\ 
-        &= \sum _i V(E_i)\mathbb{P}(E_i) \\
-        &= V(\text{plum})\alpha + V(\text{lemon})(1-\alpha)\end{align*}$$
+This function is zero when the price the sellers receive is equal to the price that consumers are willing to pay. And the price that consumers are willing to pay is a function of the probability of good cars which is the probability of good cars supplied at the price. 

@@ -28,6 +28,8 @@ nav:
         - Demand: 'chapters/applications/demand.md'
         - Comparative Statics: 'chapters/comparative_statics.md'
         - Game Theory: 'chapters/applications/game theory.md'
+      - Markets: 
+        - Asymmetric Information: 'chapters/markets/information.md'
   - Slides:
       - Consumer Heterogeneity: 'chapters/slides/conumers.md'
       - Comparative Statics: 'chapters/slides/comparative_statics.md'
