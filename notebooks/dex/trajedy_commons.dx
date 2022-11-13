@@ -1,0 +1,8 @@
+'## Trajedy of the Commons 
+
+def total_output (x: Float) : Float = 
+    2*x*x 
+
+def average {n:Type} [_:Ix n] (xs : n=>Float) : Float = 
+    total = sum xs 
+    total / (n_to_f $ size n)

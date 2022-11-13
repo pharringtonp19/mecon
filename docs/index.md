@@ -1,6 +1,6 @@
 ### **Summary**
 
-A course where we :hammer_pick: Microeconomic models 
+A course where we learn how to :hammer_pick: Microeconomic models
 
 ``` mermaid
 flowchart LR
@@ -47,10 +47,12 @@ flowchart LR
 |10/31 | [Math on the Computer](https://github.com/pharringtonp19/mecon/blob/main/notebooks/Problem_Set_4_Preparation.ipynb) |  [Problem Set 4](https://github.com/pharringtonp19/mecon/blob/main/notebooks/problem_sets/assignments/Problem_Set_Four.ipynb) | 
 | 11/02   | [Choice Uncertainty (3)](./chapters/slides/choice_uncertainty.md) | | 
 | 11/04   | [Choice Uncertainty (4)](./chapters/slides/choice_uncertainty.md) | | 
-|11/07 | [Asymmetric Information](./chapters/markets/information.md) |  [Problem Set 5](https://github.com/pharringtonp19/mecon/blob/main/notebooks/problem_sets/assignments/Design_Your_Own_Market_Correction.ipynb) | 
-| tbd   | Network Effects | | 
-| tbd   | Modeling Over States | | 
-| tbd   | Asymetric Information | | 
-| tbd   | Moral Hazard | | 
+|11/07 | [Asymmetric Information (1)](./chapters/markets/information.md) |  [Problem Set 5](https://github.com/pharringtonp19/mecon/blob/main/notebooks/problem_sets/assignments/Design_Your_Own_Market_Correction.ipynb) | 
+| 11/09  | [Mathematics of Equilibrium](./chapters/markets/information.md) | | 
+| 11/11  | [Asymmetric Information (2)](./chapters/markets/information.md) || 
+| 11/14  | [Asymmetric Information (3)](./chapters/markets/information.md) | Problem Set 6 | 
+| 11/16  | [Asymmetric Information (4)](./chapters/markets/information.md) || 
+| 11/18  | Midterm Review || 
+| 11/21  | Midterm | | 
 
 

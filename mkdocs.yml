@@ -12,6 +12,7 @@ nav:
         - Why Model? : 'chapters/why_model.md'
         - Uncertainty : 'chapters/constraints/uncertainty.md'
         - Solving Models: 'chapters/solving_models.md'
+        - Notation: 'chapters/notation.md'
       - Choice Sets:
         - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
         - Budget Constraint: 'chapters/constraints/budget_contraints.md'
@@ -21,9 +22,9 @@ nav:
         #- Random Utility: 'chapters/objectives/random_utility.md'
         - Production Function: 'chapters/objectives/production_constraints.md'
         - Profit: 'chapters/objectives/profit.md'
-      - Solvers: 
-        - Intro: 'chapters/solvers/intro.md'
-        - Basics: 'chapters/solvers/stopping.md'
+      # - Solvers: 
+      #   - Intro: 'chapters/solvers/intro.md'
+      #   - Basics: 'chapters/solvers/stopping.md'
       - Applications: 
         - Demand: 'chapters/applications/demand.md'
         - Comparative Statics: 'chapters/comparative_statics.md'
@@ -109,10 +110,10 @@ markdown_extensions:
 plugins:
   - search
   # - mknotebooks
-  - mkdocs-jupyter:
-      ignore_h1_titles: True
-      execute: False
-      include_source: False
+  # - mkdocs-jupyter:
+  #     ignore_h1_titles: True
+  #     execute: False
+  #     include_source: False
 
 extra_javascript: 
     # The below three make MathJax work, see https://squidfunk.github.io/mkdocs-material/reference/mathjax/
