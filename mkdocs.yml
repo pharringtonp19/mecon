@@ -13,6 +13,7 @@ nav:
         - Uncertainty : 'chapters/constraints/uncertainty.md'
         - Solving Models: 'chapters/solving_models.md'
         - Notation: 'chapters/notation.md'
+        - Learning: 'chapters/learning.md'
       - Choice Sets:
         - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
         - Budget Constraint: 'chapters/constraints/budget_contraints.md'
@@ -31,6 +32,7 @@ nav:
         - Game Theory: 'chapters/applications/game theory.md'
       - Markets: 
         - Asymmetric Information: 'chapters/markets/information.md'
+        - Asymmetric Information (2): 'chapters/html_scripts/compensation.html'
   - Slides:
       - Consumer Heterogeneity: 'chapters/slides/conumers.md'
       - Comparative Statics: 'chapters/slides/comparative_statics.md'

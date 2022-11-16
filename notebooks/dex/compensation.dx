@@ -1,0 +1,66 @@
+'## Model Basics
+
+'#### Output Function 
+
+'We start by introducing the output function. As we'll show, there are multiple ways to
+express the output function. Intuitively, we can think of it as a function with a bit of 
+noise added in the output. 
+
+' $$\text{effort} \longmapsto 2. + \sqrt{\text{effort}} + z \sim \mathcal{N}(0,1)$$
+
+'More formally, though, we want to think of it as a parameterized random variable. Were
+the parameterization is down with respect to effort.  
+
+' $$z  \longmapsto f(\text{effort}, z) = 2. +  \sqrt{\text{effort}} + z $$
+
+'We can write the function as follows: 
+
+def output_fn (effort : Float) (noise: Float): Float = 
+    2. + sqrt effort + noise
+
+'#### Wage Function 
+The firm sets the wage. We can think of the set of possible wage functions as the choice
+set for the firm. The wage can only depend on what is observable by the firm. Therefore, it cannot depend
+on the amount of effort exerted by the individual. It can only depend on the output in this example. 
+
+' $$\text{output} \longmapsto a + b*\text{output}$$
+
+def wage_fn (fixed_wage: Float) (marginal_wage: Float) (output: Float) : Float = 
+    fixed_wage + marginal_wage*output
+
+'#### Cost of Effort 
+You don't need to take an Intermediate Mircoeconomics Course to understand the effort is costly. 
+
+' $$\text{efffort} \longmapsto \text{efffort}^2$$
+
+def cost_effort_fn (x: Float) : Float = 
+    x*x 
+
+'#### Utility Function 
+We introduce a standard, concave utility function  
+
+' $$\text{money} \longmapsto \sqrt{\text{money}}$$
+
+def utility_fn (x: Float) : Float = 
+    sqrt x 
+
+noise = randn (new_key 1) -- Random Noise 
+
+
+
+
+
+
+
+
+
+
+
+def utils_from_effort (wage_fn: Float -> Float) (effort: Float) (noise: Float): Float = 
+    output = output_fn effort noise  
+    wage = wage_fn output 
+    utility_fn wage 
+
+utils_from_effort (wage_fn 0. 2.) 0.5 noise 
+    
+

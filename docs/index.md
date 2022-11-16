@@ -50,7 +50,7 @@ flowchart LR
 |11/07 | [Asymmetric Information (1)](./chapters/markets/information.md) |  [Problem Set 5](https://github.com/pharringtonp19/mecon/blob/main/notebooks/problem_sets/assignments/Design_Your_Own_Market_Correction.ipynb) | 
 | 11/09  | [Mathematics of Equilibrium](./chapters/markets/information.md) | | 
 | 11/11  | [Asymmetric Information (2)](./chapters/markets/information.md) || 
-| 11/14  | [Asymmetric Information (3)](./chapters/markets/information.md) | Problem Set 6 | 
+| 11/14  | [Asymmetric Information (3)](./chapters/markets/information.md) | | 
 | 11/16  | [Asymmetric Information (4)](./chapters/markets/information.md) || 
 | 11/18  | Midterm Review || 
 | 11/21  | Midterm | | 
