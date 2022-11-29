@@ -45,6 +45,12 @@ Implicit functions are functions where a solver is called during the evaluation 
 
 $$x^*(\theta) := \underset{x}{\text{solve}} \ F(x, \theta) = 0 $$
 
+### **Vectors as Functions**
+
+- Reference: Thinking with Types
+
+$$| a \to b | = \underbrace{|b| \times |b| \times \dots \times |b|}_{=|a|\textrm{times}} = |b|^{|a|}$$
+
 
 
 
