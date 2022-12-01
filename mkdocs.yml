@@ -41,6 +41,7 @@ nav:
       - Choice Uncertainty: 'chapters/slides/choice_uncertainty.md'
       - Asymmetric Information: 'chapters/slides/asymmetric_information.md'
       - Optimization: 'chapters/slides/optimization.md'
+      - Applications: 'chapters/slides/applications.md'
   - Math:
       - Functions: 'math/functions.md'
       - Partial Evaluation: 'math/partial_evaluation.md'
