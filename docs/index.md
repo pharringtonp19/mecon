@@ -1,6 +1,6 @@
 ### **Summary**
 
-A course where we learn how to :hammer_pick: Microeconomic models
+A course where we learn how to :hammer_pick: Microeconomic models 
 
 ``` mermaid
 flowchart LR
@@ -16,7 +16,7 @@ flowchart LR
     E --> R(Prices);
 ```
 
-### [YouTube Mini Lectures](https://studio.youtube.com/channel/UCLRuphScQa7h9tgrIzWG2rA)
+### [YouTube Mini Lectures: Just Updated!!!](https://www.youtube.com/watch?v=T4aqpXvKLEw&list=PLkgu-RZ_7eBEVuhrnK358pKasqnEUT0bE)
 
 ### **Schedule**
 
