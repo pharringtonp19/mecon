@@ -42,18 +42,23 @@ nav:
       - Asymmetric Information: 'chapters/slides/asymmetric_information.md'
       - Optimization: 'chapters/slides/optimization.md'
       - Applications: 'chapters/slides/applications.md'
+  - YouTube: 
+      - Constraints: 'chapters/YouTube/constraints.md'
+      - Teacher Supply: 'chapters/YouTube/teacher_supply.md'
   - Math:
       - Functions: 'math/functions.md'
       - Partial Evaluation: 'math/partial_evaluation.md'
       # - Background for Optimization: 'math/opt1.md'
-      - Basics of Optimization: 'math/opt2.md'
+      - Local Minimum: 'math/local minimum.md'
       - Probability Introduction: 'math/probability_intro.md'
-  - Assignments: 
-      # - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
-      - PS1 : 'Problem Sets/Problem_Set_One.pdf'
-      - PS1 Solutions: 'Problem Sets/Problem_Set_One_Solutions.pdf'
-      - PS2 : 'Problem Sets/Problem_Set_Two.pdf'
-      - PS2 Solutions: 'Problem Sets/Problem_Set_Two_Solutions.pdf'
+
+
+  # - Assignments: 
+  #     # - Writing Exercise Example: 'Problem Sets/Writing Exercise.md'
+  #     - PS1 : 'Problem Sets/Problem_Set_One.pdf'
+  #     - PS1 Solutions: 'Problem Sets/Problem_Set_One_Solutions.pdf'
+  #     - PS2 : 'Problem Sets/Problem_Set_Two.pdf'
+  #     - PS2 Solutions: 'Problem Sets/Problem_Set_Two_Solutions.pdf'
 
   #     - Optimization:
   #       - Background: 'math/opt1.md'

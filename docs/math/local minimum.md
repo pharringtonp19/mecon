@@ -1,63 +1,43 @@
 ### **Introduction**
 
-!!! tip 
+??? tip "Notebooks"
+    |Description | Notebook | Status 
+    |:---:|:---:|:---:|
+    Taylor Polynomials | <a href="https://github.com/pharringtonp19/mecon/blob/main/notebooks/optimization/Taylor_Polynomials.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | Work In Progress
 
-    We can reason locally about a function by using First Order Taylor Polynomials 
+!!! tldr "Overview" 
+
+    The aim of this lecture is to present the necessary conditions for a local minimum for both constrained and unconstrained optimization problems from the same starting point 
 
 We want to consider the following problem: 
 
-$$\begin{align*} \underset{x \in G(\mathbb{R}^n)}{\text{minimize}} \ f(x) \end{align*}$$
+$$\begin{align*} \underset{x }{\text{minimize}} \ f(x) \quad \textrm{s.t.} \ c(x) = 0  \end{align*}$$
 
 #### Notation
 - $f$ is the objective function
 
-- $\mathbb{R}^n$ is the domain of $f$
-
-- $G$ is a set-valed function that maps the domain of $f$ into a subset of $\mathbb{R}^n$
-
-- We can express $G$ in terms of a constraint function $c$:
-
-\begin{align*}
-G(\mathbb{R}^n) := \{x \in \mathbb{R}^n \mid c(x) = 0\}
-\end{align*}
+- $c$ is the contstraint function
 
 - $x \in \mathbb{R}^n$ is the choice variable
 
-### **Local Minimium**
+### **Starting Point**
 
-Roughly speaking, a point, $x_0$, is a local minimum of a function, $f$, if for every point in the ***feasible neighborhood*** of $x_0$, $f(x) \geq f(x_0)$.
-
-More formally, we can say that $x_0 \in G(S)$ is a local minimum if the following condition holds:
-
-\begin{align*}
-\underbrace{\exists \ \varepsilon > 0 \ s.t. \ \forall x \in G(S) \ s.t. \|x-x_0\| < \varepsilon}_{\textrm{feasible neighborhood: open ball around} \ x_0}, \quad f(x) \geq f(x_0), 
-\end{align*}
-
-<figure markdown>
-  ![Image title](./../../fig/functions.png){ width="1000" }
-  <figcaption>Functions</figcaption>
-</figure>
-
-### **First Order Conditions**
-
-Now that we have a conceptual understanding of what a local minimum is (note this definition holds for both constrained and unconstrained problems) we would like to express the criteria of a local minimum in a way so that we can search for it. That is we want to make this definition mathematically tractable. We do so by making use of the First Order Taylor Polynomial around $x_0$.
+A point, $x_0$, is a local minimum of a function, $f$, if for every point in the ***feasible neighborhood*** of $x_0$, $f(x) \geq f(x_0)$. Note this definition holds for both constrained and unconstrained problems. When reasoning about $f(x)$ in some small neighborhood around $x_0$, it is sufficient to replace $f$ with a first order taylor polynomial defined at $x_0$. That is, for $x$ "near" $x_0$, $f(x) \approx f_{x_0}(x)$, where $f_{x_0}$ is defined as follows: 
 
 \begin{align*}
 f_{x_0}(x) &= f(x_0)  + \nabla f(x_0)'(x-x_0)
 \end{align*}
 
-
-From the definition of a local minimum, it's clear that if $x_0$ is a local minimum, then the  condition, $f(x) \geq f(x_0)$, must hold when $x$ is very close to $x_0$. Hence, when reasoning about $f(x)$ in some small neighborhood around $x_0$, it is sufficient to reason about $f_{x_0}(x)$. 
-
 Therefore, if $x_0$ is a local minimum, then for any feasible $x$ in a small neighborhood of $x_0$
 
 \begin{align*}
-f_{x_0}(x) &\geq f(x) \\
-\iff \quad f(x_0)  + \nabla f(x_0)'(x-x_0) &\geq f(x) \\
+f(x) & \geq f(x_0) \\ 
+f_{x_0}(x) &\geq f(x_0) \\
+\iff \quad f(x_0)  + \nabla f(x_0)'(x-x_0) &\geq f(x_0) \\
 \iff \quad \nabla f(x_0)'(x-x_0) &\geq 0
 \end{align*}
 
-#### Unconstrained 
+### **Unconstrained**
 If there are no constraints, then the feasible set is $\mathbb{R}^n$. Hence we can re-write the above condition as saying 
 
 \begin{align*}
@@ -75,7 +55,7 @@ Take $d =  -\nabla f(x_0)/k$ where $k$ is some sufficintly large scalar such tha
 
 Hence, we can conclude that if $x_0$ is a local minimum and there are no constraints, then $\nabla f(x_0)=0$.
 
-#### Constrained 
+### **Constrained** 
 
 With a constraint function, the feasible set is no longer $\mathbb{R}^n$. Hence we can re-write the above condition as saying 
 
@@ -106,7 +86,7 @@ If $x_0$ is local minimum of $f$ then $\nabla f(x_0)'d = 0$ for all $d$ such tha
 c(x_0) &= 0 
 \end{align*}
 
-### **Second Order Conditions**:
+<!-- ### **Second Order Conditions**:
 
 - Hessian:  $\nabla^2f(x)$
 
@@ -119,7 +99,7 @@ f_{x_0}(x) &= f(x_0) + \underbrace{\nabla f(x_0)}_{=0}(x-x_0) + \frac{1}{2}(x-x_
 f_{x_0}(x) &= f(x_0) + \frac{1}{2}(x-x_0)^T\nabla^2f(x_0)(x-x_0) \\
 \end{align*}
 
-If $\nabla^2f(x)$ is Positive Semi-Definite, then $x_0$ is a local minimum of $f$.
+If $\nabla^2f(x)$ is Positive Semi-Definite, then $x_0$ is a local minimum of $f$. -->
 
 #### References
 
