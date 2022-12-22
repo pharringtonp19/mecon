@@ -1,6 +1,6 @@
 <h1 style="text-align: center;color:blue;">Microeconomic Analysis</h1>
 
-<h2 style="text-align: left;color:blue;">Sumary</h2>
+<h2 style="text-align: left;color:blue;">Summary</h2>
 
 A course where we learn how to :hammer_pick: Microeconomic models 
 
