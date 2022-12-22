@@ -1,6 +1,6 @@
-<h1 style="text-align: center;color:blue;">Microeconomic Analysis</h1>
+<h1 style="text-align: center;color:blue;font-weight:bold;">Microeconomic Analysis</h1>
 
-<h2 style="text-align: left;color:blue;">Summary</h2>
+<h2 style="text-align: left;color:blue;font-weight:bold;">Summary</h2>
 
 A course where we learn how to :hammer_pick: Microeconomic models 
 
@@ -18,14 +18,14 @@ flowchart LR
     E --> R(Prices);
 ```
 
-<h2 style="text-align: left;color:blue;">Components</h2>
+<h2 style="text-align: left;color:blue;font-weight:bold;">Components</h2>
 
 <div class="grid cards" markdown>
 
 -   __Real World Events__
 
     ---
-    
+
     A central aim in this class is to improve our ability to think critically about the world around us. We'll do so by developing models that focus on recent events, from policy initiatives like the Right to Counsel to broader labor trends like the influence of the pandemic on the supply of teachers.
 
     ---
@@ -45,7 +45,7 @@ flowchart LR
 
     ---
 
-    Most decisions are made with some level of uncertainty. Firms may be unsure of which compeititor may enter the market next year; an employer might not know the type of individual they just hired; consumers are unsure whether a storm will hit their house. In order to capture this uncertainty, we need to make use of probabilty theory.
+    Most decisions are made with some level of uncertainty. Firms may be unsure of which competitor may enter the market next year; an employer might not know the type of individual they just hired; consumers are unsure whether a storm will hit their house. In order to capture this uncertainty, we need to make use of probabilty theory.
 
     ---
     [:octicons-arrow-right-24: Getting started](#)
