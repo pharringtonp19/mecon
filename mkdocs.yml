@@ -3,10 +3,10 @@ site_url: https://pharringtonp19.github.io/mecon/
 site_description: An undergraduate microeconimcs course
 site_author: Patrick Power
 nav: 
-  - EC201: index.md 
   - Overview:
-    - Overview: 'overview/overview.md'
-    - Syllabus: 'overview/Syllabus.pdf'
+      - Summary: index.md
+      - Introduction: 'overview/overview.md'
+      - Syllabus: 'overview/Syllabus.pdf'
   - Notes:
       - General Concepts:
         - Why Model? : 'chapters/why_model.md'
