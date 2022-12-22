@@ -1,8 +1,10 @@
-### **Summary**
+<h1 style="text-align: center;color:blue;">Microeconomic Analysis</h1>
+
+<h2 style="text-align: left;color:blue;">Suumary</h2>
 
 A course where we learn how to :hammer_pick: Microeconomic models 
 
-``` mermaid
+```mermaid
 flowchart LR
     A(Preferences/Income) -->  C(Demand);
     C --> E(Market Equilibrium);
@@ -16,8 +18,59 @@ flowchart LR
     E --> R(Prices);
 ```
 
-### [YouTube Mini Lectures: Just Updated!!!](https://www.youtube.com/watch?v=T4aqpXvKLEw&list=PLkgu-RZ_7eBEVuhrnK358pKasqnEUT0bE)
+<h2 style="text-align: left;color:blue;">Components</h2>
 
+<div class="grid cards" markdown>
+
+-   __Real World Events__
+
+    ---
+
+
+
+    [:octicons-arrow-right-24: Getting started](#)
+
+-   __Optimization__
+
+    ---
+
+    In Economics, we model indviduals, firms, governments as "maximizers". That is, 
+    we assume that people can be understood as making decisions to maximize some **objective** function subject to **constraints**.
+
+    [:octicons-arrow-right-24: Getting started](#)
+
+-   __Probability Theory__
+
+    ---
+
+    Most decisions are made with some level of uncertainty. Firms may be unsure of which compeititor may enter the market next year; an employer might not know the type of individual they just hired; consumers are unsure whether a storm will hit their house. In order to capture this uncertainty, we need to make use of probabilty theory.
+
+    [:octicons-arrow-right-24: Getting started](#)
+
+-   __Math on the Computer__
+
+    ---
+
+    While we'll introduce concepts sequentially in this class, we want to be able to incorporate each aspect into our model. Then only way we can do this in a reasonable fashion is by writing our models on the computer. We'll do so by making use of python. 
+
+    [:octicons-arrow-right-24: Getting started](#)
+
+</div>
+
+
+
+
+<!-- 
+<div class="grid cards" markdown>
+
+- Real World
+- Model
+- Solver
+
+</div> -->
+
+  
+<!-- 
 ### **Schedule**
 
 | Date      | Topic | Assignments| 
@@ -53,6 +106,6 @@ flowchart LR
 | 11/14  | [Asymmetric Information (3)](./chapters/markets/information.md) | | 
 | 11/16  | [Asymmetric Information (4)](./chapters/markets/information.md) || 
 | 11/18  | Midterm Review || 
-| 11/21  | Midterm | | 
+| 11/21  | Midterm | |  -->
 
 
