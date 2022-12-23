@@ -29,7 +29,7 @@ flowchart LR
     A central aim in this class is to improve our ability to think critically about the world around us. We'll do so by developing models that focus on recent events, from policy initiatives like the Right to Counsel to broader labor trends like the influence of the pandemic on the supply of teachers.
 
     ---
-    [:octicons-arrow-right-24: Getting started](#)
+    [:octicons-arrow-right-24: Getting started](chapters/real world events/introduction.md)
 
 -   __Optimization__
 
@@ -39,7 +39,7 @@ flowchart LR
     we assume that people can be understood as making decisions to maximize some **objective** function subject to **constraints**.
 
     ---
-    [:octicons-arrow-right-24: Getting started](#)
+    [:octicons-arrow-right-24: Getting started](chapters/optimization/introduction.md)
 
 -   __Probability Theory__
 
@@ -48,13 +48,13 @@ flowchart LR
     Most decisions are made with some level of uncertainty. Firms may be unsure of which competitor may enter the market next year; an employer might not know the type of individual they just hired; consumers are unsure whether a storm will hit their house. In order to capture this uncertainty, we need to make use of probabilty theory.
 
     ---
-    [:octicons-arrow-right-24: Getting started](#)
+    [:octicons-arrow-right-24: Getting started](chapters/probability theory/introduction.md)
 
 -   __Math on the Computer__
 
     ---
 
-    While we'll introduce concepts sequentially in this class, we want to be able to incorporate each aspect into our model. Then only way we can do this in a reasonable fashion is by writing our models on the computer. We'll do so by making use of python. 
+    While we'll introduce concepts sequentially in this class, we want to be able to incorporate each aspect into our model. The only way we can do this in a reasonable fashion is by writing our models on the computer. We'll do so by making use of python. 
     
     ---
     [:octicons-arrow-right-24: Getting started](#)

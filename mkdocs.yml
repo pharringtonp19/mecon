@@ -7,32 +7,41 @@ nav:
       - Summary: index.md
       - Introduction: 'overview/overview.md'
       - Syllabus: 'overview/Syllabus.pdf'
-  - Notes:
-      - General Concepts:
-        - Why Model? : 'chapters/why_model.md'
-        - Uncertainty : 'chapters/constraints/uncertainty.md'
-        - Solving Models: 'chapters/solving_models.md'
-        - Notation: 'chapters/notation.md'
-        - Learning: 'chapters/learning.md'
-      - Choice Sets:
-        - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
-        - Budget Constraint: 'chapters/constraints/budget_contraints.md'
-        - Real World Constraints: 'chapters/constraints/exploring_choice.md'
-      - Objectives:
-        - Utility: 'chapters/objectives/utility.md'
-        #- Random Utility: 'chapters/objectives/random_utility.md'
-        - Production Function: 'chapters/objectives/production_constraints.md'
-        - Profit: 'chapters/objectives/profit.md'
-      # - Solvers: 
-      #   - Intro: 'chapters/solvers/intro.md'
-      #   - Basics: 'chapters/solvers/stopping.md'
-      - Applications: 
-        - Demand: 'chapters/applications/demand.md'
-        - Comparative Statics: 'chapters/comparative_statics.md'
-        - Game Theory: 'chapters/applications/game theory.md'
-      - Markets: 
-        - Asymmetric Information: 'chapters/markets/information.md'
-        - Asymmetric Information (2): 'chapters/html_scripts/compensation.html'
+  - Topics:
+      - Optimization:
+          - Introduction: 'chapters/optimization/introduction.md'
+      - Probability Theory:
+          - Introduction: 'chapters/probability theory/introduction.md'
+      - Math on the Computer:
+          - Introduction: 'chapters/math on the computer/introduction.md'
+      - Real World Events:
+          - Introduction: 'chapters/real world events/introduction.md'
+
+      # - General Concepts:
+      #   - Why Model? : 'chapters/why_model.md'
+      #   - Uncertainty : 'chapters/constraints/uncertainty.md'
+      #   - Solving Models: 'chapters/solving_models.md'
+      #   - Notation: 'chapters/notation.md'
+      #   - Learning: 'chapters/learning.md'
+      # - Choice Sets:
+      #   - Basics of Constraints: 'chapters/constraints/constraints_overview.md'
+      #   - Budget Constraint: 'chapters/constraints/budget_contraints.md'
+      #   - Real World Constraints: 'chapters/constraints/exploring_choice.md'
+      # - Objectives:
+      #   - Utility: 'chapters/objectives/utility.md'
+      #   #- Random Utility: 'chapters/objectives/random_utility.md'
+      #   - Production Function: 'chapters/objectives/production_constraints.md'
+      #   - Profit: 'chapters/objectives/profit.md'
+      # # - Solvers: 
+      # #   - Intro: 'chapters/solvers/intro.md'
+      # #   - Basics: 'chapters/solvers/stopping.md'
+      # - Applications: 
+      #   - Demand: 'chapters/applications/demand.md'
+      #   - Comparative Statics: 'chapters/comparative_statics.md'
+      #   - Game Theory: 'chapters/applications/game theory.md'
+      # - Markets: 
+      #   - Asymmetric Information: 'chapters/markets/information.md'
+      #   - Asymmetric Information (2): 'chapters/html_scripts/compensation.html'
   - Slides:
       - Consumer Heterogeneity: 'chapters/slides/conumers.md'
       - Comparative Statics: 'chapters/slides/comparative_statics.md'
@@ -45,12 +54,12 @@ nav:
   - YouTube: 
       - Constraints: 'chapters/YouTube/constraints.md'
       - Teacher Supply: 'chapters/YouTube/teacher_supply.md'
-  - Math:
-      - Functions: 'math/functions.md'
-      - Partial Evaluation: 'math/partial_evaluation.md'
-      # - Background for Optimization: 'math/opt1.md'
-      - Local Minimum: 'math/local minimum.md'
-      - Probability Introduction: 'math/probability_intro.md'
+  # - Math:
+  #     - Functions: 'math/functions.md'
+  #     - Partial Evaluation: 'math/partial_evaluation.md'
+  #     # - Background for Optimization: 'math/opt1.md'
+  #     - Local Minimum: 'math/local minimum.md'
+  #     - Probability Introduction: 'math/probability_intro.md'
 
 
   # - Assignments: 

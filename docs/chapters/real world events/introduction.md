@@ -1,0 +1,1 @@
+One of my professors in undergrad explained that by studying economics you should become a better reader of the newspaper.
