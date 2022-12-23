@@ -10,8 +10,8 @@ nav:
   - Topics:
       - Optimization:
           - Introduction: 'chapters/optimization/introduction.md'
-      - Probability Theory:
-          - Introduction: 'chapters/probability theory/introduction.md'
+      - Uncertainty:
+          - Introduction: 'chapters/Uncertainty/introduction.md'
       - Math on the Computer:
           - Introduction: 'chapters/math on the computer/introduction.md'
       - Real World Events:

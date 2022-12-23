@@ -41,14 +41,15 @@ flowchart LR
     ---
     [:octicons-arrow-right-24: Getting started](chapters/optimization/introduction.md)
 
--   __Probability Theory__
+-   __Uncertainty__
 
     ---
 
     Most decisions are made with some level of uncertainty. Firms may be unsure of which competitor may enter the market next year; an employer might not know the type of individual they just hired; consumers are unsure whether a storm will hit their house. In order to capture this uncertainty, we need to make use of probabilty theory.
 
     ---
-    [:octicons-arrow-right-24: Getting started](chapters/probability theory/introduction.md)
+    [:octicons-arrow-right-24: Getting started](chapters/Uncertainty/introduction.md)
+
 
 -   __Math on the Computer__
 
