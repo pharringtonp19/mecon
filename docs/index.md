@@ -1,6 +1,6 @@
-<h1 style="text-align: center;color:blue;font-weight:bold;">Microeconomic Analysis</h1>
+<h1 style="text-align: center;color:#404065;font-weight:bold;">Microeconomic Analysis</h1>
 
-<h2 style="text-align: left;color:blue;font-weight:bold;">Summary</h2>
+<h2 style="text-align: left;color:#404065;font-weight:bold;">Summary</h2>
 
 A course where we learn how to :hammer_pick: Microeconomic models 
 
@@ -18,7 +18,7 @@ flowchart LR
     E --> R(Prices);
 ```
 
-<h2 style="text-align: left;color:blue;font-weight:bold;">Components</h2>
+<h2 style="text-align: left;color:#404065;font-weight:bold;">Components</h2>
 
 <div class="grid cards" markdown>
 
