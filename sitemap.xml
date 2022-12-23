@@ -66,6 +66,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://pharringtonp19.github.io/mecon/chapters/Uncertainty/introduction/</loc>
+         <lastmod>2022-12-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://pharringtonp19.github.io/mecon/chapters/YouTube/constraints/</loc>
          <lastmod>2022-12-23</lastmod>
          <changefreq>daily</changefreq>
@@ -182,11 +187,6 @@
     </url>
     <url>
          <loc>https://pharringtonp19.github.io/mecon/chapters/optimization/introduction/</loc>
-         <lastmod>2022-12-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pharringtonp19.github.io/mecon/chapters/probability%20theory/introduction/</loc>
          <lastmod>2022-12-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
