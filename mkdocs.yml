@@ -12,6 +12,7 @@ nav:
           - Introduction: 'chapters/optimization/introduction.md'
       - Uncertainty:
           - Introduction: 'chapters/Uncertainty/introduction.md'
+          - Game Theory: 'chapters/Uncertainty/game theory.md'
       - Math on the Computer:
           - Introduction: 'chapters/math on the computer/introduction.md'
       - Real World Events:

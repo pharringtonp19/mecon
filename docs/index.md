@@ -58,7 +58,7 @@ flowchart LR
     While we'll introduce concepts sequentially in this class, we want to be able to incorporate each aspect into our model. The only way we can do this in a reasonable fashion is by writing our models on the computer. We'll do so by making use of python. 
     
     ---
-    [:octicons-arrow-right-24: Getting started](#)
+    [:octicons-arrow-right-24: Getting started](chapters/math on the computer/introduction.md)
 
 </div>
 
