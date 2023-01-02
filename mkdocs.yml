@@ -45,6 +45,7 @@ nav:
       #   - Asymmetric Information (2): 'chapters/html_scripts/compensation.html'
   - Slides:
       - Course Introduction: 'chapters/slides/course introduction.md'
+      - Firms: 'chapters/slides/firms.md'
       - Consumer Heterogeneity: 'chapters/slides/conumers.md'
       - Comparative Statics: 'chapters/slides/comparative_statics.md'
       - Optimal Policy: 'chapters/slides/optimal_policy.md'
