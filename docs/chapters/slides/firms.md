@@ -1,0 +1,1 @@
+<iframe src="https://slides.com/pharringtonp19/course-introduction/embed" width="576" height="420" title="Firms" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
