@@ -1,0 +1,1 @@
+<iframe src="https://slides.com/pharringtonp19/firms/embed" width="576" height="420" title="Consumers" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
