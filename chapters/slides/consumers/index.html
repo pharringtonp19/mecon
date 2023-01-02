@@ -12,7 +12,7 @@
         <meta name="author" content="Patrick Power">
       
       
-        <link rel="canonical" href="https://pharringtonp19.github.io/mecon/chapters/objectives/profit/">
+        <link rel="canonical" href="https://pharringtonp19.github.io/mecon/chapters/slides/consumers/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Profit - Microeconomics</title>
+        <title>Consumers - Microeconomics</title>
       
     
     
@@ -85,11 +85,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#introduction" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -119,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Profit
+              Consumers
             
           </span>
         </div>
@@ -227,6 +222,8 @@
       
         
 
+  
+
 
 
 
@@ -234,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../slides/course%20introduction/" class="md-tabs__link">
+        <a href="../course%20introduction/" class="md-tabs__link md-tabs__link--active">
           
   
   Slides
@@ -838,6 +835,8 @@
       
   
   
+    
+  
   
     
     
@@ -850,11 +849,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
         
         
           <label class="md-nav__link" for="__nav_3">
@@ -891,7 +890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slides/course%20introduction/" class="md-nav__link">
+      <a href="../course%20introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -915,9 +914,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../slides/consumers/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -932,6 +938,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -943,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slides/firms/" class="md-nav__link">
+      <a href="../firms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1093,114 +1100,9 @@
                   
 
 
-  <h1>Profit</h1>
+  <h1>Consumers</h1>
 
-<div class="admonition tldr">
-<p class="admonition-title">Overview</p>
-<p>The aim of this lecture is to illustrate how we can model the firm's behavior</p>
-</div>
-<h3 id="introduction"><strong>Introduction</strong></h3>
-<details class="question inline end">
-<summary>Consider</summary>
-<p>What else makes modeling the behavior of firms complex? Consider for instance that the actions of the firm today affect its feasibility set tomorrow!</p>
-</details>
-<p>As we've alluded to previously, modeling the behavior of firms can be quite complex. The reason(s) being that a firm's choice set can be quite large. The time horizon that the firm considers can involve multiple periods. And, the demand that they face may be partially unknown. </p>
-<p>Later in the semester, we'll be able to add complexity to our models by considering multiple time periods and thinking through how a firms decisions today affect their choice set tomorrow, and things of that nature. For the moment though, we want to begin my modeling firms as a profit maximizing entity in a single time period where demand is known. </p>
-<p>In this context, the objective of the firm is to make choices in order to maximize their profit.</p>
-<div class="arithmatex">\[\text{Profit} = \text{Revenue} - \text{Cost}  \]</div>
-<h3 id="revenue"><strong>Revenue</strong></h3>
-<p>Revenue is the price of the good multiplied by the quantity produced. We can express this mathematically, with the help of the inverse demand function, as follows:</p>
-<div class="arithmatex">\[\textrm{Revenue}(q) = D^{-1}(q)q\]</div>
-<p>The inverse demand function is a bit of a long name for a relatively simple relationship. When we talk about the demand function, we mean a function whose domain is prices and whose codomain in quantity. </p>
-<div class="arithmatex">\[\text{Demand} :: \text{Prices} \to \text{Quantity} \]</div>
-<p>The inverse demand function is the inverse of this function:</p>
-<div class="arithmatex">\[\text{Inverse Demand} :: \text{Quantity} \to  \text{Prices} \]</div>
-<p>Such that the following holds:</p>
-<div class="arithmatex">\[\text{Demand}(\text{Inverse Demand}(q)) = q \]</div>
-<p>Given the revenue function, we can compute the <strong>marginal revenue</strong> by differentaiting the function with respect to quantity.  </p>
-<div class="arithmatex">\[\text{Marginal Revenue} (q) = \frac{d}{dq}\text{Revenue}(q) = \frac{d}{dq}D^{-1}(q)q + D^{-1}(q)\]</div>
-<h3 id="cost"><strong>Cost</strong></h3>
-<p>As with revenue, we can express the cost as a function of the number of outputs: <span class="arithmatex">\(c(q)\)</span>. For instance, we may want to model the cost function as follows</p>
-<div class="arithmatex">\[c(q) = 10 + 0.5q^2\]</div>
-<h4 id="characterizing-costs">Characterizing Costs</h4>
-<ul>
-<li><strong>Variable Costs</strong>: Costs that vary with output -- Ex the wages of mechanics in an auto repair shop</li>
-<li><strong>Fixed Costs</strong>: Costs that do not vary with output -- Ex the rent/mortage on the auto repair shop</li>
-</ul>
-<div class="arithmatex">\[\text{Total Costs} = \text{Fixed Costs} + \text{Variable Costs}\]</div>
-<figure>
-<p><img alt="Image title" src="../../../fig/cost.png" width="500" />
-  </p>
-<figcaption>$$c(q) = 10 + 0.5q^2$$</figcaption>
-</figure>
-<details class="question">
-<summary>Question</summary>
-<p>If you are given a cost function, how would you compute the fixed and variable costs?</p>
-</details>
-<p>We're often interested in costs per unit of output. As we can see from the figure below, the average fixed costs will decline as we increase quantity. This tells us that as <span class="arithmatex">\(q\)</span> gets largs, average total costs <span class="arithmatex">\(\approx\)</span> average variable costs.</p>
-<figure>
-<p><img alt="Image title" src="../../../fig/avg_cost.png" width="500" />
-  </p>
-<figcaption>$$\frac{c(q)}{q} = \frac{10}{q} + 0.5q$$</figcaption>
-</figure>
-<p>Additionally, you may recall from your Principles of Microeconomics class that the profit maximizing firm chooses output to equate <strong>marginal revenue</strong> equal to <strong>marginal costs</strong>. Below we plot the marginal costs as well as the average marginal costs. </p>
-<figure>
-<p><img alt="Image title" src="../../../fig/marginal_cost.png" width="500" /></p>
-</figure>
-<figure>
-<p><img alt="Image title" src="../../../fig/marginal_avg_cost.png" width="500" /></p>
-</figure>
-<details class="question">
-<summary>Question</summary>
-<p>Let's say that the firm's cost function is as depicted above:</p>
-<div class="arithmatex">\[c(q) = 10 + 0.5q^2\]</div>
-<p>If the firm produces <span class="arithmatex">\(4\)</span> units of output, what is its total cost, fixed cost and variable costs?</p>
-</details>
-<p>We can also model the cost function in terms of the prices of the factors of production by making use of the <strong>production function</strong> which we introduced in a previous lecture. That is the cost function can be defined as an <strong>implicit function</strong> as follows:</p>
-<div class="arithmatex">\[c(q) = \underset{x_1, x_2}{\text{minimize}} \ w_1x_1 + w_2x_2 \quad \text{s.t.} \ f(x_1, x_2) = q \]</div>
-<h3 id="detailed-profit-function"><strong>Detailed Profit Function</strong></h3>
-<div class="arithmatex">\[\text{Profit} :: \text{Price of Inputs} \to \text{Inverse Demand Function} \to \text{Production Function} \to \text{Quanity} \to \mathbb{R}\]</div>
-<p>The above function signature indicates that the objective function can be thought of as consisting of four arguments: - the prices of the inputs, the inverse demand function that the firm faces in the market, the firm's production function, and the quantity of output to produce. </p>
-<details class="question">
-<summary>Consider</summary>
-<p>How would you introduce heterogeneity in this context?</p>
-</details>
-<h4 id="example">Example</h4>
-<p>Let's assume that we are modeling the company Ford which produces the F-150. Let's further assume that the factors of production consist only of the number of labor hours, <span class="arithmatex">\(l\)</span> and the number of machines <span class="arithmatex">\(k\)</span>. Then if we know the price of the labor hours <span class="arithmatex">\(w\)</span>, and the rental rate of the machines <span class="arithmatex">\(r\)</span>, the inverse demand function, <span class="arithmatex">\(D^{-1}\)</span>, and the number of F150s that Ford produces, we can comput its profit. </p>
-<div class="arithmatex">\[\begin{align*} P_{l, k, D^{-1}} (q) = D^{-1}(q)q - c(q) \end{align*}\]</div>
-<!-- 
-As we'll see shortly, the production function of the firm is a key aspect that influence the firm's behavior, but it's not t
-
-Firms may have a variety of objectives, but we'll start by modeling them as profit maximizing entities. That is, we'll assume that they make decisions in order to maximize their profit: 
-$$\text{Profit} = \text{Revenue} - \text{Cost}  $$ 
-
-As with the utility function, we'll express the profit function as a parameterized function whose domain is the firm's choice set:
-
-??? info "Description" 
-
-    If we want to be more general, then we can express profit as a "curried" function as follows: 
-
-    $$\text{Profit} :: \textrm{Technology} \to \text{Output Prices} \to \text{Input Prices} \to \text{Inputs} \to \mathbb{R} $$
-
-$$ \begin{align*}\text{Profit} &: \textrm{Inputs} \to \mathbb{R} \\ 
-\text{Profit}_{f,p,w}(x) &= \langle p, f(x) \rangle - \langle w, x \rangle \end{align*}$$
-
-
-### **Time** 
-
-We may want to separate inputs into those that are fixed in the short run and those that are not 
-
-$$\text{Profit} :: \textrm{Technology} \to \text{Output Prices} \to \text{Input Prices} \to  \text{Fixed Inputs} \to \text{Variable Inputs} \to \mathbb{R} $$
-
-### **Maximizing Over Inputs**
-
-Above, we formulated the problem of the firm as selecting the output to produce, and we assumed that they knew both the demand and associated cost functions. We could also formulate the problem of the firm as maximizing profit with respect to the input levels. 
-
-$$\underset{x}{\text{maximize}} \ p(f_t(x))f_t(x) - c_w(x)$$
-
-??? info "Bi-level Formulation"
-
-    $$\underset{q}{\text{maximize}} \ p(q)q - \underset{x}{\text{minimize}} \ c(x) \ \text{s.t.} \ f(x)=q $$ -->
+<iframe src="https://slides.com/pharringtonp19/firms/embed" width="576" height="420" title="Consumers" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 
@@ -1223,6 +1125,42 @@ $$\underset{x}{\text{maximize}} \ p(f_t(x))f_t(x) - c_w(x)$$
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../course%20introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Course Introduction" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Course Introduction
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../firms/" class="md-footer__link md-footer__link--next" aria-label="Next: Firms" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Firms
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
