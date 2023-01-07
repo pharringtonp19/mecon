@@ -13,6 +13,7 @@ nav:
           - Limitations of Sets: 'chapters/optimization/limitation of sets.md'
       - Uncertainty:
           - Introduction: 'chapters/Uncertainty/introduction.md'
+          - Fundamentals of Probability Theory: 'chapters/Uncertainty/Fundamentals of Probability Theory.md'
           - Law of Large Numbers: 'chapters/Uncertainty/Law of Large Numbers.md'
           - Game Theory: 'chapters/Uncertainty/game theory.md'
       - Math on the Computer:
@@ -96,7 +97,7 @@ theme:
   name: material
   palette:
     scheme: default
-    primary: deep purple
+    primary: deep blue
   icon:
     admonition:
       code: fontawesome/solid/code
