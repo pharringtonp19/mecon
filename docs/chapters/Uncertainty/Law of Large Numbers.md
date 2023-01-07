@@ -1,0 +1,1 @@
+To borrow an example from [Richard McElreath](https://youtu.be/R1vcdhPBlXA), what proportion of the surface is covered with water?

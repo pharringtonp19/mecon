@@ -10,8 +10,10 @@ nav:
   - Topics:
       - Optimization:
           - Introduction: 'chapters/optimization/introduction.md'
+          - Limitations of Sets: 'chapters/optimization/limitation of sets.md'
       - Uncertainty:
           - Introduction: 'chapters/Uncertainty/introduction.md'
+          - Law of Large Numbers: 'chapters/Uncertainty/Law of Large Numbers.md'
           - Game Theory: 'chapters/Uncertainty/game theory.md'
       - Math on the Computer:
           - Introduction: 'chapters/math on the computer/introduction.md'
