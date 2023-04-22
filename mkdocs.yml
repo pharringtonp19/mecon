@@ -5,7 +5,8 @@ site_author: Patrick Power
 nav: 
   - Overview:
       - Summary: index.md
-      - Introduction: 'overview/overview.md'
+      - Preface: 'overview/preface.md'
+      - Introduction: 'overview/introduction.md'
       - Syllabus: 'overview/Syllabus.pdf'
   - Topics:
       - Optimization:

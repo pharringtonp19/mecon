@@ -10,4 +10,7 @@ $$\underset{x \in F^{-1}(0)}{\textrm{minimize}} \ f(x)$$
 - Constraint Function: $F : \mathcal{R}^n \to \{0,1\}$
 
 
+The market: 
+
+
 
