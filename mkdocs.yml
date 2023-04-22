@@ -21,7 +21,6 @@ nav:
           - Introduction: 'chapters/math on the computer/introduction.md'
       - Real World Events:
           - Introduction: 'chapters/real world events/introduction.md'
-
       # - General Concepts:
       #   - Why Model? : 'chapters/why_model.md'
       #   - Uncertainty : 'chapters/constraints/uncertainty.md'
@@ -99,7 +98,7 @@ theme:
   palette:
     scheme: default
     primary: deep blue
-  icon:
+  icon: 
     admonition:
       code: fontawesome/solid/code
       note: octicons/tag-16
@@ -109,6 +108,8 @@ theme:
     - navigation.indexes
     - toc.integrate
     - navigation.top
+  logo: fig/favicon.png
+  favicon: fig/favicon.png
 
 
 markdown_extensions:
